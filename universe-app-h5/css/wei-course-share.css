@@ -1,0 +1,109 @@
+*{
+    color:#232323;
+}
+body{
+    background:#f8f8f8;
+}
+.sh-top{
+    margin:0 auto;
+    width:92%;
+    height:150px;
+    border-bottom:1px solid #e5e0de;
+}
+.ava{
+    display:block;
+    margin:25px auto 0;
+    height:70px;
+    width:70px;
+    border:1px solid #fff;
+    border-radius:50%;
+}
+.payer{
+    margin-top:24px;
+    width:100%;
+    line-height:24px;
+    text-align:center;
+    font-size:14px;
+    height:24px;
+}
+.payer span{
+    display:inline-block;
+    font-size:14px;
+    line-height:24px;
+    height:24px;
+    max-width:42px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+.sh-main{
+    position:relative;
+    margin:25px auto 0;
+    height:352px;
+    width:260px;
+}
+.share-bg{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+.title{
+    position:absolute;
+    left:30px;
+    bottom:285px;
+    width:200px;
+    font-size:14px;
+    line-height:20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+time{
+    position:absolute;
+    right:30px;
+    top:70px;
+    font-size:11px;
+}
+.try-btn{
+    position:absolute;
+    left:93px;
+    bottom:103px;
+    border-radius:50%;
+    background:transparent;
+    height:75px;
+    width:75px;
+}
+.tip{
+    margin:30px 0;
+    font-size:12px;
+    width:100%;
+    text-align:center;
+    color:#fc6d13;
+}
+.mark{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:#fff;
+}
+.mark img{
+    display:block;
+    margin:60px auto;
+    height:65px;
+    width:65px;
+}
+.mark p{
+    line-height:20px;
+    font-size:14px;
+    width:100%;
+    text-align:center;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html> <!---->
+	<head>
+		<meta charset="UTF-8">
+		<title>宇宙托福机经练习</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/plan_detail.css" />
+	</head>
+	<body>
+		<div class="download_tips">
+			<span>下载宇宙托福APP, 查看更多学习计划</span>			
+			<a href="javascript:;" class="download_btn">下载</a>
+		</div>
+		<div class="banner">
+			<img src="../img/plan_detail/banner_img.png" alt="TPO模考计划"/>
+		</div>
+		<div class="content">
+			<ul class="content_nav">
+				<li class="active">
+					<a href="#tab0" class="tab">简介</a>
+				</li>
+				<li>
+					<span class="cutLine"></span>
+					<a href="#tab1" class="tab">练习</a>
+				</li>
+				<li>
+					<span class="cutLine"></span>
+					<a href="#tab2" class="tab">音频</a>
+				</li>
+				<li>
+					<span class="cutLine"></span>
+					<a href="#tab3" class="tab">视频</a>
+				</li>
+			</ul>
+			<div class="jianjie tContent" style="display:">
+				<div class="courses_plan">
+					<h3>基础练习计划</h3>
+					<span class="people_num">
+						<i class="people_icon"></i>
+						<span id="people_count">130</span>人在学
+					</span>
+					<span class="course_duration">
+						<i class="duration_icon"></i>
+						<span id="duration_count">30</span>天课程
+					</span>
+				</div>
+				<ul class="plan_desc">
+					<li>
+						<p class="plan_desc_title">计划简介</p>
+						<span class="desc_words">Lorem ipsum dolor sit amet, 
+							consectetur adipcing elit. Aenean euismod bibendum laoreet. 
+							Proinvida dolor sit amet lacus accumsan et viverra jumodo.
+						</span>
+					</li>
+					<li>
+						<p class="plan_desc_title">试用人群</p>
+						<span class="desc_words">Lorem ipsum dolor sit amet, 
+							consectetur adipcing elit. Aenean euismod bibendum laoreet. 
+							Proinvida dolor sit amet lacus accumsan et viverra jumodo.
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="lianxi tContent" style="display: none;">
+				<ul class="mod reading">
+					<li class="mod_title">
+						<div class="iconBox"><b class="reading_icon"></b></div>
+						<div class="mod_desc">
+							<h2>阅读</h2>
+							<span>200个新单词、10个长难句、100个语法点</span>
+						</div>
+					</li>
+					<li>
+						<div class="iconBox"><i class="done_icon"></i></div>
+						<p class="mod_name">听音辩词、看词辨音</p>
+					</li>
+					<li>
+						<div class="iconBox"><i class="on_icon"></i></div>
+						<p class="mod_name">听音辩词、看词辨音</p>
+					</li>
+				</ul>
+				<ul class="mod listening">
+					<li class="mod_title">
+						<div class="iconBox"><b class="listening_icon"></b></div>
+						<div class="mod_desc">
+							<h2>听力</h2>
+							<span>200个新单词</span>
+						</div>
+					</li>
+					<li>
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<p class="mod_name">朗诵、背诵</p>
+					</li>
+					<li>
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<p class="mod_name">语法练习</p>
+					</li>
+				</ul>
+				<ul class="mod spoken">
+					<li class="mod_title">
+						<div class="iconBox"><b class="spoken_icon"></b></div>
+						<div class="mod_desc">
+							<h2>口语</h2>
+							<span>200个新单词、10个长难句、100个语法点</span>
+						</div>
+					</li>
+					<li>
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<p class="mod_name">听音辩词、看词辨音</p>
+					</li>
+					<li>
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<p class="mod_name">听音辩词、看词辨音</p>
+					</li>
+				</ul>
+			</div>
+			<div class="audios tContent" style="display: none;">
+				<ul class="mod section" id="audio_mod">
+					<li class="can_hear active-playing" data-audio="../audio/BlueDucks_FourFlossFiveSix.mp3">  <!--已购买-->		
+						<div class="margin-div"></div>
+						<div class="a_right">
+							<span class="audio_name"><i class="horn_icon"></i>Log Books</span>
+							<span class="audio_duration">03:26</span>
+						</div>						
+					</li>
+					<li class="can_hear" data-audio="../audio/BlueDucks_FourFlossFiveSix.mp3">  <!--已购买-->		
+						<div class="margin-div"></div>
+						<div class="a_right">
+							<span class="audio_name"><i class="horn_icon"></i>Log Books</span>
+							<span class="audio_duration">03:26</span>
+						</div>						
+					</li>
+					<li class="cant_hear">  <!--未购买-->		
+						<div class="margin-div"></div>
+						<div class="a_right">
+							<span class="audio_name"><i class="horn_icon"></i>Locating Books</span>
+							<span class="audio_duration">03:26</span>
+						</div>						
+					</li>
+				</ul>
+				<div id="wrapper"><!--音频播放器插件-->
+					<audio id="myAudio" preload="auto" controls>
+						<source src="../audio/BlueDucks_FourFlossFiveSix.mp3">
+					</audio>
+					<b id="a_prev"></b>
+					<b id="a_next"></b>
+				</div>
+			</div>
+			<div class="videos tContent" style="display: none;">
+				<ul class="mod section">
+					<li class="section_title">
+						第一节：攻克听力障碍
+					</li>
+					<li class="can_see">	<!--可看     已看过-->					
+						<div class="iconBox"><i class="done_icon"></i></div>
+						<div class="v_right"><a href="#">
+							<span class="section_name">音译互辩 Unit2-4</span>
+							<span class="video_duration">1小时2分钟</span></a>
+						</div>					
+					</li>
+					<li class="can_see">	<!--可看    正在看-->					
+						<div class="iconBox"><i class="on_icon"></i></div>
+						<div class="v_right"><a href="#">
+							<span class="section_name">音译互辩 Unit2-4</span>
+							<span class="video_duration">1小时2分钟</span></a>
+						</div>					
+					</li>
+					<li class="can_see">	<!--可看    可试看-->					
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<div class="v_right"><a href="#">
+							<span class="section_name">音译互辩 Unit2-4</span>
+							<span class="video_status">可试看</span>
+							<span class="video_duration">1小时2分钟</span></a>
+						</div>					
+					</li>
+					<li class="cant_see">  <!--不可看-->		
+						<div class="iconBox"><i class="havent_icon"></i></div>
+						<div class="v_right">
+							<a href="#"><span class="section_name">记忆复记忆复写 Unit2-4</span>
+							<span class="video_duration">58分钟</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="freeft footer" style="display: none;">
+			<span class="price">免费</span>
+			<a href="javascript:;" class="add_plan">加入计划</a><!-- or 已加入该计划  添加类名:have_add -->
+		</div>
+		<div class="buyft footer" style="display: none;">
+			<p class="price">
+				<i class="price_icon"></i>
+				<span id="price">299.00</span>
+			</p>	
+			<a href="javascript:;" class="tiyan">免费体验</a>
+			<a href="javascript:;" class="pay_btn">购买计划</a>
+		</div>
+		<!--模态提示框-->
+		<div class="modal">
+			<div class="dialog">
+				<p class="tips_words">已加入该计划</p>
+				<p class="tips_detail">
+					练习已成功加入<span class="userId">183****1098</span>账户，请登录APP端进行练习	
+				</p>
+				<ul>
+					<li class="wait"><a href="javascript:;">稍后再说</a></li>
+					<li class="download"><a href="javascript:;">立即下载</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/lib/jquery-1.11.1.js"></script>
+	<script src="../js/lib/audioplayer.js"></script>
+	<script src="../js/plan_detail.js"></script>
+	<script>
+		$(function() {
+			var curAudioIndex = 0;//当前播放的li下标
+			var audioLength = $(".can_hear").length;//可播放的个数
+			$('audio').audioPlayer();//初始化音频播放器
+			//点击当前音频列
+			$(".can_hear").click(function(){
+				var $this = $(this);
+				var curIndex = $this.index();
+				var audioSrc = $this.data("audio");	
+				curAudioIndex = curIndex;
+				stopAudioPlay();
+				$("#audio_mod").find("li").removeClass("active-playing");
+				$this.addClass("active-playing");
+				playAudio(audioSrc);
+			})
+			$("#myAudio").on("ended",function(){
+				$("#audio_mod").find("li").removeClass("active-playing");
+			})
+			//向前按钮
+			$("#a_prev").click(function(){
+				if(curAudioIndex <= 0){
+					return;
+				}
+				stopAudioPlay();
+				curAudioIndex--;
+				var audioSource = $(".can_hear").eq(curAudioIndex).data("audio");
+				playAudio(audioSource);
+			})
+			//向后按钮
+			$("#a_next").click(function(){
+				if(curAudioIndex >= audioLength - 1){
+					return;
+				}
+				stopAudioPlay();
+				curAudioIndex++;
+				var audioSource = $(".can_hear").eq(curAudioIndex).data("audio");
+				playAudio(audioSource);
+			})
+			//播放音频
+			function playAudio(source){
+				stopAudioPlay();
+				$("#myAudio").find("source").attr("src",source);
+				$(".audioplayer").addClass("audioplayer-playing");
+				$("#myAudio")[0].play();
+				$(".can_hear").removeClass("active-playing");
+				$(".can_hear").eq(curAudioIndex).addClass("active-playing");
+			}
+			//停止播放
+			function stopAudioPlay(){
+		    	if($(".audioplayer").hasClass("audioplayer-playing")){
+		    		$(".audioplayer").removeClass("audioplayer-playing");
+		    		$("#myAudio")[0].load();
+		    	}else{
+		    		$("#myAudio")[0].load();
+		    	}
+			}
+			
+			
+		});
+	</script>
+</html>

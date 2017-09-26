@@ -1,0 +1,680 @@
+/*-------flexble.js缩放布局*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*发起挑战*/
+#accpet-challenge{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: ;
+	color: #232323;
+	padding-top: 2rem;
+	box-sizing: border-box;
+}
+#user-avatar{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 1.2rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#user-avatar img{
+	width: 100%;
+}
+#user-nickname{
+	text-align: center;
+	padding-top: 0.533333rem;
+	font-size: 0.5rem;
+}
+#accpet-challenge>article{
+	width: 10rem;    
+	text-align: center;
+	padding-top: 1.4rem;
+	font-size: 0.4rem;
+}
+#go-challenge{
+	display: block;
+	background: #f18d00;
+	width: 4.533333rem;
+	height: 1.173333rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+	text-align: center;
+	border: none;
+	border-radius: 0.15rem;
+	margin: 1.666666rem auto 0px;
+}
+#all-result{
+	position: absolute;
+	width: 2.666666rem;
+	height: 0.426666rem;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 1.333333rem;
+	margin:auto;
+	color: #acacac;
+	font-size: 0.4rem;
+}
+
+/*接受挑战答题页面*/
+#do-challenge{
+	width: 100%;
+	height: 100%;
+}
+#challenge-details{
+	background: #f1f1f1;
+	padding: 0.933333rem 0.453333rem;
+	border-bottom: 1px solid #d6d6d6;
+	box-sizing: border-box;
+}
+#challenge-details ul{
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify  ;
+	-moz-justify-content: justify  ;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid #d6d6d6;
+	border-radius: 0.866666rem;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	background: #fff;
+}
+#finished,#unfinished{
+	width: 1.333333rem;
+	height: 1.333333rem;
+	border-radius: 0.666666rem;
+	background: #f18d00;
+	padding-top: 0.24rem;
+	box-sizing: border-box;
+}
+#finished p:first-child,
+#unfinished p:first-child{
+	color: #fff;
+	text-align: center;
+	font-size: 0.35rem;
+}
+#finished-num,#unfinished-num{
+	color: #fff;
+	text-align: center;
+	font-size: 0.466666rem;
+	margin-top: 0.086666rem;
+}
+#unfinished{
+	background: #d6d6d6;
+}
+#progress-box{
+	flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	padding: 0 5%;
+}
+#time-count{
+	font-size: 0.45rem;
+	color: #232323;
+	margin-top: 0.2rem;
+	text-align: center;
+}
+#total-progress{
+	width: 100%;
+	height: 0.133333rem;
+	background: #d6d6d6;
+	border-radius:0.066666rem;
+	border-radius: 0.13rem;
+}
+#done-progress{
+	height: 0.133333rem;
+	border-radius:0.066666rem;
+	width: 20%;
+	background: #f18d00;
+	margin-top: 0.15rem;
+}
+/*选项区*/
+.vol-question{
+	width: 100%;
+	padding-top: 1.786666rem;
+	box-sizing: border-box;
+}
+.vol-word{
+	text-align: center;
+	font-size: 0.733333rem;
+	font-weight: bold;
+}
+.vol-options-box{
+	margin-top: 1.933333rem;
+}
+.vol-options-box>li{
+	width: 100%;
+	margin-top: 0.533333rem;
+	line-height: 0.6rem;
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-flex-align: center;
+	-ms-flex-align: center;
+	-o-flex-align: center;
+	align-items: center;
+}
+.vol-options{
+	display: inline-block;
+	width: 0.8rem;
+	line-height: 0.8rem;
+	height: 0.8rem;
+	text-align: center;
+	color: #767676;
+	border: 1px solid #bfbfbf;
+	border-radius: 0.673333rem;
+	box-sizing: border-box;
+	margin-left: 35%;
+}
+.vol-mean{
+	display: inline-block;
+	width: 6rem;
+	color: #232323;
+	padding: 0 .44rem;
+	font-size: .5rem;
+	box-sizing: border-box;
+}
+
+/*顶部下载提示*/
+.download_tips{
+	width: 100%;
+	text-align: center;
+	background: #333333;
+	background: rgba(0,0,0,.5);
+	line-height:.995rem;
+	overflow: hidden;
+	padding: 0px 0.533333rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+}
+.download_tips span{
+	float: left;
+	color: #fff;
+	font-size: .3425rem;
+}
+.download_btn{
+	float: right;
+	display: inline-block;
+	background: #00b551;
+	color: #fff;
+	text-align: center;
+	width: 1.333333rem;
+	line-height: 0.533333rem;
+	border-radius: 0.08rem;
+	margin-top:.2525rem;
+}
+
+/*朋友结果页面*/
+.vol-banner{
+	width: 100%;
+	height: 5.466666rem;
+	background: url(../img/vol-challenge/vol-banner.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+#my-rank{
+	text-align: center;
+	margin-top: 1.566666rem;
+	font-size: 0.733333rem;
+	color: #bf4806;
+}
+#rank-compare{
+	margin-top:1.2rem;
+	text-align: center;
+	font-size: 0.4rem;
+	color: #5C5757;
+}
+#rank-compare>a{
+	color: #232323;
+	text-decoration: underline;
+	margin-left: 0.133333rem;
+	color: #5C5757;
+}
+#check-all-result{
+	margin: 0.28rem auto 0px;
+	font-size: 0.4rem;
+	text-align: center;
+}
+#gettea{
+	display: block;
+	color: #fff;
+	width: 1.933333rem;
+	height: 0.516666rem;
+	line-height: 0.516666rem;
+	border-radius: 0.116666rem;
+	background: #f18d00;
+	font-size: 0.4rem;
+	margin: 0.25rem auto 0;
+	text-align: center;
+}
+/*好友圈前三名*/
+.top-three{
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-justify-content: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-flex-align: center;
+	-ms-flex-align: center;
+	-o-flex-align: center;
+	align-items: center;
+	padding: 0.4rem 0.4rem 0.4rem 0.266666rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #767676;
+}
+.top-three .left-avtar{
+	position: relative;
+}
+.top-three .left-avtar img{
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 0.8rem;
+}
+.top-three .left-avtar .crown{
+	position: absolute;
+	width: 0.68rem;
+	height: 0.453333rem;
+	background-size: cover;
+	top: -0.24rem;
+	left: 0.92rem;
+	z-index: -10;
+}
+#first-one .crown{
+	background-image: url(../img/vol-challenge/first-crown.png);
+	background-repeat: no-repeat;
+}
+#second-one .crown{
+	background-image: url(../img/vol-challenge/second-crown.png);
+	background-repeat: no-repeat;
+}
+#third-one .crown{
+	background-image: url(../img/vol-challenge/third-crown.png);
+	background-repeat: no-repeat;
+}
+
+.top-three .middle-detail{
+	width: 6rem;
+	padding-left: 0.42rem;
+}
+.top-three .middle-detail .user-name,
+.normal-result li .middle-detail .user-name{
+	color: #232323;
+	font-size: 0.453333rem;
+}
+.top-three .middle-detail .finish-count{
+	color: #767676;
+	font-size: 0.373333rem;
+	margin-top: 0.26rem;
+}
+.top-three .middle-detail .doing-detail,
+.normal-result li .middle-detail .doing-detail{
+	color: #767676;
+	font-size: 0.373333rem;
+	margin-top: 0.19rem;
+}
+.top-three .right-icon{
+	width: 0.813333rem;
+	height: 0.813333rem;
+}
+.top-three .right-icon img{
+	width: 100%;
+}
+/*好友圈其他普通排名*/
+.normal-result{
+	
+}
+.normal-result li{
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-justify-content: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-flex-align: center;
+	-ms-flex-align: center;
+	-o-flex-align: center;
+	align-items: center;
+	padding: 0.4rem 0.4rem 0.4rem 0.266666rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #767676;
+}
+.normal-result li .left-avtar{
+	width: 1.266666rem;
+	height: 1.266666rem;
+	border-radius: 0.633333rem;
+}
+.normal-result li .middle-detail .user-name{
+	font-size: 0.42rem;
+}
+.normal-result li .middle-detail{
+	margin-left: 0.4rem;
+}
+.normal-result li .right-num{
+	width: 0.813333rem;
+	height: 0.813333rem;
+	line-height: 0.813333rem;
+	text-align: center;
+	font-size: 0.433333rem;
+}
+
+
+/*总排行榜*/
+#all-result-page{
+	width: 100%;
+	height: 100%;
+	padding-top: 0.986666rem;
+}
+#all-result-banner{
+	width: 100%;
+	height: 1.2rem;
+	background: #f8f8f8;
+	border-bottom: 1px solid #d9d8d8;
+	box-sizing: border-box;
+	line-height: 1.2rem;
+	font-size: 0.426666rem;
+}
+#all-result-banner img{
+	width: 0.64rem;
+	height: 0.64rem;
+	vertical-align: -0.14rem;
+	margin: 0 0.2rem 0 0.4rem;
+}
+#my-all-rank{
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-justify-content: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-flex-align: center;
+	-ms-flex-align: center;
+	-o-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 3.293333rem;
+	background: #f8f8f8;
+	border-bottom: 1px solid #d9d8d8;
+	padding: 0.426666rem 0.266666rem;
+	box-sizing: border-box;
+}
+#my-all-rank .left-avtar{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 1.2rem;
+}
+#my-all-rank .right-detail{
+	flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	margin-left: 0.4rem;
+	font-size: 0.38rem;
+}
+#my-grade{
+	font-size: 0.466666rem;
+}
+#my-grade span{
+	font-size: 0.7rem;
+	margin-left: 0.206666rem;
+}
+#my-all-rank .right-detail .finish-count{
+	color: #232323;
+	margin-top: 0.266666rem;
+}
+#finish-icon{
+	background-image: url(../img/vol-challenge/rate-icon.png);
+}
+#rate-icon{
+	background-image:url(../img/vol-challenge/finish-icon.png);
+}
+#speed-icon{
+	background-image: url(../img/vol-challenge/speed-icon.png);
+}
+.rank-icon{
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-size: cover;
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	margin-right: 0.133333rem;
+}
+#finish-icon{
+	width: ;
+}
+#my-all-rank .right-detail .doing-detail{
+	color: #232323;
+	margin-top: 0.2rem;
+}
+
+.hasSelect .gg .vol-options{
+	color: #fff;
+	background: #01b552;
+}
+.hasSelect .rr .vol-options{
+	color: #fff;
+	background: #fc0002;
+}
+
+/*开始答题tips*/
+#tips-modal,
+#dialog-tips-modal,
+#teachers-modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1004;
+	left: 0;
+	top: 0;
+	background: #fff;
+	display: none;
+}
+#dialog-tips-modal,
+#teachers-modal{
+	background: rgba(0,0,0,0.5);
+}
+#ready-count-tips{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 2.666666rem;
+	height: 2.666666rem;
+	text-align: center;
+	border-radius: 0.166666rem;
+	font-size: 1.1rem;
+	line-height: 2.666666rem;
+	background: #f18d00;
+	color: #fff;
+	animation:myfirst 1s infinite;
+	-webkit-animation:myfirst 1s infinite; /* Safari and Chrome */
+}
+@keyframes myfirst
+{
+	0%   {width: 2rem; height: 2rem;line-height: 2rem;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {width: 2rem; height: 2rem;line-height: 2rem;}
+}
+#dialog-tips{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 2.666666rem;
+	height: 2.666666rem;
+	border-radius: 0.166666rem;
+	font-size: 0.533333rem;
+	background: #f18d00;
+	color: #fff;
+}
+#teachers-qrcode{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 5.666666rem;
+	height: 5.666666rem;
+	border-radius: 0.166666rem;
+	font-size: 0.533333rem;
+	
+	background-color: #fff;
+	color: #fff;
+}
+#teachers-qrcode>p{
+	color: #232323;
+	text-align: center;
+	font-size: 0.4rem;
+	padding: 0.473333rem 0 0.17rem;
+}
+#qrcode-wrap{
+	background: url(http://universestatic.b0.upaiyun.com/img/teacher/20170120153022.jpg) no-repeat center;
+	background-size: cover;
+	display: block;
+	width: 3.833333rem;
+	height: 3.833333rem;
+	margin: 0.1rem auto 0;
+}
+#tea-qrcode{
+	position: absolute;
+	left: -1.666666rem;
+	top: -1.666666rem;
+	width: 5.833333rem;
+	height: 5.833333rem;
+	opacity: 0;
+}
+#close-qrcode{
+	position: absolute;
+	bottom: -1rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0.48rem;
+	height: 0.48rem;
+}
+#dialog-tips p:first-child{
+	font-size: 0.4rem;
+	margin-top: 0.8rem;
+	text-align: center;
+}
+#dialog-tips p:last-child{
+	font-size: 0.4rem;
+	margin-top: 0.2rem;
+	text-align: center;
+}
+/*css3*/
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/*媒体查询*/
+@media only screen and (min-width: 414px) {
+	html{
+		font-size: 37.5px;
+	}
+}

@@ -1,0 +1,168 @@
+body{
+    background: #fff;
+    color:#232323;
+}
+/*顶部下载提示*/
+.download_tips{
+    width: 100%;
+    text-align: center;
+    background: #333333;
+    line-height:2.34375rem;
+    overflow: hidden;
+    padding: 0px 1.3rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.download_tips span{
+    float: left;
+    color: #fff;
+    font-size: .8125rem;
+}
+.download_btn{
+    float: right;
+    display: inline-block;
+    background: #00b551;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-top:.5625rem;
+}
+
+header{
+    position:relative;
+    width:100%;
+    height:140px;
+}
+header img{
+    height:100%;
+    width:100%;
+}
+header div{
+    position:absolute;
+    bottom:0;
+    background:rgba(255,255,255,.6);
+    width:100%;
+}
+header div p{
+    padding:0 5%;
+    width:90%;
+    line-height:24px;
+}
+header div p:nth-child(1){
+    font-size:14px;
+}
+header div p:nth-child(2){
+    font-size:12px;
+}
+.main{
+    padding:0 5% ;
+    margin-bottom:50px;
+    width:90%;
+}
+.main hr{
+    margin-top:15px;
+    width:100%;
+    height:0;
+    border-bottom:1px solid #d6d6d6;
+}
+.main section{
+    margin-top:8px;
+}
+section h2{
+    line-height:30px;
+    font-size:14px;
+}
+section p{
+    line-height:18px;
+    font-size:12px;
+    color:#767676;
+}
+section dl{
+    margin-top:10px;
+}
+section dl dt{
+    line-height:18px;
+    font-size:13px;
+}
+section dl dd:nth-child(2){
+    line-height:18px;
+    font-size:10px;
+    color:#767676;
+}
+section dl dd:nth-child(3){
+    line-height:18px;
+    font-size:12px;
+    color:#767676;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    border-top:1px solid #d6d6d6;
+    height:48px;
+    width:100%;
+}
+footer div:nth-child(1){
+    float:left;
+    width:40%;
+    height:100%;
+    background:#fafafa;
+}
+footer div:nth-child(1) .price{
+    display:inline-block;
+    margin-left:10%;
+    height:100%;
+    line-height:100%;
+    color:#fc6d13;
+}
+footer div:nth-child(1) .price i{
+    font-style: normal;
+    font-size:17px;
+}
+footer div:nth-child(1) .price span{
+    display:inline-block;
+    height:48px;
+    line-height:48px;
+    font-size:24px;
+}
+footer div:nth-child(1) .old-price{
+    display:inline-block;
+    height:48px;
+    line-height:48px;
+    margin-left:5px;
+    color:#d6d6d6;
+}
+footer div:nth-child(1) .old-price i{
+    font-style: normal;
+    font-size:17px;
+    text-decoration: line-through;
+}
+footer div:nth-child(1) .old-price span{
+    display:inline-block;
+    height:48px;
+    line-height:48px;
+    font-size:17px;
+    text-decoration: line-through;
+}
+
+footer a:nth-child(2){
+    float:left;
+    width:30%;
+    height:48px;
+    line-height:48px;
+    text-align:center;
+    font-size:15px;
+    color:#767676;
+    background:#dedede;
+}
+footer a:nth-child(3){
+    float:left;
+    width:30%;
+    height:48px;
+    line-height:48px;
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    background:#f18d00;
+}

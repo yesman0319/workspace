@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>评论</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/practice.css" />
+	</head>
+	<body>
+		<div class="top_layout">
+			<div class="a_recorder">
+				<div class="audiojsZ newaudio " id="audiojs_wrapper0">
+		          	<audio id="myMusic" src="../js/lib/Everytime-Part.2.mp3" preload="auto"></audio>
+		         	<div class="play-pauseZ"><p class="playZ"></p>
+		              	<p class="pauseZ"></p>
+		             	<p class="loadingZ"></p>
+		            	<p class="errorZ"></p>
+		          	</div>
+		          	<div class="newscrubberZ scrubberZ">
+		             	<div class="progressZ" style="width: 0px;"></div>
+		              	<div class="loadedZ" style="width: 100%;"></div>
+		          	</div>
+					<div class="timeZ"><em class="playedZ">00:00</em>| <strong class="durationZ">00:00</strong></div>
+					<div class="error-messageZ"></div>
+					<div class="change-voice" style="display:none;"></div>
+		        	<div class="sound setsound" style="margin-left:0;margin-right: 30px;cursor:pointer;display:none;">
+		            <div class="play-voice" style="width:100%;"></div>
+		               <div class="voice-bigger"></div>
+		            </div>
+		       </div>
+			</div>
+			<div class="commtent_line">
+				全部点评
+			</div>
+		</div>
+		<div class="main">
+			<ul class="content c_content">
+				<li class="teachers">
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc c_desc">
+						<div class="left">
+							<p class="nickname">徐建军<span class="teacher_tag">宇宙老师</span></p>
+							<div class="c_audioDiv">
+								<span class="audioTime">32</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="comment_time">
+							10-09 16:30
+						</div>
+					</div>
+					<div class="comment_content">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean euismod sit bibendm laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo comodo.
+							Proin sodales pulvinar penatibus tempor. sociis sit na
+						</span>			
+						<p>
+							<span class="showHid_btn">展开</span>
+							<span class="delete_btn">删除</span>
+						</p>
+					</div>
+				</li>
+				<li class="students">
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc c_desc">
+						<div class="left">
+							<p class="nickname">李美美</p>
+							<div class="c_audioDiv">
+								<span class="audioTime">18</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="comment_time">
+							10-09 16:30
+						</div>
+					</div>
+					<div class="comment_content">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean euismod sit bibendm laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo comodo.
+							Proin sodales pulvinar penatibus penatibuspenatibuspenatibuspenatibustempor. sociis sit natoque penatibus et magnis dis sit parturient test
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean euismod sit bibendm laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo comodo.
+							Proin sodales pulvinar penatibus tempor. sociis sit natoque penatibus et magnis dis sit parturient test
+						</span>			
+						<p>
+							<span class="showHid_btn">展开</span>
+							<span class="delete_btn">删除</span>
+						</p>
+					</div>
+				</li>
+				<p class="not_more">
+					没有更多点评...
+				</p>
+			</ul>
+			<div class="load_more">点击加载更多...</div>
+		</div>
+		<div class="download_tips c_download_tips">
+			<span>下载宇宙托福APP, 查看更多学习计划</span>			
+			<a href="javascript:;" class="download_btn">下载</a>
+		</div>
+		<script src="../js/lib/jquery-1.11.1.js"></script>
+		<script src="../js/lib/audiojs/audio.min.js"></script>
+		<script>
+			
+			$(function(){
+				//点击展开收起 
+				var	$sh_btn = $(".showHid_btn");
+				var $commentSpan = $(".comment_content>span");
+				$.each($commentSpan,function(index,value){
+					var $this = $(this);
+					if($this.innerHeight() <= 81){
+						$sh_btn.eq(index).hide();
+					}else{
+						$sh_btn.eq(index).show();
+						$this.addClass("ellipsis");
+						$this.css({"max-height":"81px","overflow":"hidden"});
+						$sh_btn.eq(index).click(function(){
+							var _this = $(this);
+							if(_this.html() == "展开"){
+								$this.css("max-height","999px").removeClass("ellipsis");
+								_this.html("收起");
+							}else{
+								$this.css("max-height","81px").addClass("ellipsis");
+								_this.html("展开");
+							}
+						})
+					}
+				})
+				//语音长度
+				$(".c_audioDiv").each(function(index,item){
+					var timeLen = $(this).find(".audioTime").html();
+					var audioLen = timeLen*3+"px";
+					$(this).css("width",audioLen);
+				})	
+				//初始化音频播放器控件
+				var initAudioControl=function(eleId){
+					audiojs.events.ready(function () {
+						var objAudit = document.getElementById(eleId);
+						ctlAudio = audiojs.create(objAudit, {
+							css: false,
+							createPlayer: {
+								markup: false,
+								playPauseClass: 'play-pauseZ',
+								scrubberClass: 'scrubberZ',
+								progressClass: 'progressZ',
+								loaderClass: 'loadedZ',
+								timeClass: 'timeZ',
+								durationClass: 'durationZ',
+								playedClass: 'playedZ',
+								errorMessageClass: 'error-messageZ',
+								playingClass: 'playingZ',
+								loadingClass: 'loadingZ',
+								errorClass: 'errorZ'
+							}
+						});
+					});
+				};
+				
+				initAudioControl("myMusic");
+			})
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

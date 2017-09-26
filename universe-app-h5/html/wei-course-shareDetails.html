@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/wei-course-shareDetails.css" />
+</head>
+<body>
+<header><img src="../img/wei-course/cup.png" alt=""/>
+    <a href="javascript:;" class="see-list" id="seeList">看看谁抢到了</a>
+    <p class="ranking">第1名</p>
+</header>
+<div class="wrap">
+    <h2>我是被挑选作为试读课程的名称</h2>
+    <p class="update-time">更新时间</p>
+    <div class="container">
+
+        <div id="audioPlay">
+            <img src="../img/wei-course/wei-stop.png" alt=""/>
+            <audio src="../img/a.mp3"></audio>
+        </div>
+        <div>
+            <p>我是被挑选作为试读的课程名称我是被挑选作为试读的课程名称</p>
+            <p>
+                <span>12:23</span><span>26.42M</span>
+            </p>
+        </div>
+    </div>
+    <article>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>文章末尾，终于翻到文章的底部了。</p>
+    </article>
+</div>
+<footer>
+    <a href="javascript:;">去订</a>
+</footer>
+<div class="mark" id="mark">
+    <div class="list-con" id="listCon">
+        <div class="list-wrapper">
+            <p>抢到的好友</p>
+            <ul class="list">
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                <span class="list-name">17</span>
+                <time>12月23日&nbsp;11:25</time>
+                </li>
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                    <span class="list-name">土豪朋友</span>
+                    <time>11:25</time>
+                </li>
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                    <span class="list-name">土豪朋友</span>
+                    <time>11:25</time>
+                </li><li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                <span class="list-name">土豪朋友</span>
+                <time>11:25</time>
+            </li><li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                <span class="list-name">土豪朋友</span>
+                <time>11:25</time>
+            </li><li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                <span class="list-name">土豪朋友</span>
+                <time>11:25</time>
+            </li>
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                    <span class="list-name">土豪朋友</span>
+                    <time>11:25</time>
+                </li>
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                    <span class="list-name">土豪朋友</span>
+                    <time>11:25</time>
+                </li>
+                <li><img class="list-ava" src="../img/wei-course/ava.png" alt=""/>
+                    <span class="list-name">土豪朋友</span>
+                    <time>11:25</time>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+        <a href="javascript:;" class="close-list" id="closeList"><img src="../img/wei-course/share-close.png" alt=""/></a>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="../js/lib/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+    var playBtn=document.getElementById("audioPlay"), myAudio=playBtn.getElementsByTagName("audio")[0],myImg=playBtn.getElementsByTagName("img")[0];
+    playBtn.addEventListener("click",function(e){
+        if(myAudio.paused){//暂停
+            myAudio.play();
+            myImg.setAttribute('src','../img/wei-course/wei-play.png');
+        }else{
+            myAudio.pause();
+            myImg.setAttribute('src','../img/wei-course/wei-stop.png');
+        }
+    });
+    myAudio.addEventListener("ended",function(){
+        myImg.setAttribute('src','../img/wei-course/wei-stop.png');
+    });
+
+    $("#seeList").click(function(){
+        $("#mark").show();
+        $('html').css({"height":"100%","overflow":"hidden"});
+        $('body').css({"height":"100%","overflow":"hidden"});
+    });
+    $("#closeList").click(function(){
+        $('html').css({"overflow":"auto"});
+        $('body').css({"overflow":"auto"});
+        $("#mark").hide();
+    });
+
+
+
+
+
+    //文档浏览底部分页栏显示 fix效果自适应
+   /* $(function(){
+        var offSetTop = $("footer").offset().top+parseFloat($("footer").css("height"));
+        var innerHeight = $(window).height();
+        if(offSetTop< innerHeight){
+            $("footer").css("bottom","0");
+        }
+        else{
+            $("footer").css("position","static");
+        }
+    })
+*/
+</script>
+</html>

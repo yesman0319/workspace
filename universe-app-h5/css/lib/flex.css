@@ -1,0 +1,222 @@
+/*容器的布局方式*/
+.tcf-flex{
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: -moz-box; /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox; /* 混合版本语法: IE 10 */
+	display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+/*主轴为X方向*/
+.tcf-drection-row{
+	-webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+/*主轴为Y方向*/
+.tcf-drection-column{
+	 -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+/*主轴为X方向，子元素从右到左显示*/
+/*这里补充说明一点： box 写法的 box-direction 只是改变了子元素的排序，并没有改变对齐方式，需要新增一个 box-pack 来改变对齐方式。*/
+.tcf-drection-right{
+	-webkit-box-pack: end;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+/*主轴为Y方向，子元素从下到上显示*/
+.tcf-drection-bottom{
+	 -webkit-box-pack: end;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+/*子元素主轴居中对齐*/
+.tcf-justify-center{
+	-webkit-box-pack: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+  	-o-justify-content: center;
+	justify-content: center;
+}
+/*子元素主轴左对齐*/
+.tcf-justify-start {
+	-webkit-box-pack: start ;
+	-moz-justify-content: start ;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+/*子元素主轴右对齐*/
+.tcf-justify-end  {
+	-webkit-box-pack: end  ;
+	-moz-justify-content: flex-end  ;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+/*子元素主轴左右对齐（旧版没有space-around）*/
+.tcf-justify-justify{
+	-webkit-box-pack: justify  ;
+	-moz-justify-content: justify  ;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+/*子元素交叉轴居中对齐*/
+.tcf-align-items-center{
+-webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-flex-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  align-items: center;
+}
+
+/*子元素交叉轴左对齐*/
+.tcf-align-items-start{
+	-webkit-box-align: start ;
+    -moz-align-items: start ;
+    -webkit-align-items: flex-start ;
+    align-items: flex-start ;
+}
+
+/*子元素交叉轴右对齐*/
+.tcf-align-items-end{
+	-webkit-box-align: end ;
+    -moz-align-items: end ;
+    -webkit-align-items: flex-end ;
+    align-items: flex-end ;
+}
+
+/*子元素交叉轴文本基线对齐*/
+.tcf-align-items-baseline {
+	-webkit-box-align: baseline  ;
+    -moz-align-items: baseline  ;
+    -webkit-align-items: baseline  ;
+    align-items: baseline;
+}
+
+/*子元素交叉轴上下对齐并铺满*/
+.tcf-align-items-baseline {
+	-webkit-box-align: stretch  ;
+    -moz-align-items: stretch  ;
+    -webkit-align-items: stretch  ;
+    align-items: stretch;
+}
+
+
+/*子元素伸缩比为1*/
+.tcf-items{
+	 -webkit-box-flex: 1.0;
+	 -moz-flex: auto;
+	 -webkit-flex: auto;
+	  flex: auto;
+}
+
+/*子元素显示顺序*/
+.tcf-order{
+	 -webkit-box-ordinal-group: 1;
+	 -moz-order: 1;
+	 -webkit-order: 1;
+	 order: 1;
+}
+/*子元素显示顺序*/
+.tcf-order-previous{
+	 -webkit-box-ordinal-group: 0;
+	 -moz-order: 0;
+	 -webkit-order: 0;
+	 order: 0;
+}
+	
+
+
+.flex-1 {
+  flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+}
+.flex-3 {
+  flex: 3;
+  -moz-box-flex: 3;
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  -o-flex: 3;
+}
+/* 子元素-显示在从左向右（从上向下）第1个位置，用于改变源文档顺序显示 */
+.flex-p1 {
+  -webkit-box-ordinal-group: 1;/* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 1;/* OLD - Firefox 19- */
+  -ms-flex-order: 1;/* TWEENER - IE 10 */
+  -webkit-order: 1;/* NEW - Chrome */
+  order: 1;/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+/* 子元素-显示在从左向右（从上向下）第2个位置，用于改变源文档顺序显示 */
+.flex-p2 {
+  -webkit-box-ordinal-group: 2;/* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 2;/* OLD - Firefox 19- */
+  -ms-flex-order: 2;/* TWEENER - IE 10 */
+  -webkit-order: 2;/* NEW - Chrome */
+  order: 2;/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.flex-x {
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+.flex-br {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-box-lines: multiple;/*Firefox*/
+  -webkit-box-lines: multiple;/*Safari,Opera,Chrome*/
+  box-lines: multiple;
+}
+.flex-y {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.flex-x-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.flex-y-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-flex-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  align-items: center;
+}
+	

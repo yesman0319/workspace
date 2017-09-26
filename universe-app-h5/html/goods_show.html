@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品展示</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/goods_show.css" />
+	</head>
+	<body>
+		<div class="goodsPic">
+			<img src="../img/plan_detail/banner_img.png" alt="TPO模考计划"/>
+		</div>
+		<div class="gContent">
+			<ul class="gName mod">
+				<li>
+					<h2>机经学习计划</h2>
+					<!--<span class="orderDesc"></span>-->
+					<div class="priceChange">
+						<p class="nowPrice">
+							<i class="price_icon"></i><span id="now_price">198</span>
+						</p>
+						<span class="prevPrice" id="prev_price">299</span>
+					</div>
+				</li>	
+			</ul>
+			<div class="gInfo mod">
+				<h3>商品信息</h3>
+				<ul>
+					<li class="gLi">
+						<p class="gTitle">课程简介</p>
+						<div class="gDetail">
+							1.课程介绍课程介绍课程介绍;2.课程介绍课程介绍课程介绍;3.课程介绍课程介绍课程介绍;4.课程介绍课程介绍课程介绍.
+						</div>
+					</li>
+					<li class="gLi">
+						<p class="gTitle">适合对象</p>
+						<div class="gDetail">
+							1.适合对象适合对象适合对象适合对象;2.适合对象适合对象适合对象适合对象适合对象;3.适合对象适合对象;4.适合对象适合对象适合对象.
+						</div>
+					</li>
+					<li class="gLi">
+						<p class="gTitle">学习目标</p>
+						<div class="gDetail">
+							1.学习目标学习目标学习目标;2.学习目标学习目标学习目标;3.学习目标学习目标学习目标学习目标;4.学习目标学习目标.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--立即购买-->
+			<a href="javascript:;" class="goBuy a_demo_two">立即购买</a>
+		<script>
+		window.onload = function(){
+			var aLi = document.getElementsByClassName("gLi");
+			var goodsDiv = document.getElementsByClassName("gInfo");
+			var gStr = document.getElementsByClassName("gDetail")[0];
+			var originalStr = gStr.innerHTML;
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].style.display = "none"
+			}
+			aLi[0].style.display = "block";
+			replaceStr();
+			goodsDiv[0].onclick = function(){
+				if(aLi[1].style.display == "none"){
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].style.display = "block";
+					}
+					gStr.innerHTML = originalStr;
+				}else{
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].style.display = "none";
+					}
+					aLi[0].style.display = "block";
+					replaceStr();
+				}
+			}
+			
+			function replaceStr(){
+				if(window.innerWidth >= 375){
+					var gStrLen = gStr.innerHTML.substring(0,70) + "...";
+				}else if(window.innerWidth >= 414){
+					var gStrLen = gStr.innerHTML.substring(0,80) + "...";				
+				}else{
+					var gStrLen = gStr.innerHTML.substring(0,60) + "...";
+				}
+				gStr.innerHTML = gStrLen;
+			}
+		}
+		</script>
+	</body>
+</html>

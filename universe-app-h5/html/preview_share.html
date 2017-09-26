@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> <!---->
+	<head>
+		<meta charset="UTF-8">
+		<title>宇宙托福机经练习</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/preview_share.css" />
+	</head>
+	<body>
+		<div class="download_tips">
+			<span>下载宇宙托福APP, 查看更多学习计划</span>			
+			<a href="javascript:;" class="download_btn">下载</a>
+		</div>
+		<section>共30个单词</section>
+		<ul id="preview-list">
+			<li>
+				<p id="preview-word">analysis</p>
+				<p id="preview-paraphrase">n. 分析,分解;验定</p>
+				<i class="horn-icon">
+					<audio class="pre-audio" src="../img/a.mp3">您的浏览器不支持audio标签</audio>
+				</i>
+			</li>
+			<li>
+				<p id="preview-word">analysis</p>
+				<p id="preview-paraphrase">n. 分析,分解;验定</p>
+				<i class="horn-icon">
+					<audio class="pre-audio" src="../img/a.mp3">您的浏览器不支持audio标签</audio>
+				</i>
+			</li>
+			<li>
+				<p id="preview-word">analysis</p>
+				<p id="preview-paraphrase">n. 分析,分解;验定</p>
+				<i class="horn-icon">
+					<audio class="pre-audio" src="../img/a.mp3">您的浏览器不支持audio标签</audio>
+				</i>
+			</li>
+		</ul>
+	</body>
+	<script src="../js/lib/jquery-1.11.1.js"></script>
+	<script src="../js/lib/flexible.js"></script>
+	<script>
+		$(function(){
+			var $audioList = $("#preview-list li");//单词列表项
+			var audioList = document.getElementsByTagName("audio");//原生js遍历所有音频节点
+			var curIndex;
+			
+			$audioList.on("click",audioPlay);
+			
+			//单词点击播放
+			function audioPlay(){
+				var $this = $(this);
+				stopAudioplay();
+				$this.find(".horn-icon").addClass("playing").find("audio")[0].play();
+				$("audio").on("ended",function(){
+	    			$(".horn-icon").removeClass("playing");
+		    	})
+			}
+			//停止所有音频播放
+			function stopAudioplay(){
+				for(var j=0;j<audioList.length;j++){
+	                audioList[j].load(); 
+	            }
+				$(".horn-icon").removeClass("playing");
+			}
+		})
+	</script>
+</html>

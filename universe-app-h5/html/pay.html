@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单支付</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/pay.css" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="userLeft">
+				<p class="userName">
+					当前登录账号：<span id="userName">183****6495</span>
+				</p>
+				<p class="tips">
+					购买后请使用该账号登录宇宙托福app进行学习
+				</p>
+			</div>
+			<a href="javascript:;" class="changeUser">
+				切换用户
+			</a>
+		</div>
+		<div class="orderBox">
+			<ul class="orderName mod">
+				<li>
+					<h2>机经学习计划</h2>
+					<!--<span class="orderDesc"></span>-->
+					<div class="priceChange">
+						<p class="nowPrice">
+							<i class="price_icon"></i><span id="now_price">198</span>
+						</p>
+						<span class="prevPrice" id="prev_price">299</span>
+					</div>
+				</li>
+				
+			</ul>
+			<div class="duration mod">
+				<h3>课程时长</h3>
+				<ul>
+					<li class="selected" value="1">1个月课程</li>
+					<li value="2">2个月课程</li>
+					<li value="3">3个月课程</li>
+				</ul>
+			</div>
+			<div class="startime mod">
+				<h3>开始上课时间</h3>
+				<ul>
+					<li class="selected" value="1">2016年06月16日</li>
+					<li value="2">2016年07月16日</li>
+					<li value="3">2016年08月16日</li>
+					<li value="4">2016年09月16日</li>
+				</ul>
+			</div>
+			<div class="goods_info mod">
+				<h3>商品信息</h3>
+				<ul>
+					<li class="gLi">
+						<p class="gTitle">课程简介</p>
+						<div class="gDetail">
+							1.课程介绍课程介绍课程介绍;2.课程介绍课程介绍课程介绍;3.课程介绍课程介绍课程介绍;4.课程介绍课程介绍课程介绍.
+						</div>
+					</li>
+					<li class="gLi">
+						<p class="gTitle">适合对象</p>
+						<div class="gDetail">
+							1.适合对象适合对象适合对象适合对象;2.适合对象适合对象适合对象适合对象适合对象;3.适合对象适合对象;4.适合对象适合对象适合对象.
+						</div>
+					</li>
+					<li class="gLi">
+						<p class="gTitle">学习目标</p>
+						<div class="gDetail">
+							1.学习目标学习目标学习目标;2.学习目标学习目标学习目标;3.学习目标学习目标学习目标学习目标;4.学习目标学习目标.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="recommend">
+			<h3>推荐人</h3>
+			<input type="text" placeholder="填写推荐人" />
+		</div>
+		<div class="orderPrice">
+			<h3>待支付</h3>
+			<p>
+				<i class="price_icon"></i><span id="orderPrice">299</span>
+			</p>
+		</div>
+		<div class="topay">
+			<p>请选择支付方式</p>
+			<ul class="payWay">
+				<li class="wxPay" value="wx">
+					<b class="wx_icon"></b>
+					<div class="wx">
+						<span>微信支付</span>
+						<span class="checkbox checked"></span>
+					</div>
+				</li>
+				<li class="aliPay" value="ali">
+					<b class="ali_icon"></b>
+					<div class="ali">
+						<span>支付宝支付</span>
+						<span class="checkbox"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="confirm">
+			<a href="javascript:;" class="payBtn">确认支付</a>
+		</div>
+		
+		<!--支付成功提示-->
+		<div class="paySuccess" style="display:none;">
+			<p class="success_tips">
+				<i class="queren_icon"></i>
+				<span>订单支付成功</span>
+			</p>
+			<p class="total_price">
+				<i class="price_icon"></i>
+				<span>299</span>
+			</p>
+		</div>
+		<script>
+		window.onload = function(){
+			var aLi = document.getElementsByClassName("gLi");
+			var goodsDiv = document.getElementsByClassName("goods_info");
+			var gStr = document.getElementsByClassName("gDetail")[0];
+			var originalStr = gStr.innerHTML;
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].style.display = "none"
+			}
+			aLi[0].style.display = "block";
+			replaceStr();
+			goodsDiv[0].onclick = function(){
+				if(aLi[1].style.display == "none"){
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].style.display = "block";
+					}
+					gStr.innerHTML = originalStr;
+				}else{
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].style.display = "none";
+					}
+					aLi[0].style.display = "block";
+					replaceStr();
+				}
+			}
+			
+			function replaceStr(){
+				if(window.innerWidth >= 375){
+					var gStrLen = gStr.innerHTML.substring(0,70) + "...";
+				}else if(window.innerWidth >= 414){
+					var gStrLen = gStr.innerHTML.substring(0,80) + "...";				
+				}else{
+					var gStrLen = gStr.innerHTML.substring(0,60) + "...";
+				}
+				gStr.innerHTML = gStrLen;
+			}
+		}
+		</script>
+	</body>
+</html>

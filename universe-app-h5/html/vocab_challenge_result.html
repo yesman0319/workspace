@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html> <!---->
+	<head>
+		<meta charset="UTF-8">
+		<title>宇宙托福机经练习</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/vocabulary_share.css" />
+	</head>
+	<body>
+			<div class="download_tips" style="background: rgba(0,0,0,1);position: fixed;">
+				<span>下载宇宙托福APP, 向好友发起挑战~</span>			
+				<a href="javascript:;" class="download_btn">下载</a>
+			</div>
+			<div id="all-result-page">
+				<div id="all-result-banner">
+					<img src="../img/vol-challenge/all-result-icon.png" />总排行榜
+				</div>
+				<article id="my-all-rank">
+					<img class="left-avtar" src="../img/500bg.png" />
+					<div class="right-detail">
+						<p id="my-grade">我的排名<span>23</span></p>
+						<p class="finish-count">
+							<i class="rank-icon" id="finish-icon"></i>完成<span>10</span>个单词
+						</p>
+						<p class="doing-detail">
+							<i class="rank-icon" id="rate-icon"></i>正确率<span>60</span>%&nbsp;&nbsp;&nbsp;
+							<i class="rank-icon" id="speed-icon"></i>速度<span>2.2</span>秒/题
+						</p>
+					</div>
+				</article>
+				<section class="top-three" id="first-one"><!--第一名-->
+					<div class="left-avtar">
+						<img src="../img/500bg.png" />
+						<i class="crown"></i>
+					</div>
+					<div class="middle-detail">
+						<p class="user-name">田老师</p>
+						<p class="finish-count">
+							完成<span>10</span>个单词
+						</p>
+						<p class="doing-detail">
+							正确率<span>60</span>%&nbsp;&nbsp;&nbsp;
+							速度<span>2.2</span>秒/题
+						</p>
+					</div>
+					<div class="right-icon">
+						<img src="../img/vol-challenge/the_first.png" />
+					</div>
+				</section>
+				<section class="top-three" id="second-one"><!--第二名-->
+					<div class="left-avtar">
+						<img src="../img/500bg.png" />
+						<i class="crown"></i>
+					</div>
+					<div class="middle-detail">
+						<p class="user-name">田老师</p>
+						<p class="finish-count">
+							完成<span>9</span>个单词
+						</p>
+						<p class="doing-detail">
+							正确率<span>60</span>%&nbsp;&nbsp;&nbsp;
+							速度<span>2.3</span>秒/题
+						</p>
+					</div>
+					<div class="right-icon">
+						<img src="../img/vol-challenge/the_second.png" />
+					</div>
+				</section>
+				<section class="top-three" id="third-one"><!--第三名-->
+					<div class="left-avtar">
+						<img src="../img/404bg.png" />
+						<i class="crown"></i>
+					</div>
+					<div class="middle-detail">
+						<p class="user-name">田老师</p>
+						<p class="finish-count">
+							完成<span>10</span>个单词
+						</p>
+						<p class="doing-detail">
+							正确率<span>50</span>%&nbsp;&nbsp;&nbsp;
+							速度<span>2.3</span>秒/题
+						</p>
+					</div>
+					<div class="right-icon">
+						<img src="../img/vol-challenge/the_third.png" />
+					</div>
+				</section>
+				<ul class="normal-result"><!--普通排名-->
+					<li>
+						<img  class="left-avtar"src="../img/500bg.png" />
+						<div class="middle-detail">
+							<p class="user-name">田老师</p>
+							<p class="doing-detail">
+								完成<span>7</span>个单词&nbsp;
+								正确率<span>60</span>%&nbsp;
+								速度<span>2.3</span>秒/题
+							</p>
+						</div>
+						<div class="right-num">
+							4
+						</div>
+					</li>
+					<li>
+						<img  class="left-avtar"src="../img/404bg.png" />
+						<div class="middle-detail">
+							<p class="user-name">田老师</p>
+							<p class="doing-detail">
+								完成<span>4</span>个单词&nbsp;
+								正确率<span>60</span>%&nbsp;
+								速度<span>2.3</span>秒/题
+							</p>
+						</div>
+						<div class="right-num">
+							5
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+	</body>
+	<script src="../js/lib/jquery-1.11.1.js"></script>
+	<script src="../js/lib/flexible.js"></script>
+	<script>
+	
+		var QuestionIndex = 0; //题号
+		$(function(){
+			/*$(".divv").click(function(){
+				var $this = $(this);
+				$this.addClass("lightSpeedIn").on("animationend",function(){
+					$this.removeClass("lightSpeedIn");
+				})
+			})*/
+		
+		function setVolQuestion(index,callback){
+			$(".vol-question").hide().eq(index).show();
+			
+			if(callback != "" || callback != null){
+				callback();
+			}
+		}
+		function nextVolQuestion(indexx){
+			var questionLength = $(".vol-question").length;
+			if(index+1 == questionLength){
+				//最后一题提交答案
+				$.ajax({
+					type:"post",
+					url:"",
+					async:false,
+					data:{},
+					success: function(data){
+						
+					}
+				});
+			}else{
+				$(".vol-question").hide(200).eq(index+1).show().addClass("lightSpeedIn").on("animationend",function(){
+					$(this).removeClass("lightSpeedIn");
+				});
+			}
+			
+		}
+			
+			
+			//倒计时
+			function countDown(s) {
+			    if (s != 0) {
+			    	$("#pyzmm").html(s + "秒");
+			    tt = setTimeout(function () {
+			            pYzmdjs(s - 1)
+			        }, 1000);
+			    } else {
+
+			        clearTimeout(tt);
+			    }
+			}
+			
+		})
+	</script>
+</html>

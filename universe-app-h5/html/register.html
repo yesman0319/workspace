@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+	</head>
+	<body>
+		<ul class="register">
+			<li class="phoneNum">
+				<div class="left">
+					<i class="phone_icon"></i>
+				</div>
+				<div class="right">
+					<input type="text" name="phoneNum" id="phoneIpt" placeholder="请输入手机号码" />
+					<span class="codeSpan">获取验证码</span>
+				</div>
+			</li>
+			<li class="checkCode">
+				<div class="left">
+					<i class="lock_icon"></i>
+				</div>
+				<div class="right">
+					<input type="text" name="checkCode" id="checkCode" placeholder="请输入验证码" />
+				</div>
+			</li>
+			<li class="psw">
+				<div class="left">
+					<i class="lock_icon"></i>
+				</div>
+				<div class="right" style="border: none;">
+					<input type="password" name="password" placeholder="请输入6-12位密码" id="psw" />
+				</div>
+			</li>
+		</ul>
+		<div class="checkTips">手机号格式不正确</div>
+		<div class="agreement">
+			<label for="agreement" class="">
+				<!--<input type="checkbox" checked="checked" name="agreement" id="agreement"/>-->
+			</label>
+			已阅读宇宙托福<a href="javascript:;">用户协议</a>
+		</div>
+			<a href="javascript:;" class="register_btn uncheck">注册</a>
+			
+		<script src="../js/lib/jquery-1.11.1.js"></script>
+		<script>
+			$("label").on("click",function(){
+				$(this).toggleClass("selected");
+				$(".register_btn").toggleClass("uncheck");
+			})
+		</script>	
+	</body>
+</html>

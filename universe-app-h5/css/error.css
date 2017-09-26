@@ -1,0 +1,67 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.body404{
+	background-color: #C9EDEA;
+	position: relative;
+}
+.body404 img{
+		position: absolute;
+		width: 280px;
+		height: 280px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+}
+	
+.body500{
+	background-color: #C5E7CD;
+	position: relative;
+}
+.body500 img{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/*媒体查询*/
+@media screen and (min-width: 375px) {
+    .body404 img{
+		width: 340px;
+		height: 340px;
+	}
+	.body500 img{
+		width: 340px;
+		height: 340px;
+	}
+}
+
+@media screen and (min-width: 414px) {
+    .body404 img{
+		width: 380px;
+		height: 380px;
+	}
+	.body500 img{
+		width: 380px;
+		height: 380px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+    .body404 img{
+		width: 500px;
+		height: 500px;
+	}
+	.body500 img{
+		width: 500px;
+		height: 500px;
+	}
+}

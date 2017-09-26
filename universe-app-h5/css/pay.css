@@ -1,0 +1,341 @@
+
+/*顶部账号切换*/
+body{
+	background: #fff;
+}
+.top{
+	width: 100%;
+	background: #f2f2f2;
+	height: 50px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.userLeft{
+	float: left;
+	margin-top: 10px;
+}
+.userLeft .tips{
+	color: #999999;
+	margin-top: 6px;
+}
+.changeUser{
+	float: right;
+	display: inline-block;
+	line-height: 50px;
+	font-size: 14px;
+	color: #000;
+	padding: 0px 2px;
+}
+.changeUser:active{
+	background: #ddd;
+}
+@media screen and (max-width: 340px) {
+	.userLeft{
+		margin-left: -6px;
+	}
+  .changeUser{
+		font-size: 12px;
+		margin-right: -6px;
+	}
+}
+
+
+
+/*订单课程选择*/
+.orderBox{
+	padding-left:15px;
+}
+.orderBox h3{
+	font-size: 15px;
+}
+.orderName{
+	font-size: 16px;
+	color: #00b451;
+}
+.orderName>li{
+	position: relative;
+}
+/*原价与现价*/
+.priceChange{
+	position: absolute;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nowPrice{
+	display: inline-block;
+}
+.nowPrice span{
+	color: #FC7120;
+	font-size: 16px;
+}
+.prevPrice{
+	display: inline-block;
+	text-decoration: line-through;
+	position: relative;
+	bottom: 3px;
+	color: black;
+	font-size: 12px;
+}
+
+
+/*商品信息*/
+.goods_info ul{
+	padding: 0 4px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.goods_info ul li{
+	padding-top: 6px;
+}
+.gTitle{
+	font-size: 14px;
+	padding-bottom: 3px;
+}
+.gDetail{
+	line-height: 15px;
+	color: #767676;
+}
+.duration{
+	font-size: 14px;
+}
+.duration ul{
+	overflow: hidden;
+	padding-top: 12px;
+}
+.duration ul li{
+	width: 23%;
+	height: 25px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+	color: #999;
+	text-align: center;
+	line-height: 25px;
+}
+.duration ul .selected{
+	border: 1px solid #00b451;
+	color: #00b451;
+}
+.startime{
+	font-size: 14px;
+}
+.startime ul{
+	overflow: hidden;
+	padding-top: 12px;
+	margin-bottom: -15px;
+}
+.startime ul li{
+	width: 35%;
+	min-width: 120px;
+	height: 25px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	color: #999;
+	text-align: center;
+	line-height: 25px;
+}
+.startime ul .selected{
+	border: 1px solid #00b451;
+	color: #00b451;
+}
+.mod{
+	border-bottom: 1px solid #d6d6d6;
+	padding: 15px 0px;
+}
+
+/*推荐人*/
+.recommend{
+	padding: 10px 15px;
+	border-bottom: 1px solid #ccc;
+}
+.recommend h3{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.recommend input{
+	width: 100%;
+	height: 28px;
+	padding: 5px;
+	box-sizing: border-box;
+	line-height: 18px;
+}
+
+/*待支付*/
+.orderPrice{
+	padding: 15px;
+	overflow: hidden;
+}
+.orderPrice h3{
+	font-size: 15px;
+	float: left;
+}
+.orderPrice p{
+	float: right;
+}
+.price_icon{
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../img/price_icon.png) no-repeat;
+	background-size: cover;
+	vertical-align: 0px;
+	margin-right: 1px;
+}
+#orderPrice{
+	font-size: 14px;
+	color: #fc6d13;
+}
+
+/*支付方式*/
+.topay{
+	background: #f7f7f7;
+	padding-bottom: 15px;
+}
+.topay p{
+	font-size: 14px;
+	color: #bfbfbd;
+	padding: 16px 15px;
+	border-bottom: 1px solid #bfbfbd;
+}
+.payWay{
+	background: #fff;
+	padding: 0 15px;
+}
+.payWay li{
+	height: 43px;
+	font-size: 14px;
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+	align-items: center;
+}
+.payWay li b{
+	width: 24px;
+	height: 24px;
+	margin-right: 15px;
+}
+.payWay li .wx_icon{
+	background: url(../img/pay.css/wx_icon.png) no-repeat;
+	background-size: cover;
+}
+.payWay li .ali_icon{
+	background: url(../img/pay.css/ali_icon.png) no-repeat;
+	background-size: cover;
+}
+.payWay>li>div{
+	width: 100%;
+	-webkit-box-flex: 1;
+	-moz-flex: auto;
+	-webkit-flex: auto;
+	flex: auto;
+	flex: 1;
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-box-pack: justify;
+	-moz-justify-content: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+	align-items: center;
+}
+.payWay li div span{
+	display: inline-block;
+}
+.payWay li div .checkbox{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #9d9d9d;
+	border-radius: 10px;
+}
+.payWay li div .checked{
+	background: url(../img/pay.css/check_icon.png) no-repeat center;
+	background-size: 10px;
+}
+
+/*确认支付*/
+
+.confirm{
+	padding: 10px 15px;
+	border-top: 1px solid #d7d7d7;
+	background: #f7f7f7;
+}
+.confirm .payBtn{
+	display: inline-block;
+	width: 100%;
+	line-height: 33px;
+	font-size: 16px;
+	color: #fff;
+	background: #00b451;
+	text-align: center;
+}
+.confirm .payBtn:active{
+	padding: 0 1px;
+	background: green;
+}
+
+/*支付成功提示*/
+.paySuccess{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+	z-index: 100;
+}
+.success_tips{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.success_tips .queren_icon{
+	display: inline-block;
+	background: url(../img/pay.css/queren_icon.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	vertical-align: -4px;
+	margin-right: 5px;
+}
+.success_tips span{
+	font-size: 16px;
+}
+.total_price{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding-bottom: 60px;
+}
+.total_price .price_icon{
+	display: inline-block;
+	background: url(../img/price_icon.png) no-repeat;
+	width: 12px;
+	height: 18px;
+	background-size: 11px 16px;
+	vertical-align: -3px;
+	margin-right: -2px;
+}
+.total_price span{
+	font-size: 18px;
+	color: #FF6905;
+	font-weight: bold;
+}

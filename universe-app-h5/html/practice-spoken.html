@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>独立口语</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/practice.css" />
+	</head>
+	<body>
+		<div class="download_tips">
+			<span>下载宇宙托福APP, 查看更多学习计划</span>			
+			<a href="javascript:;" class="download_btn">下载</a>
+		</div>
+			<div class="questions">
+				<h2>Questions</h2>
+				<span id="question">				
+					What are the benefits of chatting with older family members? 
+					Please include specific reasons and details in your response.
+				</span>
+			</div>
+			<ul class="content">
+				<li>
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc">
+						<a href="javascript:;">
+							<div class="left">
+								<p class="nickname">张哭哭</p>
+								<div class="audioDiv">
+									<span class="audioTime">32</span>"
+									<span class="playImg"></span>
+									<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+									<audio src="#"></audio>
+								</div>
+							</div>
+							<div class="rightc">
+								<p><i class="comment"></i></p>
+								<p class="commentCount">11</p>						
+							</div>
+							<div class="right">
+								<p><i class="zan yizan"></i></p>
+								<p>
+									<span class="zanCount">8</span>赞
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc">
+						<div class="left">
+							<p class="nickname">张笑笑</p>
+							<div class="audioDiv">
+								<span class="audioTime">26</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="right">
+							<p><i class="zan"></i></p>
+							<p>
+								<span class="zanCount">19</span>赞
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc">
+						<div class="left">
+							<p class="nickname">张哭哭</p>
+							<div class="audioDiv">
+								<span class="audioTime">32</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="right">
+							<p><i class="zan"></i></p>
+							<p>
+								<span class="zanCount">4</span>赞
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc">
+						<div class="left">
+							<p class="nickname">张笑笑</p>
+							<div class="audioDiv">
+								<span class="audioTime">56</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="right">
+							<p><i class="zan"></i></p>
+							<p>
+								<span class="zanCount">19</span>赞
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<!--进入练习 按钮-->
+			<a href="javascript:;" class="goPractice">进入练习</a>
+	</body>
+	<script src="../js/lib/jquery-1.11.1.js"></script>
+	<script>
+	//语音长度
+		$(".audioDiv").each(function(index,item){
+			var timeLen = $(this).find(".audioTime").html();
+			var audioLen = timeLen*3+"px";
+			$(this).css("width",audioLen);
+		})	
+	</script>
+</html>

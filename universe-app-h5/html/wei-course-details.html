@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/wei-course-details.css" />
+</head>
+<body>
+<div class="download_tips">
+    <span>下载宇宙托福APP, 查看更多学习计划</span>
+    <a href="javascript:;" class="download_btn">下载</a>
+</div>
+<header><img src="../img/wei-course/wei-course-banner.png" alt=""/></header>
+<div class="wrap">
+    <h2>我是被挑选作为试读课程的名称</h2>
+    <p class="update-time">更新时间</p>
+    <div class="container">
+
+        <div id="audioPlay">
+            <img src="../img/wei-course/wei-stop.png" alt=""/>
+            <audio src="../img/a.mp3"></audio>
+        </div>
+        <div>
+            <p>我是被挑选作为试读的课程名称我是被挑选作为试读的课程名称</p>
+            <p>
+                <span>12:23</span><span>26.42M</span>
+            </p>
+        </div>
+    </div>
+    <article>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>我是微课程的文章文本，我是微课程的文章文本，我是微课程的 文章文本，我是微课程的文章文本，我是微课程的文章文本，我 是微课程的文章文本，我是微课程的文章文本。</p>
+        <p>文章末尾，终于翻到文章的底部了。</p>
+    </article>
+    <p class="recommend">课程推荐</p>
+</div>
+<ul class="recommend-list">
+<li>
+    <img src="../img/wei-course/recommend1.png" alt=""/>
+    <a href="javascript:;">Day1 托福听力高分备考指南Day1 托福听力高分备考指南</a>
+</li>
+    <li>
+        <img src="../img/wei-course/recommend2.png" alt=""/>
+        <a href="javascript:;">Day1 托福听力高分备考指南Day1 托福听力高分备考指南</a>
+    </li>
+
+</ul>
+<div class="plan-pic">
+    <div>
+        <img src="../img/wei-course/plan-pic.png" alt=""/>
+        <p>TPO模考计划</p>
+    </div>
+    <div>
+        <img src="../img/wei-course/plan-pic.png" alt=""/>
+        <p>TPO模考计划</p>
+    </div>
+
+
+</div>
+<footer>
+    <div>
+            <span class="price">
+                <i>&yen;</i>
+                <span>99</span>
+            </span>
+
+    </div>
+    <a href="javascript:;">订阅</a>
+</footer>
+<script type="text/javascript">
+    var playBtn=document.getElementById("audioPlay"), myAudio=playBtn.getElementsByTagName("audio")[0],myImg=playBtn.getElementsByTagName("img")[0];
+   /* window.onload=function(){
+      console.log(myAudio.duration);
+    };*/
+    playBtn.addEventListener("click",function(e){
+      if(myAudio.paused){//暂停
+          myAudio.play();
+          myImg.setAttribute('src','../img/wei-course/wei-play.png');
+      }else{
+          myAudio.pause();
+          myImg.setAttribute('src','../img/wei-course/wei-stop.png');
+      }
+    });
+    myAudio.addEventListener("ended",function(){
+        myImg.setAttribute('src','../img/wei-course/wei-stop.png');
+    });
+
+</script>
+</body>
+</html>

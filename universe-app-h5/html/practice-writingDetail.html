@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>写作详情</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/practice.css" />
+	</head>
+	<body>
+		<div class="questions">
+			<h2>Questions</h2>
+			<span id="question">				
+				What are the benefits of chatting with older family members? 
+				Please include specific reasons and details in your response.
+			</span>
+		</div>
+		<div class="d_detail">
+			<div class="d_info">
+				<div class="d_user">
+					<img class="d_avatar"  src="../../universe-web/i/f_icon1.png"/>
+					<span class="d_nickname">张笑笑</span>
+				</div>
+				<div class="d_total">
+					<span class="d_count">234</span>词
+				</div>
+			</div>
+			<p class="d_content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Aenean euismod bibendum laoreet. 
+				Proin gra dolor sit amet lacus accumsan et viverra justo odo. 
+				Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+				parturient montes, nasetur ridiculus mus. 
+				Nam fermentum, nulla luctus phara vulputate, felis tellus mollis orci, 
+			 	sed rhoncus sapin nunc eget.
+			</p>
+		</div>
+		<div class="top_layout">
+			<div class="commtent_line">
+				全部点评
+			</div>
+		</div>
+		<div class="main">
+			<ul class="content c_content">
+				<li class="teachers">
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc c_desc">
+						<div class="left">
+							<p class="nickname">徐建军<span class="teacher_tag">宇宙老师</span></p>
+							<div class="c_audioDiv">
+								<span class="audioTime">32</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="comment_time">
+							10-09 16:30
+						</div>
+					</div>
+					<div class="comment_content">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean euismod sit bibendm laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo comodo.
+							Proin sodales pulvinar penatibus tempor. sociis sit natoque penatibus et magnis dis sit parturient test...
+						</span>			
+						<p>
+							<span class="showHid_btn">展开</span>
+							<span class="delete_btn">删除</span>
+						</p>
+					</div>
+				</li>
+				<li class="students">
+					<div class="avatar">
+						<img  src="../img/plan_detail/people_icon.png"/>
+					</div>
+					<div class="desc c_desc">			
+						<div class="left">
+							<p class="nickname">李美美</p>
+							<div class="c_audioDiv">
+								<span class="audioTime">27</span>"
+								<span class="playImg"></span>
+								<!--<img src="../img/practice/play_img.png" class="playImg" />-->
+								<audio src="#"></audio>
+							</div>
+						</div>
+						<div class="comment_time">
+							10-09 16:30
+						</div>
+					</div>
+					<div class="comment_content">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean euismod sit bibendm laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo comodo.
+							Proin sodales pulvinar penatibus tempor. sociis sit natoque penatibus et magnis dis sit parturient test...
+						</span>			
+						<p>
+							<span class="showHid_btn">展开</span>
+							<span class="delete_btn">删除</span>
+						</p>
+					</div>
+				</li>
+				<p class="not_more">
+					没有更多点评...
+				</p>
+			</ul>
+			<div class="load_more">点击加载更多...</div>
+		</div>
+		<div class="download_tips c_download_tips">
+			<span>下载宇宙托福APP, 查看更多学习计划</span>			
+			<a href="javascript:;" class="download_btn">下载</a>
+		</div>
+		<script src="../js/lib/jquery-1.11.1.js"></script>
+		<script>
+			
+			$(function(){
+				//点击展开收起 
+				var	$sh_btn = $(".showHid_btn");
+				var $commentSpan = $(".comment_content>span");
+				$.each($commentSpan,function(index,value){
+					var $this = $(this);
+					if($this.innerHeight() <= 81){
+						$sh_btn.eq(index).hide();
+					}else{
+						$sh_btn.eq(index).show();
+						$this.addClass("ellipsis");
+						$this.css({"max-height":"81px","overflow":"hidden"});
+						$sh_btn.eq(index).click(function(){
+							var _this = $(this);
+							if(_this.html() == "展开"){
+								$this.css("max-height","999px").removeClass("ellipsis");
+								_this.html("收起");
+							}else{
+								$this.css("max-height","81px").addClass("ellipsis");
+								_this.html("展开");
+							}
+						})
+					}
+				})
+				
+				//语音长度
+				$(".c_audioDiv").each(function(index,item){
+					var timeLen = $(this).find(".audioTime").html();
+					var audioLen = timeLen*3+"px";
+					$(this).css("width",audioLen);
+				})	
+			})
+			
+		</script>
+	</body>
+</html>

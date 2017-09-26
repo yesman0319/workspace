@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html> <!---->
+	<head>
+		<meta charset="UTF-8">
+		<title>宇宙托福机经练习</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/vocabulary_share.css" />
+	</head>
+	<body>
+		
+		<div id="accpet-challenge" style="display: none;"><!--发起挑战页面-->
+			<section id="user-infor">
+				<p id="user-avatar">
+					<img  src="../img/500bg.png" />
+				</p>
+				<p id="user-nickname">田老师</p>
+			</section>
+			<article>
+				你的好友<span>郎老师</span>向你发起了词汇挑战攻击
+			</article>
+			<button id="go-challenge">立即应战</button>
+			<a id="all-result" href="vocab_challenge_result.html">查看总排行榜</a>
+		</div>
+		<div id="do-challenge" style="display: none;"><!--接受挑战并开始做题页面-->
+			<div id="challenge-details">
+				<ul>
+					<li id="finished">
+						<p>已完成</p>
+						<p id="finished-num">5</p>
+					</li>
+					<li id="progress-box">
+						<p id="time-count">20s</p>
+						<div id="total-progress">
+							<div id="done-progress"></div>
+						</div>
+					</li>
+					<li id="unfinished">
+						<p>未完成</p>
+						<p id="unfinished-num">4</p>
+					</li>
+				</ul>
+			</div>
+			
+			<section class="vol-question">
+				<p class="vol-word">biological</p>
+				<ul class="vol-options-box">
+					<li>
+						<span class="vol-options">A</span>
+						<span class="vol-mean">生物的</span>
+					</li>
+					<li>
+						<span class="vol-options">B</span>
+						<span class="vol-mean">长期的</span>
+					</li>
+					<li>
+						<span class="vol-options">C</span>
+						<span class="vol-mean">全世界的</span>
+					</li>
+					<li>
+						<span class="vol-options">D</span>
+						<span class="vol-mean">全宇宙</span>
+					</li>
+				</ul>
+			</section>
+			<section class="vol-question" style="visibility: hidden;">
+				<p class="vol-word">biolcal</p>
+				<ul class="vol-options-box">
+					<li>
+						<span class="vol-options">A</span>
+						<span class="vol-mean">生物</span>
+					</li>
+					<li>
+						<span class="vol-options">B</span>
+						<span class="vol-mean">长期</span>
+					</li>
+					<li>
+						<span class="vol-options">C</span>
+						<span class="vol-mean">全世界</span>
+					</li>
+					<li>
+						<span class="vol-options">D</span>
+						<span class="vol-mean">全宇</span>
+					</li>
+				</ul>
+			</section>
+			<section class="vol-question" style="visibility: hidden;">
+				<p class="vol-word">bla</p>
+				<ul class="vol-options-box">
+					<li>
+						<span class="vol-options">A</span>
+						<span class="vol-mean">动物</span>
+					</li>
+					<li>
+						<span class="vol-options">B</span>
+						<span class="vol-mean">长sdfs期</span>
+					</li>
+					<li>
+						<span class="vol-options">C</span>
+						<span class="vol-mean">全sdfs世界</span>
+					</li>
+					<li>
+						<span class="vol-options">D</span>
+						<span class="vol-mean">全sdfsdf宇</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+		
+		<div id="friends-result" style="display: block;"><!--朋友圈结果页-->
+			<div class="download_tips">
+				<span>下载宇宙托福APP, 向好友发起挑战~</span>			
+				<a href="javascript:;" class="download_btn">下载</a>
+			</div>
+			<div class="vol-banner">
+				<p id="my-rank">3</p>
+				<p id="rank-compare">
+					打败宇宙托福<span id="ranking-compare">80</span>%用户
+					<a href="/h5/wordschallenge/result?shareId=${shareId }&unionId=${unionId }&headImgUrl=${headImgUrl}&nickname=${nickname}" target="_blank">查看总排名</a>
+				</p>
+				<p id="check-all-result">
+					恭喜获得<span id="tContent"></span>词汇福袋人人领
+					<a id="gettea">抢福袋喽</a>
+				</p>
+			</div>
+			<section class="top-three" id="first-one"><!--第一名-->
+				<div class="left-avtar">
+					<img src="../img/500bg.png" />
+					<i class="crown"></i>
+				</div>
+				<div class="middle-detail">
+					<p class="user-name">田老师</p>
+					<p class="finish-count">
+						完成<span>10</span>个单词
+					</p>
+					<p class="doing-detail">
+						正确率<span>60</span>%&nbsp;&nbsp;&nbsp;
+						速度<span>2.2</span>秒/题
+					</p>
+				</div>
+				<div class="right-icon">
+					<img src="../img/vol-challenge/the_first.png" />
+				</div>
+			</section>
+			<section class="top-three" id="second-one"><!--第二名-->
+				<div class="left-avtar">
+					<img src="../img/500bg.png" />
+					<i class="crown"></i>
+				</div>
+				<div class="middle-detail">
+					<p class="user-name">田老师</p>
+					<p class="finish-count">
+						完成<span>9</span>个单词
+					</p>
+					<p class="doing-detail">
+						正确率<span>60</span>%&nbsp;&nbsp;&nbsp;
+						速度<span>2.3</span>秒/题
+					</p>
+				</div>
+				<div class="right-icon">
+					<img src="../img/vol-challenge/the_second.png" />
+				</div>
+			</section>
+			<section class="top-three" id="third-one"><!--第三名-->
+				<div class="left-avtar">
+					<img src="../img/404bg.png" />
+					<i class="crown"></i>
+				</div>
+				<div class="middle-detail">
+					<p class="user-name">田老师</p>
+					<p class="finish-count">
+						完成<span>10</span>个单词
+					</p>
+					<p class="doing-detail">
+						正确率<span>50</span>%&nbsp;&nbsp;&nbsp;
+						速度<span>2.3</span>秒/题
+					</p>
+				</div>
+				<div class="right-icon">
+					<img src="../img/vol-challenge/the_third.png" />
+				</div>
+			</section>
+			<ul class="normal-result"><!--普通排名-->
+				<li>
+					<img  class="left-avtar"src="../img/500bg.png" />
+					<div class="middle-detail">
+						<p class="user-name">田老师</p>
+						<p class="doing-detail">
+							完成<span>7</span>个单词&nbsp;
+							正确率<span>60</span>%&nbsp;
+							速度<span>2.3</span>秒/题
+						</p>
+					</div>
+					<div class="right-num">
+						4
+					</div>
+				</li>
+				<li>
+					<img  class="left-avtar"src="../img/404bg.png" />
+					<div class="middle-detail">
+						<p class="user-name">田老师</p>
+						<p class="doing-detail">
+							完成<span>4</span>个单词&nbsp;
+							正确率<span>60</span>%&nbsp;
+							速度<span>2.3</span>秒/题
+						</p>
+					</div>
+					<div class="right-num">
+						5
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="tips-modal">
+			<div id="ready-count-tips">3</div>
+		</div>
+		<div id="dialog-tips-modal">
+			<div id="dialog-tips">
+				<p>完成</p>
+				<p>正在计算结果</p>
+			</div>
+		</div>
+		<div id="teachers-modal">
+			<div id="teachers-qrcode">
+				<p>扫码领取福袋</p>
+				<div id="qrcode-wrap">
+					<img id="tea-qrcode" src="http://universestatic.b0.upaiyun.com/img/teacher/20170120153022.jpg" />
+				</div>
+				<img id="close-qrcode" src="../img/wei-course/share-close.png" alt=""/>
+			</div>
+			
+		</div>
+	</body>
+	<script src="../js/lib/jquery-1.11.1.js"></script>
+	<script src="../js/lib/flexible.js"></script>
+	<script>
+		var QuestionIndex = 0; //当前的下标
+		var questionLength = $(".vol-question").length;//题的个数
+		var selectOptions;//每一题的选项
+		var correctAnswer = ["生物的","长期","动物"];//正确答案;
+		var selectFlag = true;
+		var doingRecord = [];//做题记录
+		var correctNum = 0;//正确的题数
+		var tt,ss;
+		var totalTimer = 20;
+		var durationTimer = 0;//做题用时
+		$(".vol-question").css("visibility","visible")
+		//立即应战
+		
+		$(function(){
+			$("#go-challenge").click(function(){
+				$("#tips-modal").show();
+				threeCountDown(3) //3秒钟倒计时
+				$("#accpet-challenge").hide().next().show();
+				$(".vol-question").hide().eq(0).show();
+				for(var n=0;n<questionLength;n++){
+					doingRecord[n] = (n+1) + "-"
+				}
+				console.log(doingRecord);
+			})
+
+			$(".vol-options-box").each(function(ii,vv){
+				selectOptions = $(".vol-options-box").eq(ii).find("li");
+				selectOptions.each(function(jj,item){
+					if(selectOptions.eq(jj).find(".vol-mean").text() == correctAnswer[ii]){
+						$(item).addClass("gg");
+						return;
+					}
+				})
+				
+				selectOptions.click(function(){
+					var $this = $(this);
+					var selectResult = $this.find(".vol-mean").text();//选中的答案
+					doingRecord[QuestionIndex] += selectResult;//记录做题结果
+					if(selectFlag){
+						if(selectResult != correctAnswer[ii]){
+							$this.addClass("rr").parent().addClass("hasSelect");
+						}else{
+							$this.parent().addClass("hasSelect");
+							correctNum++;
+						}
+					}
+					selectFlag = false;
+					
+					tt = setTimeout(nextVolQuestion,1000)
+					console.log(doingRecord);
+				})
+			})
+			function initChallenge(){
+				countDowntimer(20);
+				$("#finished-num").text(QuestionIndex);
+				$("#unfinished-num").text(questionLength);
+				progressStatus(0);
+			}
+			function nextVolQuestion(){
+				clearTimeout(tt);
+				
+				QuestionIndex++;
+				$("#finished-num").text(QuestionIndex);
+				$("#unfinished-num").text(questionLength - QuestionIndex);
+				progressStatus(QuestionIndex/questionLength*100);
+				
+				if(QuestionIndex >= questionLength){
+					//最后一题提交答案
+					$("#dialog-tips-modal").show();
+					var obj = {};
+					obj.finish_num = QuestionIndex;
+					obj.rate = (correctNum/questionLength*100).toFixed(2);
+					obj.duration = durationTimer;
+					obj.doingRecord = doingRecord;
+					/*postAnswer(obj)*/
+				}else{
+					selectFlag = true;
+					$(".vol-question").hide().eq(QuestionIndex).show().addClass("lightSpeedIn").on("animationend",function(){
+						$(this).removeClass("lightSpeedIn");
+					});
+					
+					selectOptions = $(".vol-options-box").eq(QuestionIndex).find("li");
+				}
+			}
+			//提交答案
+			function postAnswer(param){
+				$.ajax({
+					type:"post",
+					url:"",
+					async:false,
+					data:param,
+					success: function(data){
+						$("#dialog-tips-modal").remove();
+						$("#friends-result").show().prev().hide();
+					}
+				});
+			}
+			//完成进度条
+			function progressStatus(value){
+				$("#done-progress").width(value + "%")
+			}
+			
+			//倒计时
+			function countDowntimer(num) {
+			    if (num != 0) {
+			    	durationTimer++;
+			    	$("#time-count").html(num + "s");
+			    ss = setTimeout(function () {
+			            countDowntimer(num - 1)
+			        }, 1000);
+			    } else {
+			    	clearTimeout(ss);
+			    	var obj = {};
+					/*obj.rate = "";
+					obj.avg_speed = "";
+					obj.finish_num = "";
+					postAnswer(obj)*/	        
+			    }
+			}
+			function threeCountDown(num){
+				if (num != 0) {
+			    	$("#ready-count-tips").html(num);
+			    ss = setTimeout(function () {
+			            threeCountDown(num - 1)
+			        }, 1000);
+			    } else {
+			    	$("#tips-modal").remove();
+			    	initChallenge();
+			    }
+			}
+			//点击获取老师二维码
+			$("#gettea").on("click",function(){
+				$("#teachers-modal").show();
+			});
+			$("#close-qrcode").click(function(){
+				$("#teachers-modal").hide();
+			})
+		})
+	</script>
+</html>

@@ -10,5 +10,6 @@
 ### demo演示
 	
 * [计划详情分享](https://yesman0319.github.io/workspace/universe-app-h5/html/plan_detail.html)<br>
-* [词汇挑战分享](https://yesman0319.github.io/workspace/universe-app-h5/html/vocab_challenge_doing.html)
+* [词汇挑战分享](https://yesman0319.github.io/workspace/universe-app-h5/html/vocab_challenge_doing.html)<br>
+* [词语拼接分享](http://test.www.vip-young.com/html/jingying_jihua/h5/vocab-join.html?params=eyJlc3RpbWF0ZVRpbWUiOiI1IiwiZ3JvdXBJRCI6MTQ2Nn0=)
 

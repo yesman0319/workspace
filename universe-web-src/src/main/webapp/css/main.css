@@ -1,0 +1,183 @@
+/* Author:zhangguandong
+   v0.1 | 20150402
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin:0px;
+	font-family:'Microsoft Yahei','微软雅黑','Lato', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****** Main ********/
+
+body {
+	font-size:62.5%;
+	font-family: 'Microsoft Yahei','微软雅黑','Lato', sans-serif;
+	color:#000;
+}
+h1 {
+	font-size:7em;
+}
+h2 {
+	font-size:6em;
+}
+h3 {
+	font-size:2.3em;
+}
+dt {
+	font-size:2.3em;
+}
+dd {
+	font-size:1.9em;
+	padding:0.6em 0 0.9em 0;
+}
+p {
+	font-size:1.9em;
+}
+a:link,
+a:visited {
+	color:#000;
+	text-decoration:none;
+}
+a:hover,
+a:focus,
+a:active {
+	text-decoration:underline;
+}
+
+.scream{
+	position:relative;
+	width:100%;
+	text-align:center;
+	height:700px;
+}
+.scream50{
+	position:absolute;
+	height:100%;
+	width:50%;
+	top:0px;
+	left:0px;
+}
+.screaml50{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0px;
+	right: 0px;
+}
+.screammid{
+	position:relative;
+	height:100%;
+	width:1000px;
+	margin:0 auto;
+}
+.screamf{
+	position:relative;
+	height:100%;
+	width:100%;
+	margin:0 auto;
+}
+.screamfb{
+	position:absolute;
+	height:100%;
+	width:100%;
+	bottom:0px;
+	left:0px;
+}
+.tagline {
+
+	font-size:2.3em;
+	letter-spacing:0.02em;
+	padding:0;
+}
+.twiter{
+	color:#fff;
+}
+img.gd{
+	position:absolute;
+}
+div.gd{
+	position: absolute;
+	
+	
+}
+.w100{ width:100%}
+.w100l{ left:0%; width:100%}
+.btn{
+	cursor:pointer;
+}
+.btnx{
+	cursor:pointer;
+}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+.t14{ font-size:14px;}
+.t16{ font-size:16px;}
+.t18{ font-size:18px;}
+.t20{ font-size:20px;}
+.t22{ font-size:22px;}
+.t24{ font-size:24px;}
+.t26{ font-size:26px;}
+.t28{ font-size:28px;}
+.t30{ font-size:30px;}
+.t32{ font-size:32px;}
+.t34{ font-size:34px;}
+.t36{ font-size:36px;}
+.t38{ font-size:38px;}
+.t40{ font-size:40px;}
+.t42{ font-size:42px;}
+.t44{ font-size:44px;}
+.t46{ font-size:46px;}
+.t48{ font-size:48px;}
+.t50{ font-size:50px;}
+.t60{ font-size:60px;}
+.ti{font-style:italic;}
+.tu{text-decoration:underline;}
+.tb{font-weight:bold;}
+.tbb{font-weight:bolder;}
+.tclw{color:#FFF}
+.tclb{color:#000}
+.tclg{color:#666666}
+.tclr{color:#ff0000}

@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="header-new mid" style="line-height: 60px;">
+    <a id="logoNav" href="../html/home.html"><img src="../i/w_logo.png"></a>
+    <span id="lgNavNo">
+       <ul class="nav-other">
+         <li><a href="../html/register.html" id="registerNav">注册</a></li>
+         <li><a href="../html/login.html" id="loginNav">登录</a></li>
+       </ul>
+    </span>
+  </div>
+</div>

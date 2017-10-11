@@ -1,0 +1,108 @@
+
+.head-div{width:170px;height:194px;background: #fff;text-align: center;}
+.head-div .head_name{width:170px;height:46px;background: #e2e2e2;text-align: center;color:#232323;padding:5px;margin-top:15px;}
+.head-div .head_name p{margin-bottom:0px;}
+.head-div1{width:180px;height:168px;background: #fff;  border: 1px solid #ddd;border-bottom:none;border-left: 4px solid #509bfd;/* border-radius: 8px; */}
+.head-div .red{color:#f00;margin-left:20px;padding-left: 90px;}
+.head-div .red:hover{color:#f00;}
+.p7{text-align: center;padding-top:20px;}
+.h640{width:730px;min-height:640px;height:auto !important;font-family: sans-serif; position: relative;margin-top: -290px;margin-left: 518px;top: 23px;}
+.wc1000{width: 1000px;min-height: 625px;height: auto !important;position: relative;top: 25px}
+.tab1{min-height:600px!important;}
+.tab-content{margin-top: 0px;border-top: 3px solid #509bfd;padding-bottom: 20px;}
+
+.box{width:160px!important;height:40px!important;font-size: 14px!important;}
+.box-inline{display: inline-block;}
+/* .form-horizontal{position: relative!important;top:30px!important;} */
+.for-pwd{margin-left: -380px;}
+.for-pwd a{color: #0370ff!important;}
+
+.correct-div1{width: 680px;height: 340px;}
+.h53{width:706px;min-height: 53px;background: #ffffff;border-radius: 8px;}
+.h1120{width:1000px;min-height: 720px;height: auto !important;background: #ffffff;border-radius: 8px;margin-top: 20px;overflow: hidden;}
+.h54{width: 1000px;height: 53px;background: #ffffff;border-radius: 8px;}
+.round{width:36px; height:36px;border-radius:18px;}
+.check-all{position: relative;left: 900px;top: 9px;}
+.correct1 p{/* width: 900px; */width: 630px;height: 30px;}
+.his630{width: 1000px;min-height: 630px;height: auto !important;background: #ffffff;border-radius: 8px;margin-top: 20px;}
+.h630{width: 733px;min-height: 630px;height: auto !important;background: #ffffff;border-radius: 8px;margin-top: 20px;overflow: hidden;}
+.correct-div2{width: 680px;height: 240px;}
+.center-div2{width: 980px;min-height: 240px;margin-bottom: 30px;padding: 25px 0px;}
+.c6p6{width: 960px;}
+.correct1 p.plength{width:830px;}
+.h450{width: 713px;min-height: 450px;height: auto !important;background: #ffffff;border-radius: 8px;margin-top: 20px;overflow: hidden;}
+.training-hoistory{position: relative;top: 16px;width: 680px;min-height: 90px;height: auto!important;margin-top: -20px;}
+.span2{font-size: 11px}
+a.side-nav1{background-color: #509bfd;text-align: center;padding: 13px 15px;}
+a.side-nav1:hover{background-color: #b0b0b0!important;}
+.jijing-space2{padding-top: 15px;}
+.history-time1{float: right;position: relative;right: 25px;}
+
+.person-zpoints{width: 570px;height: 255px;background: #f8f8f8;margin-top: 50px;margin-left: 141px;border-radius: 6px;padding-left: 30px;padding-top: 20px;}
+.person-spoints{position: relative;left: 258px;top: 40px;}
+.person-pleft48{padding-left: 48px;}
+.person-hr{margin-bottom: 0px;}
+.message-div{padding-top: 40px;}
+.score-bot10{margin-bottom:10px}
+.correct1{min-height: 50px;/* background: #ff0; */}
+
+.tabs_new {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tabs_new li {
+    float: left;
+    margin: 0 .5em 0 0;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-bottom: none;
+}
+.tabs_new a {
+    position: relative;
+    background: #f2f2f2;
+    width: 102px;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    text-decoration: none;
+    color: #444;
+}
+.tabs_new a:hover, .tabs_new a:hover::after, .tabs_new a:focus, .tabs_new a:focus::after {
+    background: #fff;
+    color:#70aafd;
+    text-decoration:none;
+}
+.tabs_new a:focus {
+    outline: 0;
+    color:#70aafd;
+    text-decoration:none;
+}
+.tabs_new a::after {
+    content:'';
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    right: -8px;
+    bottom: 0;
+    width: 17px;
+    background: #f2f2f2;
+    border-right: 1px solid #d2d2d2;
+    -webkit-transform: skew(23deg);
+    -moz-transform: skew(23deg);
+    -ms-transform: skew(23deg);
+    -o-transform: skew(23deg);
+    transform: skew(23deg);
+}
+.tabs_new #current a, .tabs_new #current a::after {
+    background: #fff;
+    z-index: 3;
+    color:#70aafd;
+}
+.tabs_new .current a, .tabs_new .current a::after {
+    background: #fff;
+    z-index: 3;
+    color:#70aafd;
+}

@@ -1,0 +1,20 @@
+/*Õ¸º«√‹¬Î*/
+.forget{width:885px;margin:100px auto;background:#fff;}
+.forget .title{position: relative; top: 5px;display:inline-block;width:125px;text-align:center;margin-left:-4px;margin-right:0;margin-top:35px;color:#767676;font-size:24px;}
+.forget hr{display:inline-block;width:380px;margin-top: 40px;margin-left:-4px;margin-right:0; border: 0;  border-top: 1px solid #767676;}
+.layout{margin:180px auto;width:382px;}
+.layout .warn{color:#00b551;font-size:14px;}
+.layout .user{height:56px;width:100%;margin-top:28px;}
+.layout .err_msg{position: absolute;display:block;line-height: 56px; margin-left:20px; color: #767676;font-size: 14px;}
+.layout .email{position: absolute;background: none;padding:10px 20px;width:340px;line-height:34px;height:34px;border:1px solid #bdbdbd;border-radius:5px;outline: none;font-size:14px;color:#767676;}
+.layout .sendCode{text-decoration:none; display:block;margin-top:38px;height:56px;line-height:56px;width:382px;text-align:center;border-radius:5px;background:#00b551;font-size:18px;color:#fff;}
+
+/*” œ‰µ«¬º*/
+.layout1{margin:100px auto;width:382px;}
+.layout1 .warn{color:#00b551;font-size:14px;}
+.layout1 .user{height:56px;width:100%;margin-top:18px;}
+.layout1 .err_msg{position: absolute;display:block;line-height: 56px; margin-left:20px; color: #767676;font-size: 14px;}
+.layout1 .text{position: absolute;background: none;padding:10px 20px;width:340px;line-height:34px;height:34px;border:1px solid #bdbdbd;border-radius:5px;outline: none;font-size:14px;color:#767676;}
+.layout1 .user_phone{margin-top:28px;}
+.layout1 .reset{display:block;margin-top:38px;margin-bottom:18px;height:56px;line-height:56px;width:382px;text-align:center;border-radius:5px;background:#00b551;font-size:18px;color:#fff;}
+.layout1 .forget_psw,.layout1 .re_code,.layout1 .other_log{display:block;width:100%;font-size:14px;color:#767676;line-height:25px;}

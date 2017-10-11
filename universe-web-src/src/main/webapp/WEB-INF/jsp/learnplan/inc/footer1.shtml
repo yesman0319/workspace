@@ -1,0 +1,40 @@
+<div class="footer1">
+    <div class="link">
+        <div class="width">
+            <div class="f_link">
+                <div class="fl l1">
+                    <img src="../i/f_link.png" alt="宇宙托福"/>
+                    <ul class="f_link_list">
+                        <li><a href="">关于我们&nbsp;&nbsp;about us</a></li>
+                        <li><a href="">使用协议&nbsp;&nbsp;Use protocol</a></li>
+                        <li><a href="">常见问题&nbsp;&nbsp;Common problem</a></li>
+                        <li><a href="">联系我们&nbsp;&nbsp;Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="fl l2">
+                    <img src="../i/f_universe.png" alt="宇宙托福"/>
+                    <div class="f_ios fl">
+                        <span>iphone</span>
+                        <img src="../i/f_code_ios.png" alt="宇宙托福IOS下载"/>
+                    </div>
+                    <div class="f_ad fl">
+                        <span>Android</span>
+                        <img src="../i/f_code_ad.png" alt="宇宙托福Android下载"/>
+                    </div>
+                </div>
+                <div class="fl l3">
+                    <img src="../i/f_followme.png" alt="宇宙托福社区"/>
+                    <ul class="f_icon_list">
+                        <li><a href=""><img src="../i/f_icon1.png" alt=""/></a></li>
+                        <li><a href=""><img src="../i/f_icon2.png" alt=""/></a></li>
+                        <li style="margin-right:0;"><a href=""><img src="../i/f_icon3.png" alt=""/></a></li>
+                        <li><a href=""><img src="../i/f_icon4.png" alt=""/></a></li>
+                        <li><a href=""><img src="../i/f_icon5.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mid"><p class="width">? 2014 小马过河 京ICP备14009560号-3 京公网安备11010802016914号</p></div>
+</div>

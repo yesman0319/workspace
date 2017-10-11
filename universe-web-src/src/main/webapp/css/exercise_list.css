@@ -1,0 +1,378 @@
+.list-box{
+	width: 1120px;
+	margin: 0 auto;
+	background: #F5F5F5;
+	box-sizing: border-box;
+	margin-top: 48px;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+
+/*---左侧菜单列表----*/
+.list-left-ul{
+	border: 1px solid #DCDCDC;
+	width: 232px;
+	float: left;
+	background: #fff;
+}
+.list-left-ul li{
+	background: #fff;
+	border-bottom: 1px solid #dcdcdc;
+}
+.list-classify{
+	
+}
+.list-classify-title{
+	position: relative;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 20px;
+	height: 42px;
+	border-bottom: 1px solid #dcdcdc;
+	background: #fff;
+	line-height: 42px;
+}
+.list-classify-title:hover{
+	cursor: pointer;
+}
+.classify-line{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 4px;
+	height: 42px;
+	background: #00B551;
+}
+.up .classify-arrow{
+	position: absolute;
+	width: 12px;
+	height: 6px;
+	right: 20px;
+	top: 19px;
+	background: url(../i/exercise_list/list_spirit.png) no-repeat -279px -1px;
+}
+.down .classify-arrow{
+	position: absolute;
+	width: 12px;
+	height: 6px;
+	right: 20px;
+	top: 18px;
+	background: url(../i/exercise_list/list_spirit.png) no-repeat -279px -8px;
+}
+
+/*每个练习模块菜单列表样式*/
+.list-mod-title{
+	line-height: 42px;
+}
+.list-mod-title a{
+	display: inline-block;
+	position: relative;
+	width: 232px;
+	height: 42px;
+	color: #767676;
+	font-size: 13px;
+	padding-left: 72px;
+	box-sizing: border-box;
+}
+.list-mod-title:hover{
+	background: #00B551;
+	cursor: pointer;
+}
+.list-mod-title:hover a {
+	color: #fff;
+}
+.mod-active{
+	background: #00B551 !important;
+}
+.mod-active a{
+	position: relative;
+	color: #fff !important;
+}
+.mod-active a:after{
+	position: absolute;
+	width: 11px;
+	height: 43px;
+	content: "";
+	visibility: visible;
+	right: -11px;
+	top: 0;
+	background-image: url(../i/exercise_list/list_spirit.png) !important;
+	background-repeat: no-repeat !important;  
+	background-position: -296px 0px !important;
+}
+.list-mod-title a .mod-line{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 4px;
+	height: 42px;
+	background: #B2E9CA;
+}
+.list-mod-title a i{
+	position: absolute;
+	background-image: url(../i/exercise_list/list_spirit.png);
+}
+.cihui_icon{
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	left: 35px;
+	background-position: -106px 0px;
+}
+.list-mod-title:hover .cihui_icon,
+.mod-active .cihui_icon{
+	background-position: -106px -21px;
+}
+.yufa_icon{
+	width: 17px;
+	height: 19px;
+	top: 12px;
+	left: 36px;
+	background-position: -129px 0px;
+}
+.list-mod-title:hover .yufa_icon,
+.mod-active .yufa_icon{
+	background-position: -129px -21px;
+}
+.tingxie_icon{
+	width: 19px;
+	height: 17px;
+	top: 12px;
+	left: 34px;
+	background-position: -21px 0px;
+}
+.list-mod-title:hover .tingxie_icon,
+.mod-active .tingxie_icon{
+	background-position: -21px -21px;
+}
+.hubian_icon{
+	width: 19px;
+	height: 17px;
+	top: 12px;
+	left: 34px;
+	background-position: -42px 0px;
+}
+.list-mod-title:hover .hubian_icon,
+.mod-active .hubian_icon{
+	background-position: -42px -21px;
+}
+.fuxie_icon{
+	width: 20px;
+	height: 15px;
+	top: 13px;
+	left: 34px;
+	background-position: -63px 0px;
+}
+.list-mod-title:hover .fuxie_icon,
+.mod-active .fuxie_icon{
+	background-position: -63px -21px;
+}
+.zonghe_t_icon{
+	width: 20px;
+	height: 18px;
+	top: 12px;
+	left: 34px;
+	background-position: 0px 0px;
+}
+.list-mod-title:hover .zonghe_t_icon,
+.mod-active .zonghe_t_icon{
+	background-position: 0px -21px;
+}
+.yuedu_jj_icon{
+	width: 20px;
+	height: 20px;
+	top: 12px;
+	left: 34px;
+	background-position: -148px 0px;
+}
+.list-mod-title:hover .yuedu_jj_icon,
+.mod-active .yuedu_jj_icon{
+	background-position: -148px -21px;
+}
+.tingli_jj_icon{
+	width: 20px;
+	height: 20px;
+	top: 12px;
+	left: 34px;
+	background-position: -168px 0px;
+}
+.list-mod-title:hover .tingli_jj_icon,
+.mod-active .tingli_jj_icon{
+	background-position: -168px -21px;
+}
+.kouyu_jj_icon{
+	width: 17px;
+	height: 19px;
+	top: 12px;
+	left: 34px;
+	background-position: -190px 0px;
+}
+.list-mod-title:hover .kouyu_jj_icon,
+.mod-active .kouyu_jj_icon{
+	background-position: -190px -21px;
+}
+.zonghe_k_jj_icon{
+	width: 20px;
+	height: 18px;
+	top: 11px;
+	left: 34px;
+	background-position: -210px 0px;
+}
+.list-mod-title:hover .zonghe_k_jj_icon,
+.mod-active .zonghe_k_jj_icon{
+	background-position: -210px -21px;
+}
+.xiezuo_jj_icon{
+	width: 17px;
+	height: 19px;
+	top: 11px;
+	left: 34px;
+	background-position: -232px 0px;
+}
+.list-mod-title:hover .xiezuo_jj_icon,
+.mod-active .xiezuo_jj_icon{
+	background-position: -232px -21px;
+}
+.duli_xiezuo_icon{
+	width: 20px;
+	height: 18px;
+	top: 10px;
+	left: 34px;
+	background-position: -252px 0px;
+}
+.list-mod-title:hover .duli_xiezuo_icon,
+.mod-active .duli_xiezuo_icon{
+	background-position: -252px -21px;
+}
+
+.list-right-div{
+	width: 808px;
+	min-height: 622px;
+	border: 1px solid #dcdcdc;
+	float: left;
+	margin-left: 26px;
+	background: #fff;
+	padding: 12px 25px;
+}
+.list-top{
+	padding-bottom: 15px;
+}
+.list-top img{
+	display: inline-block;
+	vertical-align: -6px;
+}
+.list-top span{
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 12px;
+}
+.list-right-div ul{
+	
+}
+.list-right-div ul li{
+	width: 397px;
+	height: 37px;
+	background: #fff;
+	float: left;
+	line-height: 37px;
+}
+
+.list-right-div ul li a{
+	display: inline-block;
+	width: 397px;
+	height: 37px;
+	padding-left: 15px;
+	position: relative;
+}
+.list-right-div ul li:nth-child(2n){
+	margin-left: 14px;
+}
+.list-right-div ul li:nth-child(4n+1),
+.list-right-div ul li:nth-child(4n+2){
+	background: #f6f6f6;
+}
+.list-right-div ul li:hover{
+	background: #ddd;
+}
+.list-right-div ul li a .flag_img{
+	position: absolute;
+	right: 32px;
+	top: 8px;
+}
+.list-right-div ul li a .lock_img{
+	position: absolute;
+	right: 32px;
+	top: 9px;
+}
+
+/*购买计划弹框*/
+#buytips_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+}
+#buytips_modal .modal_box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 420px;
+    height: 275px;
+    background: #fff;
+}
+#buytips_modal .modal_box .modal_title{
+    height: 54px;
+    line-height: 54px;
+    background: #39c075;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 25px;
+    position: relative;
+}
+#buytips_modal .modal_box .modal_title .tips_close{
+    position: absolute;
+    width: 13px;
+    height: 15px;
+    top: -4px;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    cursor: pointer;
+    display: inline-block;
+    background: url(../i/live/close_icon2.png) no-repeat
+}
+
+#buytips_modal .modal_box .modal_tips{
+    padding: 40px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+#buytips_modal .modal_box .modal_btns{
+    text-align: center;
+}
+#buytips_modal .modal_box .modal_btns a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 2px solid #00b551;
+    border-radius: 8px;
+    background: #f2fbf6;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+#buytips_modal .modal_box .modal_btns .cancel{
+    margin-left: 30px;
+}

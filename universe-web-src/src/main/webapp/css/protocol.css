@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+}
+
+p {
+    color: #333;
+}
+
+h2, span {
+    font-weight: bold;
+    color: #232323;
+}
+
+.section h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #232323;
+    font-size: 18px;
+    line-height: 40px;
+    background: #f7f7f7;
+}
+.section h1 .goBack{
+    position:absolute;
+    left:5%;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.section h2 {   
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.section .content {
+    padding: 0 5%;
+    width: 90%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+span {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.marl {
+    margin-left: 20px;
+}
+
+.marll {
+    margin-left: 30px;
+}

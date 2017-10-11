@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>微信登陆</title>
+		
+	</head>
+	<body>
+		<script src="../../../common/js/jquery-1.7.2.min.js"></script>
+		<script src="../../../common/js/baseUrl.js"></script>
+		<script>
+			
+			var href = window.location.href;//当前url;
+			var targetUrl = window.location.host + "/html/jingying_jihua/h5/vocab-join.html?" + href.split("?")[1];//授权后需要跳转的目标页面
+			var getAuthorUrl = BaseUrl.host+"/plan/proxy?proxyurl=https://dev.api.vip-young.com:8443/wxmp/binding/authority?backUrl="+targetUrl;//请求获取授权地址 www.open.weixin.qq.com
+			
+			var obj = {
+				"href":window.location.href,
+				"targetUrl":window.location.host + "/html/jingying_jihua/h5/vocab-join.html" + href.split("?")[1],
+				"getAuthorUrl":BaseUrl.host+"/plan/proxy?proxyurl=https://dev.api.vip-young.com:8443/wxmp/binding/authority?backUrl="+targetUrl
+			}
+			
+			localStorage.setItem("redisUrlObj",JSON.stringify(obj))
+			
+			$.ajax({
+				type:"get",
+				url:getAuthorUrl,
+				dataType:'json',
+				asasync:false,
+			}).then(function(data){
+				console.log(data);
+				setTimeout(function(){
+					window.location.href = data.redisUrl;
+				},5000)
+				
+			});
+			
+		</script>
+
+		
+		
+	</body>
+</html>

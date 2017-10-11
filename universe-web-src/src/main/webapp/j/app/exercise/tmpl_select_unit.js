@@ -1,0 +1,36 @@
+'use strict'
+
+define(function(){
+	return [
+    '<p class="p1 bold black mleft25"><img src="../../i/list-pic.png" class="list-pic"><span>已练习498个词汇</span><span class="unit"><a href="#">选择单元</a></span></p>',
+    '<hr class="mleft25>',
+     '<ul>',
+      '<li><a href="#">unit1<span class="green">(正确率60%)</span></a></li>',
+      '<li><a href="#">unit25<span class="green">(正确率70%)</span></a></li>',
+      '<li><a href="#">unit10<span class="green">(正确率1%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li> ',
+     '</ul>',
+       '<ul>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li>',
+      '<li><a href="#">unit100<span class="red">(正确率100%)</span></a></li> ',
+     '</ul>',
+       '<ul>',
+      '<li><a href="#">unit1<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit1<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit1<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit1<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit1<span>(正确率100%)</span></a></li> ',
+     '</ul>',
+       '<ul>',
+      '<li><a href="#">unit25<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit25<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit25<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit25<span>(正确率100%)</span></a></li>',
+      '<li><a href="#">unit25<span>(正确率100%)</span></a></li> ',
+     '</ul>',
+	].join('')
+})

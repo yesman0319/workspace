@@ -1,0 +1,161 @@
+html,body{
+	width: 100%;height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+}
+.wrap{
+	width: 100%;height: 100%;
+	position: relative;
+}
+
+.wrap header{
+	width: 100%;height: 4rem;
+	border-bottom: 1px solid #d3d3d3;
+	background: #f4f4f4;
+
+}
+.wrap header .head{
+	width: 100%;
+	position: relative;
+}
+.wrap header .head h1{
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	line-height: 4rem;
+}
+.wrap header .head p:nth-of-type(1){
+	position: absolute;
+	width: 10px;
+	left: 15px;
+	top: 1.2rem;
+	
+}
+.wrap header .head p:nth-of-type(2){
+	position: absolute;
+	width: 17px;
+	right: 15px;
+	top: 1.8rem;
+	
+}
+.wrap header .head p img{
+	display: block;
+	width: 100%;
+}
+
+.wrap section{
+	width: 100%;
+	overflow: hidden;
+	position:absolute;
+	top:0px;bottom:3.8rem;
+	overflow-y:scroll;
+}
+.wrap section .center{
+	width: 100%;
+}
+.wrap section .center .times{
+	width: 100%;
+	height: 3.6rem;
+	background: #e4e4e4;
+}
+.wrap section .center .times h1{
+	line-height: 3.6rem;
+	margin-left: 1rem;
+}
+
+.wrap section .center .videos ul{
+	width: 100%;
+}
+	
+.wrap section .center .videos ul li{
+	width: 96%;
+	margin-left: 4%;
+	border-bottom: 1px solid #d6d6d6;
+	display: -webkit-box;
+	position: relative;
+}
+
+.wrap section .center .videos ul li img{
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+	margin-right: 0.7rem;
+}
+.wrap section .center .videos ul li div{
+	margin-top: 0.7rem;
+	width: 66%;
+}
+.wrap section .center .videos ul li div p{
+	font-size: 12px;
+	color: #232323;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.wrap section .center .videos ul li div p:nth-of-type(2){
+	color: #7f7f7f;
+	background: url(/common/images/live-sj.png) no-repeat left; 
+	background-size: 1rem 1rem;
+	padding-left: 1.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.7rem;
+}
+.wrap section .center .videos ul li span{
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	margin-top: -0.9rem;
+	width: 4.2rem;
+	height: 1.8rem;
+	
+	
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.8rem;
+}
+
+.wrap section .center .videos ul li .zhibo{
+	border: 1px solid #ff8030;
+	color: #ff8030;
+}
+.wrap section .center .videos ul li .huifang{
+	border: 1px solid #00b551;
+	color: #00b551;
+}
+.wrap section .center .videos ul li .weizhibo{
+	border: 1px solid #767676;
+	color: #767676;
+}
+
+.wrap section .center .videos ul li .yugao{
+	border: 1px solid #767676;
+	color: #767676;
+}
+
+.download{
+	width: 100%; height: 3.8rem;background: #000;
+	margin-top: 1px;
+	color: white;
+	padding-left: 1.6rem;
+	line-height: 3.8rem;
+	font-size: 12px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	opacity: .7;
+}
+.download span{
+	display: inline-block;
+	width: 4.2rem;
+	height: 2rem;
+	background: #00b551;
+	border-radius: 5px 5px;
+	margin-left: 3rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+

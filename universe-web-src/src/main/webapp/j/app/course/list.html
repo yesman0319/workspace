@@ -1,0 +1,13 @@
+
+    <%_.each(data.courseList, function(item, index){%>
+    <div style="<%if(index==0){%>margin-left: 36px!important;<%}%>">
+        <p  class="re_p1"><span><%=item.name%></span><span><a href="course_replay.html?id=<%=item.id%>">更多</a></span></p>
+        <ul class="re_u1">
+            <%_.each(item.child, function(item1, index1){%>
+                <li> <img src="../i/listen2.png"><span productId="<%=item1.productId%>" coursesUrl="<%=item1.coursesUrl%>"><%=item1.name%></span></li>
+            <%})%>
+        </ul>
+    </div>
+    <%})%>
+
+

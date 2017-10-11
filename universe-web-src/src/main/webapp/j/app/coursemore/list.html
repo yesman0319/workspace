@@ -1,0 +1,15 @@
+
+    <%_.each(data.courseList, function(item, index){%>
+    <li>
+        <span><%=item.time%></span>
+        <span> <%=item.name%></span>
+        <div class="btn1 fr" style="margin-right:11px;margin-top:16px;" ><a href="<%=item.coursesUrl%>" target="_blank" style="text-decoration: none;">课程回放</a></div>
+    </li>
+
+    <%})%>
+    <%if(!data.courseList||data.courseList.length==0){%>
+    <p style="line-height:100px;text-align:center;width:100%;">
+        暂无课程数据
+    </p>
+    <%}%>
+

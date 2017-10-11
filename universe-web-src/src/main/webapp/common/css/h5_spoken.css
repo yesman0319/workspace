@@ -1,0 +1,155 @@
+html,body{
+	width: 100%;height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+}
+/*鏉╂瑦妲搁張锟姐亣閻ㄥ嫮娲呯�涳拷/
+.wrap{
+	width: 100%;height: 100%;
+	position: relative;
+}
+
+/*鏉╂瑦妲告径鎾劥*/
+.wrap header{
+	width: 100%;height: 4.3rem;
+	border-bottom: 1px solid #d3d3d3;
+	background: #f4f4f4;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.wrap header .head{
+	width: 100%;
+	position: relative;
+}
+.wrap header .head h1{
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	line-height: 4.3rem;
+}
+.wrap header .head p:nth-of-type(1){
+	position: absolute;
+	width: 12px;
+	left: 15px;
+	top: 1.2rem;
+	
+}
+.wrap header .head p:nth-of-type(2){
+	position: absolute;
+	width: 17px;
+	right: 15px;
+	top: 1.3rem;
+	
+}
+.wrap header .head p img{
+	display: block;
+	width: 100%;
+}
+
+/*鏉╂瑦妲搁崘鍛啇*/
+.wrap section{
+	width: 100%;
+	overflow-y: scroll;
+	position: absolute;
+	top:0.1rem;
+	bottom:11rem;
+	
+}
+.wrap section .center{
+	width: 100%;
+	overflow: hidden;
+}
+.wrap section .center .download{
+	width: 100%; height: 3.8rem;background: #333333;
+	margin-top: 1px;
+	color: white;
+	padding-left: 1.6rem;
+	line-height: 3.8rem;
+	font-size: 12px;
+}
+.wrap section .center .download span{
+	display: inline-block;
+	width: 4.2rem;
+	height: 2rem;
+	background: #00b551;
+	border-radius: 5px 5px;
+	margin-left: 3rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.wrap section .center ul{
+	width: 100%;
+}
+.wrap section .center ul li{
+	width: 94%;
+	margin-left: 6%;
+	border-bottom: 1px solid #d6d6d6;
+	word-wrap:break-word;
+}
+.wrap section .center ul li h1{
+	width: 100%;
+	position: relative;
+}
+.wrap section .center ul li h1 img{
+	width: 1.7rem;
+	height: 1.6rem;
+	position: absolute;
+	top: 1.8rem;
+	right: 1.6rem;
+}
+.wrap section .center ul li h1 span{
+	display: block;
+	padding-top: 1.7rem;
+	width: 88%;
+}
+.wrap section .center ul li p{
+	width: 96%;
+	color: #989898;
+	font-size: 12px;
+	margin-bottom: 1.4rem;
+	margin-top: 0.4rem;
+}
+
+
+/*姒涙垼澹婇惃鍕紕缂冿拷*/
+.bg{
+	width: 100%;
+	height: 11rem;
+	background: #000;
+	opacity: .8;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+.bg p{
+	color: white;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 2rem;
+	margin-top: 1.6rem;
+}
+.bg p span{
+	color: #74e1a5;
+}
+.bg button{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	height: 2.6rem;
+	background: #00b551;
+	border-radius: 5px 5px;
+	margin-top: 0.8rem;
+	color: #cff1de;
+	outline: none;
+}
+
+
+
+
+
+
+

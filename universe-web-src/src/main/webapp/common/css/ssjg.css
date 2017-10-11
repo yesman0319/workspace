@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.ss-main{  min-height: 800px; background:#f2f2f2; padding-bottom:16px;}
+.ss-main-inner{ width:1170px; margin:0 auto;padding-top:18px; background:#fff;}
+.ss-header{ overflow:hidden; color:#232323; padding-bottom:14px;}
+.ss-name{color:#509bfd;}
+.ss-header input{ height:28px;width:256px; padding-left:33px; background:#fff url(/common/images/ss.png) no-repeat 11px center; border:1px solid #dcdcdc;color:#ccc;}
+.ss-header .sousuo{ color:#509bfd; height:28px;width:72px; border:1px solid #509bfd; display:inline-block; margin-left:-1px; text-align:center; line-height:28px; }
+.ss-conntent{ border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc;}
+.ss-conntent ul li{ overflow:hidden; height:60px; line-height:60px;}
+.ss-conntent ul li:nth-child(odd){ background:#fff;}
+.ss-conntent ul li:nth-child(even){ background:#f6f6f6;}
+.l-title{ margin-left:25px; margin-right:58px; width:420px;}
+.l-title span{ margin-left:11px; font-weight:normal; border-radius:3px; line-height:18px; padding:0 8px; display:inline-block; vertical-align:-1px;}
+.l-title span.yellow{ color:#f7ae23; border:1px solid #f7ae23;}
+.l-title span.blue{ color:#6cc5e9; border:1px solid #6cc5e9;}
+.l-title span.baolan{ color:#435cc8; border:1px solid #435cc8;}
+.l-title span.purple{ color:#805475; border:1px solid #805475;}
+.l-title span.red{ color:#d96565; border:1px solid #d96565;}
+
+.ss-l-name{ color:#509bfd;}
+.l-zhujiang{ width:100px; color:#767676; margin-top:-1px;}
+.l-zhibo{ width:220px; margin:0 132px 0 116px;color:#767676;margin-top:-1px;}
+.kchf{ color:#509bfd;/* background:url(../images/sp.png) no-repeat left 25px;*//* padding-left:26px;*/}
+.pages{ margin:24px 0; text-align:center;}
+.pages a{ border:1px solid #dcdcdc; padding:7px 9px; display:inline-block;}
+.pages a{ color:#232323; text-decoration:none;}
+.pages a:hover{ background:#549dfd; color:#fff;}
+.pages a.no-br{ border:none; background:#fff; color:#232323;}
+.pages a.hover{ background:#549dfd; color:#fff;}
+

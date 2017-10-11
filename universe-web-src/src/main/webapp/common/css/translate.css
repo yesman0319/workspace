@@ -1,0 +1,150 @@
+.artc{
+    width: 100%;
+}
+
+.exercise-content{
+    width: 100%; background: #f1f2f6;
+    float: left;
+}
+.exercise-content-wrap{
+    width: 850px;
+    margin: 30px auto;
+}
+
+.exercise-right-part1{
+    width: 850px;
+    border: 1px solid #dcdcdc;
+    background: white;
+}
+.right-cen{
+    width: 850px;
+    margin-left: 31px;
+    position: relative;
+}
+
+.exercise-right-part1 h1{
+    height: 60px;
+}
+.exercise-right-part1 h1 img{
+    margin-top: 18px;
+    margin-right: 15px;
+    float: left;
+}
+.exercise-right-part1 h1 span{
+    line-height: 60px;
+    float: left;
+    font-size: 15px;
+    color: #767676;
+}
+
+.exercise-right-part1 .right-text{
+    width: 798px;
+    background: #f6f6f6;
+    margin-top: 18px;
+}
+.exercise-right-part1 .right-text p{
+    padding-left: 20px;
+
+}
+.exercise-right-part1 .right-text p:nth-of-type(1){
+    padding-top: 21px;
+    color: #242424;
+
+}
+.exercise-right-part1 .right-text p:nth-of-type(2){
+    padding-top: 7px;
+    color: #9b9b9b;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.right-yw{
+    height: 60px; line-height: 60px;
+}
+.right-textarea{
+    display: block;
+    width: 776px; height: 188px; border: 1px solid #dcdcdc;
+    outline: none;
+    padding-left: 19px;
+    padding-top: 25px;
+}
+.right-key p{
+    width: 700px;
+    margin-left: 34px;
+    color: #232323;
+    word-wrap:break-word;
+}
+
+#btn{
+    display: block;
+    margin-top: 100px;
+    width: 170px; height: 50px;
+    border: 2px solid #bababa;
+    background: white;
+    border-radius: 30px 30px;
+    color: #757575;
+    outline: none;
+    margin-left: 313px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#btn2{
+    display: block;
+    margin-top: 100px;
+    width: 170px; height: 50px;
+    border: 2px solid #bababa;
+    background: white;
+    border-radius: 30px 30px;
+    color: #757575;
+    outline: none;
+    margin-left: 313px;
+    border: 2px solid #01b551;
+    color: #01b551;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#btn.on{
+    border: 2px solid #01b551;
+    color: #01b551;
+}
+
+#btns{
+    display: block;
+    margin-top: 100px;
+    width: 170px; height: 50px;
+    border: 2px solid #01b551;
+    background: white;
+    border-radius: 30px 30px;
+    color: #01b551;
+    outline: none;
+    margin-left: 313px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#btns1{
+    display: block;
+    margin-top: 100px;
+    width: 170px; height: 50px;
+    border: 2px solid #01b551;
+    background: white;
+    border-radius: 30px 30px;
+    color: #01b551;
+    outline: none;
+    margin-left: 313px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

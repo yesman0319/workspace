@@ -1,0 +1,56 @@
+body,h1,h2,h3,h4,div,span,ul,li,form,input,p{  margin: 0; padding: 0;}
+em{ font-style: normal;}
+a{ text-decoration:none; outline:none; }
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+li{list-style: none;}
+img{ border:0;}
+body{ font:14px/1.5 Arial,"微软雅黑","Microsoft Yahei"; font-size: 12px; color:#555;}
+.tc{ text-align: center;}
+.fno{ clear: both;}
+.fs{ font-family: "宋体";}
+.fA{ font-family: "Arial";}
+.fb{ font-weight: bold;}
+.fw500{ font-weight: 500;}
+.fw700{ font-weight: 700;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+.f18{ font-size: 18px;}
+.f20{ font-size: 20px;}
+.f22{ font-size: 22px;}
+.f24{ font-size: 24px;}
+.f30{ font-size: 30px;}
+.f34{ font-size: 34px;}
+.lh24{ line-height: 24px;}
+.lh26{ line-height: 26px;}
+.fl{float:left;}
+.fr{float:right;}
+.auto{ margin:0 auto;}
+.cp{ cursor: pointer;}
+.c9{ color:#999;}
+.c01{ color:#010101;}
+.c3c{ color:#3c3c3c;}
+.cf{ color:#fff;}
+.c0{ color:#000;}
+.c68{ color:#68a3cd;}
+.c23{ color:#231815;}
+.mt8{ margin-top:8px;}
+.c00{ color:#00affe;}
+.cd7{ color:#d75a12;}
+.c23{ color:#231815;}
+.bjef{ background: #eff3f3;}
+.c0e{ color: #0ea5e6;}
+.c02{ color:#027dc4;}
+.c00{ color:#009944;}
+.cec{ color:#ec6941;}
+.c027{ color:#027dc4;}
+.cfe{ color:#fe0000;}
+.ced{ color:#ed6742;}
+.c007{ color:#007cc2;}
+.c8c{ color:#8cbb19;}
+.ca4{ color:#a4aeb9;}
+.cff9{ color:#ff9900;}
+
+
+
+
+

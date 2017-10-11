@@ -1,0 +1,453 @@
+
+body{
+	background: #f7f7f7;
+}
+/*顶部下载提示*/
+.download_tips{
+	width: 100%;
+	text-align: center;
+	background: #333333;
+	line-height:2.34375rem;
+	overflow: hidden;
+	padding: 0px 1.3rem;
+	position: relative;
+	box-sizing: border-box;
+}
+.c_download_tips{
+	position: fixed;
+	bottom: 0;
+}
+.download_tips span{
+	float: left;
+	color: #fff;
+	font-size: .8125rem;
+}
+.download_btn{
+	float: right;
+	display: inline-block;
+	background: #00b551;
+	color: #fff;
+	text-align: center;
+	width: 50px;
+	line-height: 20px;
+	border-radius: 3px;
+	margin-top:.5625rem;
+}
+.questions{
+	padding: 0 15px;
+	font-size: 16px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.questions h2{
+	padding: 15px 0;
+	border-bottom: 1px solid #d7d7d7;
+}
+.questions span{
+	display: inline-block;
+	padding: 15px 0px;
+	line-height: 20px;
+}
+
+/*用户口语内容*/
+.content{
+	padding: 0 15px;
+	background: #fff;
+	margin-bottom: 54px;
+}
+.content li{
+	height: 86px;
+	box-sizing: border-box;
+}
+
+.avatar{
+	float: left;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	border-radius: 25px;
+	background:#ccc;
+	margin:15px 5px 5px 0;
+	background-size: cover;
+}
+.avatar img{
+	width:100%;
+	height: 100%;
+	border-radius: 100%;
+}
+.desc{
+	margin-left: 40px;
+	overflow: hidden;
+	padding: 15px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+.content li:last-child .desc{
+	border: none;
+}
+.desc .left{
+	float: left;
+	padding-left: 5px;
+	width: 80%;
+}
+
+@media screen and (max-width: 375px) {
+	.desc .left, .cw_desc .left{
+		width: 75% !important;
+	}
+}
+@media screen and (max-width: 340px) {
+	.desc .left, .cw_desc .left{
+		width: 74% !important;
+	}
+}
+.desc .left .nickname{
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: #000;
+}
+.desc .left .audioDiv{
+	position: relative;
+	min-width: 60px;
+	max-width: 150px;
+	height: 30px;
+	border: 1px solid #00b551;
+	background: #e0ffee;
+	border-radius: 5px;
+	color: #00b551;
+}
+
+.desc .left .audioDiv .audioTime{
+	display: inline-block;
+	margin-top: 9px;
+	margin-left: 8px;
+	color: #00b551;
+}
+.desc .left .audioDiv .playImg{
+	width: 12px;
+	height: 18px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 8px;
+	background: url(../img/practice/play_img.png) no-repeat;
+	background-size: 11px;
+}
+.playing{
+	background: url(../img/practice/play_img.gif) no-repeat !important;
+	background-size: cover !important;
+}
+.desc .left .audioDiv:before{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-left: 1px solid #00b551;
+	border-bottom: 1px solid #00b551;
+	transform: rotate(45deg);
+	-ms-transform:rotate(45deg); 	
+	-moz-transform:rotate(45deg); 	
+	-webkit-transform:rotate(45deg); 
+	-o-transform:rotate(45deg);
+	left: -4px;
+	top: 8px;
+	background: #e0ffee;
+}
+
+.desc .left .writeDiv{  /*写作页面 用户写作回复*/
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 14px;
+	overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.desc .left .writeDiv a{
+	color: #000;
+	line-height: 15px;
+}
+.desc .right{
+	float: right;
+	margin-top: 5px;
+	/*text-align: center;*/
+}
+.desc .right p{
+	min-width: 30px;
+	text-align: center;
+}
+.desc .right .zan, .desc .rightc .comment{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/practice/zan_icon.png) no-repeat;
+	background-size: cover;
+	/*margin-left: 5px;*/
+}
+.desc .right .yizan{
+	background: url(../img/practice/yizan_icon.png) no-repeat;
+	background-size: cover;
+}
+.desc .rightc .comment{
+	background: url(../img/practice/comment_icon.png) no-repeat;
+	background-size: cover;
+}
+.desc .right p{
+	color: #767676;
+	margin-top: 3px;
+}
+.desc .rightc{
+	float: right;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+.desc .rightc .commentCount{
+	margin-top: 3px;
+	color: #767676;
+	text-align: center;
+}
+.goPractice{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 48px;
+	text-align: center;
+	background: #00b551;
+	font-size: 16px;
+	color: #fff ;
+}
+.goPractice:active{
+	padding: 0 1px;
+	background: green;
+}
+
+/*写作详情页面*/
+.d_detail{
+	background: #fff;
+	padding-bottom: 2%;
+	border-bottom: 1px solid #d6d6d6;
+}
+.d_info{
+	padding: 10px 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #d6d6d6;
+}
+.d_info .d_user{
+	float: left;
+	font-size: 14px;
+}
+.d_avatar{
+	width: 22px;
+	height: 22px;
+	vertical-align: -5px;
+	border-radius:11px;
+}
+.d_nickname{
+	padding-left: 5px;
+}
+
+.d_info .d_total{
+	float: right;
+	font-size: 14px;
+	margin-top: 5px;
+	padding-right: 5px;
+}
+.d_content{
+	padding: 15px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/*口语点评*/
+.main{
+	margin-bottom: 2.54375rem;
+}
+.c_content{
+	margin-bottom: 10px;
+}
+.c_content li{
+	background: #fff;
+	height: auto !important;
+	border-bottom: 1px solid #d6d6d6;
+}
+.c_content li:last-of-type{
+	border: none;
+}
+.not_more{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	padding: 5px 0;
+	border-top:1px solid  #d6d6d6;
+	display: none;
+}
+.top_layout{
+	padding: 0 15px;
+	background: #fff;
+	box-sizing: border-box;
+}
+.a_recorder{
+	padding: 10px 0;
+}
+.commtent_line{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 15px;
+}
+.c_desc{
+	border: none;
+	min-height: 26px;
+}
+.c_desc .left{
+	width: 63%;
+}
+.c_audioDiv{
+	position: relative;
+	min-width: 60px;
+	max-width: 150px;
+	height: 30px;
+	border: 1px solid #00b551;
+	background: #e0ffee;
+	border-radius: 15px;
+	color: #00b551;
+}
+.teacher_tag{
+	font-size: 10px;
+	color: #767676;
+	border: 1px solid #767676;
+	margin-left: 10px;
+	padding: 0 1px;
+}
+.c_audioDiv .audioTime{
+	display: inline-block;
+	margin-top: 9px;
+	margin-left: 8px;
+	color: #00b551;
+}
+.c_audioDiv .playImg{
+	width: 12px;
+	height: 18px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 8px;
+	background: url(../img/practice/play_img.png) no-repeat;
+	background-size: 11px;
+}
+.comment_time{
+	float: right;
+	width: 87px;
+	text-align: right;
+}
+.comment_content{
+	padding-left: 40px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	text-indent: 2em;
+	overflow: hidden;
+	position: relative;
+}
+.comment_content>span{
+	display: block;
+	word-break: break-all;
+	padding-right:15px;
+}
+.ellipsis:after{
+	content: "...";
+	position: absolute;
+	bottom: 32px;
+	right: 10px;
+}
+.comment_content p{
+	padding: 10px 0;
+	text-indent: 0;
+}
+.comment_content p .showHid_btn{
+	font-size: 14px;
+	color: #00b551;
+	float: left;
+}
+.comment_content p .delete_btn{
+	font-size: 14px;
+	color: #00b551;
+	float: right;
+	margin-right: 25px;
+}
+
+/*写作点评*/
+.cw_desc .left{
+	width: 76%;
+}
+
+/*加载更多*/
+.load_more{
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center;
+	width: 33%;
+	margin: 0 auto;
+	border: 1px solid #767676;
+	border-radius: 5px;
+}
+.load_more:active{
+	padding: 10px 1px;
+	background: #eee;
+	border: 1px solid #000;
+}
+audio{
+	width: 100%;
+	margin: 0 auto;
+}
+/*音频播放器*/
+/*.audiojsZ audio { position: absolute; left: -1px;margin: 0 auto;}*/
+.audiojsZ { width: 100%; height: 40px; background: #e4e2e3; overflow: hidden; font-family: monospace; font-size: 14px;border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);/**/
+    -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /*}*/}
+.audiojsZ .play-pauseZ { width: 12%; height: 40px; padding:1px 0 0 4px;  float: left; overflow: hidden; border-right: 2px solid #ffffff;box-sizing: border-box; }
+.audiojsZ p { display: none; width: 100%; height: 100%; cursor: pointer; }
+.audiojsZ .playZ { display: block; }
+.audiojsZ .scrubberZ { position: relative; float: left;background: #a8a8a8; width: 59%; height: 4px; margin:19px 2px 18px 2px; border-left: 0px; border-bottom: 0px;}
+.audiojsZ .progressZ { position: absolute; top: 0px; left: 0px; height: 4px; width: 0px; background: #509bfd; z-index: 1; }
+.audiojsZ .progressZ:after{  position: absolute;content: " ";background: url(../img/audioImgs/audio2.png) no-repeat;width: 30px; height: 30px;top: -10px; right:-27px;}
+.audiojsZ .loadedZ {position: absolute; top: 0px; left: 0px; height: 4px; width: 0px; background: #a8a8a8; }
+.audiojsZ .timeZ { width: 26%; float: left; font-size: 12px;height: 40px;text-align: center; line-height: 40px; margin: 0px 0px 0px 1px; padding: 0px 0px 0px 1px; border-left: 2px solid #ffffff;box-sizing: border-box; color: #000000; font-family:"Microsoft YaHei",微软雅黑!important; }
+.audiojsZ .timeZ em { padding: 0px 2px 0px 0px; color: #000000; font-style: normal; }
+.audiojsZ .timeZ strong { padding: 0px 0px 0px 1px; font-weight: normal; }
+.audiojsZ .error-messageZ { float: left; display: none; margin: 0px 10px; height: 40px; width: 65%; overflow: hidden; line-height: 40px; white-space: nowrap; color: #fff;
+    text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; }
+.audiojsZ .error-messageZ a { color: #eee; text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #999; white-space: wrap; }
+.audiojsZ .playZ { background: url('../img/audioImgs/audio1.png') center center no-repeat; }
+.audiojsZ .loadingZ { background: url('../img/audioImgs/loadimg.gif') center center no-repeat; background-size:19px;}
+.audiojsZ .errorZ { background: url('../img/audioImgs/audio1.png') center center no-repeat; }
+.audiojsZ .pauseZ { background: url('../img/audioImgs/audio3.png') center center no-repeat }
+
+.playingZ .playZ, .playingZ .loadingZ, .playingZ .errorZ { display: none; }
+.playingZ .pauseZ { display: block; }
+
+.loadingZ .playZ, .loadingZ .pauseZ, .loadingZ .errorZ { display: none; }
+.loadingZ .loadingZ { display: block; }
+
+.errorZ .timeZ, .errorZ .playZ, .errorZ .pauseZ, .errorZ .scrubberZ, .errorZ .loadingZ { display: none; }
+.errorZ .errorZ { display: block; }
+.errorZ .play-pauseZ p { cursor: auto; }
+.errorZ .error-messageZ { display: block; }
+@media screen and (min-width: 375px) {
+	.audiojsZ .scrubberZ{
+		width: 62%;
+	}
+	.audiojsZ .timeZ{
+		width: 24%;
+	}
+}
+@media screen and (min-width: 413px) {
+	.audiojsZ .scrubberZ{
+		width: 64%;
+	}
+	.audiojsZ .timeZ{
+		width: 22%;
+	}
+}

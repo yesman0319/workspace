@@ -1,0 +1,58 @@
+'use strict';
+
+define(function(){
+  return [
+      '<div class="right-part1">',
+
+      //'<p class="p1 bold black mleft25"><img src="../../i/list-pic.png" style="margin-left:   -6px;margin-right:10px;"><span>第{{data.groupSeqNum}}单元结果</span><span class="unit"><a id="selectUnit" href="#" >选择单元</a></span></p>',
+      '<p class="p1 bold black mleft25"><img src="../../i/list-pic.png" style="margin-left:   -6px;margin-right:10px;"><span>{{data.title}}</span><span class="unit"><a id="selectUnit" href="#" ></a></span></p>',
+      '<hr class="mleft25">',
+      '<div class="practice-result">',
+        '<img src="../../i/i23.png" class="result-img1">',
+        '<div class="i25 correctWrong">',
+            '{{if null != data.avg_speed && "" != data.avg_speed}}',
+                '<p class="font12"><img src="{{data.imgUrl}}"></p>',
+            '{{/if}}',
+            '<span class="font12 re_orange">{{data.isBest?"最好成绩：":"本次练习："}}</span>',
+            '<span class="font12 re_orange  mright10">正确率：{{data.rate}}%</span>',
+            '{{if null != data.avg_speed && "" != data.avg_speed}}',
+              '<span class="font12 marginTop re_orange mright10">平均速度：{{data.avg_speed}}/空</span>',
+            '{{/if}}',
+        '</div>',
+        '<p class="dic-colortip" id="color_sample">',
+          '颜色示例：',
+          '<span>',
+            '<a href="##" rel="prev" class="dic-ball-blue dic-roundstyle"></a>',
+            '全对',
+          '</span>',
+          '<span>',
+            '<a href="##" rel="prev" class="dic-borange dic-roundstyle"></a>',
+            '部分正确',
+          '</span>',
+          '<span>',
+            '<a href="##" rel="prev" class="dic-bred dic-roundstyle"></a>',
+            '全错',
+          '</span>',
+        '</p>',
+        '<p class="dic-tip" id="dic_percent_tip">正确率是按照做对的空格计算的哦</p>',
+       // '<span class="gram-result result-orange"></span>',
+      '</div>',
+	   '<nav class="pagination4 center">',
+	   '{{each data.records as value index}}',
+	      '<span class="page">',
+	      '<a href="##" rel="prev" {{if value.is_correct == 1}}class="dic-ball-blue"{{else if value.is_correct == 2}}class="dic-bred"{{else}}class="dic-borange"{{/if}}>{{value.question_sequence_number}}</a>',
+	     	'</span>',
+	    '{{/each}}',
+	   '</nav>',
+      '<div class="two-button2">',
+	 '<button type="button" class="btn9 btn btn-primary active " id="listen-write-repeat" >再练一遍</button>',
+    '<button type="button" class="btn2 btn btn-primary active" id="listen-write-onlywrong">重做错题</button>',
+//  '<button type="button" class="btn btn-primary btn1" id="btnDictNextUnit" {{if data.isLockNextGroup}}disabled{{/if}}>再来一遍</button>',
+		'<button type="button" class="btn btn-primary btn1" id="btnDictDone">完成</button>',
+     '</div>',
+	 '<div style="clear:both;"></div>',
+
+    '</div>'
+
+  ].join('')
+})

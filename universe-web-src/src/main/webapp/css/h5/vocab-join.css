@@ -1,0 +1,444 @@
+@import "../components/circle-progress.css";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffb44d, #ab6301);
+}
+html #init-page,
+body #init-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1111;
+}
+html #init-page div,
+body #init-page div {
+  width: 100%;
+  text-align: center;
+  padding-top: 45%;
+}
+html #init-page div p,
+body #init-page div p {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 150px;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+html #init-page div p i,
+body #init-page div p i {
+  color: #f18b00;
+  margin-right: 10px;
+  font-size: 22px;
+}
+html #init-page div #goJoin,
+body #init-page div #goJoin {
+  display: inline-block;
+  width: 160px;
+  height: 46px;
+  border-radius: 10px;
+  background: #f18b00;
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: #ffffff;
+  padding-top: 2px;
+  box-sizing: border-box;
+  animation-duration: .8s;
+  animation-timing-function: ease;
+  animation-delay: .1s;
+}
+html #question-page,
+body #question-page {
+  height: 100%;
+  position: relative;
+}
+html section,
+body section {
+  width: 100%;
+  box-sizing: border-box;
+}
+html #myAudio,
+body #myAudio {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+html #animate-stem,
+body #animate-stem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffb44d, #ab6301);
+  z-index: 999;
+  text-align: center;
+  display: none;
+}
+html #animate-stem div,
+body #animate-stem div,
+html #animate-stem span,
+body #animate-stem span {
+  position: absolute;
+  width: 90%;
+  height: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+html #animate-stem .check,
+body #animate-stem .check {
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50% ;
+  background: #ffffff;
+  color: #13ce66;
+  font-size: 46px;
+  animation: check-zoomIn 0.9s cubic-bezier(0.2, 0.8, 0.9, 0.3);
+}
+html #animate-stem .animated-result,
+body #animate-stem .animated-result {
+  opacity: 0;
+  animation: stem-zoomIn 1.2s cubic-bezier(0.2, 0.8, 0.8, 0.5);
+  animation-delay: 1s;
+}
+html #animate-stem .animated-result p,
+body #animate-stem .animated-result p {
+  font-size: 22px;
+  color: #ffffff;
+}
+.nav {
+  position: relative;
+  height: 10%;
+  padding: 5px 0px;
+}
+.nav .title {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  color: #ffffff;
+  font-size: 16px;
+}
+.nav #circleWrapper {
+  float: right;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-right: 10px;
+}
+.nav #circleWrapper span {
+  color: #ffffff;
+}
+.stem {
+  height: 16%;
+  padding-top: 60px;
+}
+.stem p {
+  text-align: center;
+  font-size: 26px;
+  color: #ffffff;
+}
+.options {
+  height: 44%;
+  padding: 0px 20px 10px 20px;
+}
+.options ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.options ul li {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 30px;
+  padding-top: 2px;
+  margin: 10px 20px;
+  box-sizing: border-box;
+}
+.options ul li span {
+  color: #f18b00;
+  font-size: 22px;
+  font-weight: bold;
+}
+.options ul li:last-child {
+  clear: both;
+}
+.options ul li.animate-back {
+  transition: all .6s;
+}
+.options ul li.is-dragging {
+  z-index: 9999;
+}
+.options ul a {
+  width: 60px;
+  height: 60px;
+  margin: 10px 20px;
+  padding-top: 2px;
+  opacity: 0;
+}
+.result {
+  height: 20%;
+}
+.result ul {
+  width: 70%;
+  height: 54px;
+  border-radius: 27px;
+  border: 2px #fff solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s, background 0.3s;
+}
+.result ul.highlight {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale3d(1.08, 1.08, 1);
+}
+.result ul.shake {
+  box-shadow: 0px 0px 65px #ff4949;
+  border-color: #ff4949;
+  -webkit-animation: shake 1s 1;
+  animation: shake 1s 1;
+}
+.result ul.correctLight {
+  border-color: #13ce66;
+}
+.result ul.wrongLight {
+  border-color: #ff4949;
+}
+.result ul li {
+  margin-top: 10px;
+}
+.result ul li .text-line {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px 5px;
+}
+.result ul li .text-show {
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 10px;
+}
+.progress {
+  position: absolute;
+  bottom: 20px;
+  height: 10%;
+}
+.progress .total-bar {
+  width: 60%;
+  margin: auto;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+.progress .total-bar .load-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background: #324057;
+  border-radius: 4px;
+}
+.progress .detail {
+  text-align: center;
+}
+.progress .detail p {
+  color: #ffffff;
+}
+.progress .detail p.percent-show {
+  font-size: 24px;
+}
+.progress .detail p.text {
+  font-size: 16px;
+}
+#result-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffb44d, #ab6301);
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+#result-page section {
+  width: 100%;
+}
+#result-page section.banner div {
+  background: rgba(0, 0, 0, 0.2);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+#result-page section.detail {
+  width: 80%;
+  height: 100px;
+  margin: 150px auto 0px;
+}
+#result-page section.detail p {
+  font-size: 24px;
+  color: #ffffff;
+  padding: 30px 0px;
+  text-align: center;
+  opacity: 0;
+  animation: slideInLeft 1s ease;
+  animation-delay: 0.1s;
+}
+#result-page section.detail p:last-child {
+  animation-delay: 0.8s;
+}
+#result-page section.detail p i {
+  margin-right: 10px;
+}
+#result-page .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+@keyframes stem-zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+@keyframes check-zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+    transform: scale(4);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    font-size: 10px;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    font-size: 24px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0%, 0);
+    transform: translate3d(100%, 0%, 0);
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    background: #324057;
+  }
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+  #init-page {
+    width: 800px !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 340px) {
+  .options ul li {
+    margin: 10px !important;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+  }
+  .options ul li a {
+    margin: 10px !important;
+  }
+  .stem {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 410px) {
+  .options ul li {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 32px;
+  }
+}

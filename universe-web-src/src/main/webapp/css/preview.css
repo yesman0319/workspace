@@ -1,0 +1,278 @@
+.pre-box{
+	width: 1050px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 125px;
+	margin-bottom: 90px;
+	border: 1px solid #dadada;
+	padding: 0px 30px;
+	box-sizing: border-box;
+}
+/*顶部标题部分*/
+.pre-title{
+	width: 990px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #dadada;
+}
+.pre-list-title, .pre-card-title{
+	font-size: 18px;
+	/*font-weight: bold;*/
+}
+.pre-title>img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+/*横幅 单词计数 切换按钮 部分*/
+.pre-banner{
+	width: 990px;
+	height: 80px;
+	line-height: 80px;
+}
+.pre-banner .bleft{
+	font-size: 16px;
+	font-weight: bold;
+}
+.pre-banner .bleft .vocaNum{
+	font-size: 16px;
+	font-weight: bold;
+}
+.pre-banner img{ 
+	float: right;
+	position: relative;
+	top: 20px;
+	cursor: pointer;
+	width: 98px;
+	height: 34px;
+}
+
+/*下部主要内容部分 -----词汇列表*/
+.pre-main{
+	padding-bottom:80px;
+}
+.pre-main li{
+	height: 60px;
+	font-size: 16px;
+}
+.pre-main li a{
+	display: block;
+	font-size: 0px;
+}
+.pre-main li a span{
+	font-size: 16px;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+}
+.pre-main li a .voca-wrap{
+	display: inline-block;
+	margin-left: 20px;
+	width: 350px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pre-main li a .vocab{
+	max-width: 165px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pre-main li a .soundmark{
+	margin-left: 15px;
+	max-width: 170px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pre-main li a .shiyi{
+	margin-left: 10px;
+	width: 550px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pre-mian-list:nth-child(2n-1){
+	background: #fafafa;
+}
+.pre-main li:hover{
+	background: #ececec;
+}
+.pre-main li:hover a span{
+	color: #00b551;
+}
+.pre-main li .horn_icon{
+	display: inline-block;
+	width: 21px;
+	height: 19px;
+	background: url(../i/preview/horn_icon.png) no-repeat;
+	margin-left: 10px;
+	position: relative;
+	top: -20px;
+	background-size: cover;
+}
+.pre-main li .horn_icon.playing{
+	background: url(../i/preview/playing_icon.gif) no-repeat;
+	width: 26px;
+	height: 26px;
+	background-size: cover;
+	margin-left: 7px;
+	top: -17px;
+}
+
+
+/*下部主要内容部分 -----词汇卡片*/
+.pre-main-card{
+	width: 760px;
+	margin: 0 auto;
+	padding-bottom:60px;
+}
+.cbanner{
+	width: 760px;
+	height: 60px;
+	line-height: 60px;
+	border-top:4px solid #00B551;
+	border-bottom: 1px solid #ededed;
+}
+.cbanner .card-horn{
+	display: inline-block;
+	width: 36px;
+	height: 32px;
+	background: url(../i/preview/c_horn_icon.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+	background-size: cover;
+}
+.cbanner .card-horn.cplaying{
+	background: url(../i/preview/cplaying_icon.gif) no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 36px;
+	margin-left: 28px;
+	margin-top: 11px;
+}
+.c-switch{
+	display: inline-block;
+	width: 78px;
+	height: 30px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.card-bd{
+	height: 430px;
+	background: #F8F8F8;
+	padding: 60px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-bd .c-voca{
+	font-size: 26px;
+	font-family: "微软雅黑";
+	text-align: center;
+	margin-bottom: 50px;
+}
+.card-bd .c-soundmark{
+	font-size: 22px;
+	color: #767676;
+	text-align: center;
+	margin-bottom:30px;
+}
+.card-bd .c-shiyi-btn{
+	display: block;
+	text-decoration: underline;
+	font-size: 18px;
+	color: #00b551;
+	width: 72px;
+	margin: 0 auto;
+	margin-bottom:30px;
+	cursor: pointer;
+}
+.card-bd .c-shiyi{
+	font-size: 24px;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 80px;
+	font-family: "黑体";
+}
+#prev-btn{
+	width: 60px;
+	height: 60px;
+	background: #CCCCCC;
+	border-radius: 30px;
+	position: absolute;
+	top: 165px;
+	left: -30px;
+	cursor: pointer;
+	display: none;
+}
+#next-btn{
+	width: 60px;
+	height: 60px;
+	background: #CCCCCC;
+	border-radius: 30px;
+	position: absolute;
+	top: 165px;
+	left: 730px;
+	cursor: pointer;
+	display: none;
+}
+#next-btn:hover, #prev-btn:hover{
+	background: #8F8F8F;
+}
+ 
+.rarrow_icon{
+	width: 11px;
+	height: 17px;
+	background: url(../i/preview/rarrow_icon.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 22px;
+	left: 13px;
+}
+.larrow_icon{
+	width: 11px;
+	height: 17px;
+	background: url(../i/preview/larrow_icon.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 22px;
+	left: 36px;
+}
+
+/*完成按钮*/
+.card-btn-box{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	margin-top: 30px;
+}
+#card-done-btn{
+	position: absolute;
+	width: 100px;
+	height: 36px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #E5F7ED;
+	border-radius: 18px;
+	border: 1px solid #00B551;
+	color: #00B551;
+}
+.list-btn-box{
+	padding: 20px 0 20px 20px;
+}
+#list-done-btn{
+	color:#00B551;
+	text-decoration: underline;
+}
+/*此模块不显示回到顶部图标*/
+.return-top{
+	display: none;
+}

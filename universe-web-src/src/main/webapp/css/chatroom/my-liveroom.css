@@ -1,0 +1,170 @@
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner .bg{
+	width: 100%;
+}
+.my-info{
+	position: absolute;
+	left: 20px;
+	top: 100px;
+}
+.my-info .lm-head{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-radius: 10px;
+}
+.my-info .info-box{
+	float: left;
+	margin-left: 15px;
+	
+}
+.my-info .info-box p{
+	color: #fff;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.my-info .info-box .lm-name{
+	font-size: 16px;
+	font-weight: bold;
+}
+.create-topic{
+	width: 100%;
+	padding: 10px 5%;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.create-topic a{
+	color: #fff;
+	display: inline-block;
+	width: 44%;
+	height: 40px;
+	color: #fff;
+	background: #F84C69;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+}
+.create-topic a:last-child{
+	margin-left: 10%;
+}
+.my-course{
+	background: #fff;
+}
+.mui-control-content{
+	/*background: #fff;*/
+	padding: 10px 5%;
+	overflow: hidden;
+}
+.mui-control-content dl{
+	float: left;
+	width: 45%;
+}
+.mui-control-content dl>a{
+	display: block;
+	width: 100%;
+}
+.mui-control-content dl:nth-child(2n){
+	margin-left:10%;
+}
+.mui-control-content dl img{
+	width: 100%;
+	border-radius: 5px;
+}
+.course-name{
+	color: #505559;
+	font-weight: bold;
+}
+.course-related{
+	font-size: 12px;
+}
+.course-related a{
+	color: #ccc;
+	float: right;
+}
+.topics{
+	width: 100%;
+}
+.topics li{
+	width: 100%;
+	height: 100%;
+	padding: 10px 0px;
+	border-bottom: 1px solid #fafafa;
+}
+.topics li a{
+	display: block;
+	overflow: hidden;
+}
+.topics li a .left{
+	float: left;
+	position: relative;
+	width: 45%;
+}
+.topics li a .left mark{
+	position: absolute;
+	padding: 0px 5px;
+	background: #F5431E;
+	bottom: 12px;
+	left: 10px;
+	font-size: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+.topics li a .left img{
+	width: 100%;
+	border-radius:5px;
+	font-size: 0px;
+}
+.topics li a .right{
+	position: relative;
+	float: left;
+	display: block;
+	height: 100px;
+	width: 50%;
+	margin-left: 5%;
+	height: 100%;
+}
+.topics li a .right p{
+	padding-bottom: 5px;
+}
+.topics li a p span i{
+	margin-right: 4px;
+}
+.topics li a .right .title{
+	font-size: 15px;
+	font-weight: bold;
+	color: #767676;
+}
+.topics li a .right .status{
+	font-size: 13px;
+}
+.topics li a .right .status .living{
+	color:#2984e2;
+}
+.topics li a .right .status .start-time{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.topics li a .right .detail{
+	font-size: 12px;
+	color: #ccc;
+	padding-top: 10px;
+}
+
+.topics li a .right .detail .tool{
+	float: right;
+}
+/*媒体查询*/
+@media screen and (min-width:640px) {
+	html{
+		background: #fff;
+	}
+	body{
+		position: relative;
+		width: 640px;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,35 @@
+@import "src/layout.css";
+@import "src/layoutvoca.css";
+@import "src/layoutcorrect.css";
+@import "src/layoutcenter.css";
+@import "src/layoutgram.css"; 
+@import "src/layoutlogin.css";
+@import "src/layoutdic.css";
+@import "src/layoutwritecorrect.css";
+@import "src/layoutremember_write.css";
+/*@import "src/layoutteachercorrect.css";*/
+@import "src/layouthomepage.css";
+ @import "src/layouttingli.css";
+ @import "src/application.css";
+ @import "src/audio.css";
+ @import "src/result.css";
+@import "src/footer.css"; 
+@import "src/page.css";
+@import "src/reset.css";
+@import "src/icon.css";
+@import "src/font.css";
+@import "src/style.css";
+@import "src/button.css";
+@import "src/table.css"; 
+@import "src/layoutfeedback.css";
+ @import "src/application.css";
+ @import "src/layoutrepeat.css";
+@import "src/layouttpo.css";
+@import "src/layoutscore.css";
+@import "src/layoutgradecorrect.css";
+@import "src/layoutjijingspeak.css"; 
+@import "src/reviselogin.css";
+@import "src/black-overlay.css";
+@import "src/tpo_newlayout.css";
+@import "src/new-shop.css";
+

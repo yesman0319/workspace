@@ -1,0 +1,341 @@
+.artc{
+    width: 100%;
+}
+
+.exercise-content{
+    width: 100%; background: #f1f2f6;
+    float: left;
+}
+.exercise-content-wrap{
+    width: 850px;
+    margin: 30px auto;
+    margin-bottom: 132px;
+}
+.spoken{
+	padding: 0;
+}
+
+.exercise-right-part1{
+    width: 850px;
+    border: 1px solid #dcdcdc;
+    background: white;
+
+}
+.right-cen{
+    width: 850px;
+    margin-left: 31px;
+    position: relative;
+
+}
+.right-cen h1{
+    height: 60px;
+
+}
+.right-cen h1 img{
+    margin-top: 18px;
+    margin-right: 15px;
+    float: left;
+}
+.right-cen h1 span{
+    line-height: 60px;
+    float: left;
+    font-size: 15px;
+    color: #767676;
+}
+.right-cen p:nth-of-type(2){
+    color: #232323;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.right-bot{
+    width: 777px;
+}
+
+.right-bot p{
+    height: 50px;
+    line-height: 50px;
+}
+.right-bot p:nth-of-type(1){
+    color: #149de5;
+}
+.right-bot p:nth-of-type(2){
+    color: #01b552;
+}
+.right-bot p img{
+    display: block;margin-top:15px;
+    float: left;
+    margin-right: 15px;
+}
+
+.right-audio{
+    width: 754px;
+    height: 46px;
+    background: #f5f5f5;
+    margin-left: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.autoPlay {
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #00b652;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline: none;
+    border: none;
+}
+.stopPlay{
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #00b652;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    outline: none;
+    border: none;
+}
+.zhezhao{
+    width: 850px;
+    height: 300px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+.right-myaudio{
+    width: 850px;
+    overflow: hidden;
+}
+.right-myaudio img{
+    display: block;
+    margin-left: 305px;
+    margin-top: 84px;
+}
+.right-myaudio img:nth-of-type(2){
+    display: none;
+    margin-left: 280px;
+    margin-top: 55px;
+}
+.right-myaudio img:nth-of-type(3){
+    display: none;
+}
+.right-myaudio img:nth-of-type(4){
+    display: none;
+}
+.right-btn{
+    width: 850px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.right-btn button{
+    width: 97px; height: 30px;
+    border-radius: 20px 20px;
+    background: no-repeat;
+    outline: none;
+    border: none !important;
+    font-size: 14px !important;
+}
+.right-btn .btn1{
+    display: inline-block;
+    display: none;
+    /*border: 1px solid #ff5959;*/
+    color: #ff5959;
+    float: left;
+    margin-right: 29px;
+    font-weight: bold;
+}
+.speakre-record{
+	margin-left: 214px !important;
+}
+.right-btn .btn2{
+    display: inline-block;
+    display: none;
+    border: 1px solid #519bfc;
+    color: #519bfc;
+    font-weight: bold;
+    display: none;
+}
+.right-btn .btn3{
+    display: inline-block;
+    border: 1px solid #519bfc;
+    color: #519bfc;
+    font-weight: bold;
+    margin-left: 300px;
+}
+
+.right-btn .btn4{
+    display: inline-block;
+    display: none;
+    border: 1px solid #519bfc;
+    color: #519bfc;
+    font-weight: bold;
+}
+
+
+
+.right-particulars{
+    width: 800px;
+    height: 50px;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+.right-particulars h1{
+    line-height: 50px;
+    font-size: 18px;
+    color: #222222;
+}
+
+.ps{
+    width: 750px;
+    color: #232323;
+}
+
+
+.bar1 {
+    height: 4px;
+    width: 636px;
+    background: #a8a8a8;
+    border-radius: 10px;
+    position: absolute;
+    top: 46%;
+    left: 70px;
+}
+.bar1 .finesh{
+    height: 100%;
+    width: 0px;
+    background-color: #00b652;
+    border-radius: 5px;
+}
+.tishi{
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #00b54e;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline: none;
+    border: none;
+}
+
+.tishi1{
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #00b54e;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    outline: none;
+    border: none;
+}
+
+.bar2 {
+    height: 4px;
+    width: 636px;
+    background: #a8a8a8;
+    border-radius: 10px;
+    position: absolute;
+    top: 46%;
+    left: 70px;
+}
+.bar2 .finesh {
+    height: 100%;
+    width: 0px;
+    background-color: #519bfe;
+    border-radius: 5px;
+}
+.my{
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #539bff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline: none;
+    border: none;
+}
+
+.my1{
+    width: 50px;
+    height: 44px;
+    background: #f5f5f5;
+    font-size: 24px;
+    line-height: 44px;
+    left: 10px;
+    border-right: 2px solid white;
+    text-align: center;
+    color: #539bff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    outline: none;
+    border: none;
+}
+
+
+.dashed{
+    border-bottom: 1px dashed #949494;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    width: 850px;
+    overflow: hidden;
+}
+
+.once{
+    width: 170px;height: 50px;
+    margin-left: 295px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 10px 10px;
+    color: #f7f9ec;
+    font-weight: bold;
+    background: #fc5c5e;
+    border: none;
+    outline: none;
+}
+
+
+.spoken .bar{height: 4px;width: 636px;border: 1px solid #AAA;border-radius: 10px; position:absolute;top: 46%;left: 70px;}
+.spoken .bar .finish{height: 100%;background-color: #00b652;border-radius: 5px;}
+.spoken .autoPlay img{position:absolute;top:12px;left:14px;height:21px;width:21px;}
+
+
+
+
+

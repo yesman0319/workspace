@@ -1,0 +1,64 @@
+.exercise-pre-box{
+	width: 1050px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 125px;
+	margin-bottom: 90px;
+	border: 1px solid #dadada;
+	padding: 0px 30px;
+	box-sizing: border-box;
+}
+/*顶部标题部分*/
+.exercise-pre-title{
+	width: 990px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #dadada;
+}
+.pre-list-title, .pre-card-title{
+	font-size: 18px;
+	/*font-weight: bold;*/
+	vertical-align: -3px;
+}
+.exercise-pre-title>img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.ep-mod h2{
+	font-size: 16px;
+}
+.ep-mod p, .ep-mod div ,.ep-mod ul{
+	padding: 3px 15px 5px 15px;
+}
+.ep-mod p, .ep-mod div ,.ep-mod ul li{
+	font-size: 15px;
+}
+#exercise-pre-main{
+	margin: 15px 0 20px 0;
+}
+.exercise-pre-banner{
+	margin: 10px 0;
+}
+.exercise-pre-banner img{
+	width: 100%;
+	height: 254px;
+}
+.ep-btn{
+	display: block;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    border: 2px solid #00bb51;
+    background: #F3FBF7;
+    border-radius: 25px 25px;
+    color: #00BB51;
+    outline: none;
+    margin: 30px auto;
+    cursor: pointer;
+}
+.have-learned{
+	border: 2px solid #bababa;
+	color: #757575;
+	background: #fff;
+}

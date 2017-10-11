@@ -1,0 +1,43 @@
+input{ border: 0; background: none;}
+.header{ height: 99px; width: 100%; border-bottom: 1px solid #e5e5e5;}
+.header-wrap{ width: 1000px; overflow: hidden;}
+.logo-box{ padding:25px 0 0 0;}
+.registeredText{ line-height: 99px; color:#000; text-indent: 35px;}
+
+.main{ width: 100%; overflow: hidden;}
+.main-wrap{ width: 1000px; padding:90px 0 140px 0; overflow: hidden;}
+.registered-box{ width: 683px; border-right:1px solid #e2e2e2; overflow: hidden; margin-right: 27px;}
+
+.tr-box{ line-height: 40px; height: 70px; overflow: hidden; margin-bottom: 10px; }
+.btn-box{ width: 290px; height: 40px;  padding:0 10px 0 15px;}
+.textBtn{ height: 38px; *height:37px; line-height: 38px; border:1px solid #ccc; width: 278px; font-size: 14px; padding-left: 10px; border-radius:2px;}
+.name-box{   text-align: right; width: 100px; height: 40px;}
+.error-box{ width: 215px;}
+.error-box div{ height: 20px; line-height: 20px;}
+.pass-box{ width: 156px; height: 8px; position: relative; margin-left: 15px;}
+.passIcon,.inPassIcon{ position: absolute; top: 5px; left: 0; display: block; width: 156px; height: 8px; }
+.passIcon{ background: url("../images/passIcon.png") no-repeat; z-index: 1;}
+.inPassIcon{ z-index: 2; }
+.checkIcon{ width: 13px; height: 13px; margin-right: 8px; display: block; background: url("../images/ck.png") no-repeat;}
+.checkIcon.active{ background: url("../images/ckY.png") no-repeat;}
+.terms{ height: 13px; line-height: 14px; margin-bottom: 21px;}
+.reg-box{ width: 100%; height: 66px; }
+.r-box{  padding:0 10px 0 15px;}
+.submitBtn{ display: block; width:106px; height: 32px; line-height: 32px; background: url("../images/submitIcon.png") no-repeat; }
+.Login-box{  width: 230px;}
+.lt{ height: 54px; line-height: 54px;}
+.l-box{ height: 50px; width: 100%;}
+.dlIcon{ width: 79px; height: 28px; display: block; color: #010101; font-size: 14px; line-height: 28px; text-align: center; background: url("../images/dl.png") no-repeat;}
+.hz{ height: 53px; line-height: 53px;}
+.fx{ font-size: 14px; margin-left: 20px;}
+.fx a{ color:#4f7bf2; margin-right: 25px;}
+/*.qqIcon,.sinaIcon,.RenIcon{ display: block;}*/
+.qqIcon{ width:16px; height: 16px; background: url("../images/qq.png") no-repeat; margin:2px 5px 0 0;}
+.sinaIcon{ width: 18px; height: 15px; background: url("../images/sn.png") no-repeat; margin:2px 4px 0 0;}
+.RenIcon{ width: 16px; height: 16px; background: url("../images/rr.png") no-repeat; margin:2px 4px 0 0;}
+
+#emailTip,#pwdTip{color: red}
+
+.footer{ height: 37px; border-top: 1px solid #e5e5e5;}
+.footer p a{ color: #8b8b8d; padding-right: 23px;}
+.footer p{ line-height: 37px;}

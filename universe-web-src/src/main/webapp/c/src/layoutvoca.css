@@ -1,0 +1,18 @@
+/* p.p1{padding-left: 27px;padding-top: 20px;margin-bottom: -8px;} */
+p.p2{padding-left: 7px;margin-bottom: -8px;min-width: 200px;width:auto!important;height:26px;margin-top:20px;line-height: 26px;}
+div.table{width:645px;height:80px;background:#f8f8f8;border-radius: 8px;margin-left: 40px;line-height: 60px}
+.choiceVol:hover{background:#767676;width:22px;height: 22px;}
+.choiceVolErr:hover{background:#767676;width:22px;height: 22px;}
+
+/*20170926*/
+
+.volStemImgWrap{
+	max-width: 400px;
+	margin: 40px auto 0px;
+}
+.volStemImgWrap img{
+	width: 100%;
+}
+
+
+

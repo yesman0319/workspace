@@ -1,0 +1,249 @@
+body{
+    height:100%;
+    width: 100%;
+    background: #f5f5f5;
+}
+.main{
+    margin:30px auto 120px;
+    padding:0 30px;
+    width:990px;
+    border:1px solid #dadada;
+    background:#fff;
+    min-height: 624px;
+}
+.main h2{
+    padding-left:36px;
+    font-size:18px;
+    font-weight: normal;
+    line-height:70px;
+    border-bottom:1px solid #dcdcdc;
+    background: url("../i/plan/audio-star.png") 2px center no-repeat;
+}
+.main .nav{
+    height:70px;
+}
+.main .nav .nav-name{
+    line-height:70px;
+    font-size:18px;
+}
+.main .nav .nav-time{
+    display:block;
+    float:right;
+    width:100px;
+    font-size:14px;
+    text-align:center;
+    line-height: 70px;
+}
+.audio-list li{
+    height:60px;
+    width:100%;
+}
+.audio-list .gray{
+    background:#fafafa;
+}
+.audio-list li a{
+    display:block;
+    height:100%;
+    width:100%;
+}
+.audio-list li a .ic-play{
+    display:none;
+    margin-top:17px;
+    margin-left:4px;
+    height:26px;
+    width:26px;
+    background:url("../i/plan/i20.gif") no-repeat;
+}
+
+.audio-list li a .li-num{
+    display:block;
+    height:60px;
+    line-height:60px;
+    width:30px;
+    text-align:right;
+    font-size:16px;
+}
+.audio-list li a .li-title{
+    display:block;
+    margin-left:10px;
+    height:60px;
+    line-height:60px;
+    max-width:530px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size:16px;
+}
+
+.audio-list li a .li-free{
+    display: block;
+    margin-left:16px;
+    margin-top:21px;
+    height: 18px;
+    line-height: 18px;
+    width: 46px;
+    text-align: center;
+    border: 1px solid #00b551;
+    border-radius: 5px;
+    color: #00b551;
+}
+.audio-list li a .li-time{
+    display:block;
+    height:60px;
+    line-height:60px;
+    width:100px;
+    text-align: center;
+    font-size:16px;
+}
+/*播放当前音频时样式*/
+.audio-list .playing .ic-play{
+    display:block;
+}
+.audio-list .playing .li-num{
+    display:none;
+}
+.audio-list .playing .li-title,.audio-list .playing .li-time{
+    color:#00b551;
+}
+/*暂停当前音频*/
+.audio-list .stop .ic-play{
+    display:block;
+    background:url("../i/plan/i20.png") no-repeat;
+}
+.audio-list .stop .li-num{
+    display:none;
+}
+.audio-list .stop .li-title,.audio-list .stop .li-time{
+    color:#00b551;
+}
+/*未购买*/
+.audio-list .not-buy a{
+    cursor:default;
+}
+.audio-list .not-buy .li-num,.audio-list .not-buy .li-title,.audio-list .not-buy .li-time{
+    color:#767676;
+}
+
+/*播放框*/
+.play-box{
+    position: fixed;
+    bottom:-80px;
+    width:100%;
+    height:80px;
+    background:#e4e4e4;
+}
+.play-box #wrapper{
+    position: relative;
+    margin:0 auto;
+    padding:0 31px;
+    height:100%;
+    width:990px;
+
+}
+.play-box #wrapper #a_prev{
+    display:block;
+    float:left;
+    margin-left:56px;
+    margin-top:26px;
+    height:28px;
+    width:22px;
+    background:url("../i/preview/ess-pre-btn.png") no-repeat;
+}
+.play-box #wrapper #a_next{
+    display:block;
+    float:left;
+    margin-left:26px;
+    margin-top:26px;
+    height:28px;
+    width:22px;
+    background:url("../i/preview/ess-next-btn.png") no-repeat;
+}
+.play-box #wrapper .split{
+    position:absolute;
+    font-size:16px;
+    color:#232323;
+    right:84px;
+    top:28px
+}
+.audioplayer-playpause a{
+	display:none!important;
+}
+.audioplayer-playpause{
+    position:absolute;
+    left:31px;
+    top:25px;
+    height:30px;
+    width:22px;
+    background:url("../i/preview/ess-play-btn.png") no-repeat;
+    cursor:pointer;
+}
+.audioplayer-playing .audioplayer-playpause{
+    background:url("../i/preview/ess-stop-btn.png") no-repeat;
+}
+.audioplayer-bar {
+    position:absolute;
+    top:38px;
+    left:182px;
+    width:708px;
+    height: 4px;
+    background: #9d9d9d;
+    cursor:pointer;
+}
+.audioplayer-bar-played{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#00b551;
+}
+.audioplayer-bar-played:after {
+    position: absolute;
+    content: "";
+    right: -8px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#fff;
+    border:2px solid #00bb51;
+}
+
+
+.audioplayer-time{
+    display:inline-block;
+    position: absolute;
+    line-height:80px;
+    width:60px;
+    text-align: center;
+    font-size:16px;
+}
+.audioplayer-time-current{
+    right:84px;
+}
+.audioplayer-time-duration{
+    right:31px;
+}
+.audioplayer-volume{
+    position: absolute;
+    left:182px;
+    top:0;
+    line-height:38px;
+    height:38px;
+}
+.audioplayer-volume .audioplayer-volume-button{
+    line-height:38px;
+    height:38px;
+    font-size:14px;
+    max-width: 530px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.audioplayer-volume .audioplayer-volume-button a{
+    display:none;
+}
+.footer1{
+    position:relative;
+}

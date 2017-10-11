@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="width">
+        <img class="fl logo" src="../i/logo.png" alt="精英计划"/>
+        <ul class="fl nav">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">直播</a></li>
+            <li><a href="javascript:;">学习计划</a></li>
+            <li><a href="javascript:;">资料</a></li>
+            <li><a href="javascript:;">回放</a></li>
+            <li><a href="javascript:;">FAQ</a></li>
+        </ul>
+        <div class="fr lg" >
+            <a href="login.html" class="login fl cur"><span>登录</span></a>
+            <a href="register.html" class="register fl"><span>注册</span></a>
+        </div>
+    </div>
+</div>

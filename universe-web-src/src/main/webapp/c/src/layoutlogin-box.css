@@ -1,0 +1,8 @@
+.login-box{width: 456px;min-height: 472px;height: auto !important;background: #86811D;border-radius: 8px;position: relative;top: 200px;}
+.login-box .login-form {position: relative;left: 40px;top: 30px;}
+.loginbox-forpwd{color:#000;}
+.loginbox-forpwd:link,.loginbox-forpwd:active{color:#000;}
+.loginbox-forpwd:hover{color:#000;}
+.loginbox-regsiter{padding-left: 245px;}
+hr.hr6{width: 430px;color: #000; margin-left:-29px; margin-bottom: 30px;margin-top: 30px;}
+.X{float: right;margin-right: 80px;margin-top: -18px;font-size: 30px;color: #bababa;}

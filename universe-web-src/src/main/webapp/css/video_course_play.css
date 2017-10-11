@@ -1,0 +1,426 @@
+.layout {
+	width: 100%;
+	background: #f5f5f5;
+	padding-bottom: 70px;s
+}
+
+.main {
+	position: relative;
+	width: 1160px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+}
+
+/*----面包屑地址位置-----*/
+
+.location{
+	height: 55px;
+	line-height: 55px;
+	background: #f5f5f5;
+}
+.location>a{
+	font-size: 14px;
+}
+.down_href{
+	color: #00b551!important;;
+}
+
+
+/*-------视频区域 左侧视频界面----------*/
+
+.video_course_left{
+	width: 875px;
+	height: 755px;
+	float: left;
+	background: #eed;
+}
+.video_course_left .video_control{
+	position: relative;
+}
+.main i{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+/*-------控制键------*/
+.play_icon{
+	background: url(../i/live/play.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 30px;
+}
+.pause_icon{
+	background: url(../i/live/pause_icon.png) no-repeat;
+}
+.volume_icon{
+	background:url(../i/live/volume.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 170px;
+}
+.mute_icon{
+	background:url(../i/live/mute_icon.png) no-repeat;
+}
+.full_icon{
+	background: url(../i/live/full_icon.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 30px;
+}
+/* .scale_icon{
+	background: url(../i/live/scale_icon.png) no-repeat;
+} */
+.loop_icon{
+	background: url(../i/live/loop_icon.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 100px;
+	width: 34px !important;
+	height: 34px !important;
+}
+.video_control #duration_bar{
+	width: 100%;
+	height: 6px;
+	position: absolute;
+	top: -3px;
+	background: #114d2c;
+}
+.video_control #play_loaction{
+	width: 24px;
+	height: 24px;
+	background: url(../i/live/play_location_icon.png) no-repeat;
+	position: absolute;
+	top: -9px;
+	left: 10%;
+}
+.video_control #progress_bar{
+	width: 11%;
+	height: 6px;
+	position: absolute;
+	background: #11cc65;
+}
+.video_control .exchange{
+	position: absolute;
+	display: block;
+	border-radius: 17px;
+	background: #00B551;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-family: "黑体";
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin:auto;
+	width: 90px;
+	height: 34px;
+	line-height: 34px;
+}
+
+.video_title{
+	width: 100%;
+	height: 60px;
+	background: #232323;
+	color: #fff;
+	position: relative;
+}
+#video_title{
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 30px;
+}
+#course_part{
+	font-size: 16px;
+}
+#share_btn{
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	background: url(../i/live/share_icon.png) no-repeat;
+}
+.video_box{
+	width: 100%;
+	height: 625px;
+}
+.video_control{
+	width: 100%;
+	height: 69px;
+	border-top: 1px solid #424242;
+	background: #222222;
+}
+
+
+/*------右侧视频内容---------*/
+.video_course_right{
+	width: 285px;
+	height: 755px;
+	float: left;
+	box-sizing: border-box;
+	background: #2d2d2d;
+	border-left:2px solid #3f3f3f;
+}
+
+.file_area{
+	height: 124px;
+	border-bottom: 2px solid #3f3f3f;
+	background: #2d2d2d;
+	padding: 40px 22px 0px 22px;
+}
+.file_area>p{
+	text-align: center;
+	padding: 10px 0;
+	color: #615f5f;
+}
+.file_icon{
+	display: block;
+	margin:0 auto;
+	width: 36px;
+	height: 45px;
+	background:url(../i/live/file_icon.png) no-repeat;
+}
+.video_course_crumb{
+	height: 69px;
+	background: #333333;
+	padding: 10px 22px 0px 22px;
+}
+.video_course_icon{
+	background: url(../i/live/video_course_icon.png) no-repeat;
+	display: inline-block;
+	width: 28px;
+	height: 16px;
+	vertical-align: 3px;
+}
+.course_title{
+	display:inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #fff;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 181px;
+}
+.video_course_crumb .wrap{
+	padding-top: 10px;
+	color: #b2b2b2;
+}
+.courses_box{
+	overflow: auto;
+	height: 500px;
+}
+/*.courses_box::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-thumb:vertical{
+	background-color: #999;
+	-webkit-border-radius:5px;
+}*/
+.courses li{
+	padding: 10px 22px;
+	color: #fff;
+}
+.courses .chapter{
+	height: 20px;
+	background: #383838;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+.course_name{
+	display: inline-block;
+	margin-left: 30px;
+	color: #767676;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 98px;
+    overflow: hidden;
+}
+.try_see{
+	/*margin-left: 5px;*/
+	padding: 1px 2px;
+	box-sizing: border-box;
+	background: #114D2C;
+	vertical-align: 3px;
+}
+.duration{
+	float: right;
+}
+
+.video_course_right .course_icon{
+	display: inline-block;
+	position: static;
+	width: 17px;
+	height: 17px;
+	vertical-align: -1px;
+	background: url(../i/live/yibofang_icon.png) no-repeat;
+	margin-right: -20px;
+}
+.onplay .course_icon{
+	background: url(../i/live/bofang_icon.png) no-repeat;
+}
+.onplay span{
+	color: #00b551;
+}
+.weibofang .course_icon{
+	background: url(../i/live/weibofang_icon.png) no-repeat;
+}
+.weibofang span{
+	color: #fff;
+}
+.yibofang span{
+	color: #767676;
+}
+.can_see span{
+	color: #fff;
+}
+.can_see .course_icon{
+	background: url(../i/live/weibofang_icon.png) no-repeat;
+}
+.cant_see span{
+	color: #767676;
+}
+.cant_see .course_icon{
+	background: url(../i/live/weibofang_icon.png) no-repeat;
+}
+.expires span{
+	color: #767676;
+}
+.expires .course_icon{
+	background: url(../i/live/yibofang_icon.png) no-repeat;
+}
+
+/*---------playback 页面---------*/
+.playback_video_course_crumb{ 
+	height: 59px;
+	line-height: 59px;
+	padding: 0 20px;
+	color: #d8d8d8;
+	background: #333333;
+}
+.pre_course{  
+	font-size: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #d8d8d8;
+}
+.playback_courses{
+	padding: 0 20px;
+}
+.playback_courses li{
+	display: block;
+	padding: 12px 2px;
+	border-bottom: 1px dashed #b2b2b2;
+}
+.playback_courses li:last-child{
+	border: none;
+}
+.playback_courses li.lastChild{
+	border: none;
+}
+.playback_course_r{
+	color: #ffffff;
+}
+.playback_course_name{
+	font-size: 16px;
+	margin-right: 10px;
+}
+.playback_course_part{
+	font-size: 14px;
+}
+.playback_video_info{
+	margin-top: 14px;
+	color: #b2b2b2;
+}
+.playback_video_info .duration_icon{
+	position: static;
+	width: 16px;
+	display: inline-block;
+	height: 16px;
+	background: url(../i/live/duration_icon.png) no-repeat;
+	margin-right: 10px;
+	vertical-align: -3px;
+}
+.playback_video_info .teacher_icon{
+	position: static;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../i/live/teacher_icon.png) no-repeat;
+	margin-left: 20px;
+	margin-right: 10px;
+	vertical-align: -3px;
+}
+
+/*-----微信分享二维码--------*/
+
+.share_qrcode_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.share_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 275px;
+	height: 400px;
+	background: #fff;
+}
+
+.share_dialog h2,
+.nickname_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+.share_qrcode{
+	width: 144px;
+	height: 144px;
+	margin: 45px auto;
+}
+.share_tips{
+	margin-left: 40px;
+}
+.share_tips li{
+	margin: 6px 0;
+	color: #767676;
+	font-size: 14px;
+}
+

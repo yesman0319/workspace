@@ -1,0 +1,33 @@
+ul,li{lsit-style:none;}
+.main{background:#fff;width:100%;overflow:hidden;}
+.main .leftSide{width:724px;}
+.main .rightSide{width:456px;}
+.leftSide h2{margin-left:40px;margin-top:25px;margin-bottom:32px;font-size:20px;color:#232323;}
+.product{margin-top:32px;margin-left:70px;width:560px;border:1px solid #d7d7d7;border-radius:15px;overflow:hidden;}
+.product .desc{margin-top:50px;width:100%;text-align:center;font-size:36px;color:#767676;}
+.pro{margin-top:32px;margin-bottom:60px;width:100%;text-align:center;}
+.product .yuan{margin-right:20px;font-size:48px;color:#767676}
+.product .price{text-align:center;font-size:80px;color:#232323}
+.product h3{padding-left:30px;height:68px;line-height:68px;border-bottom:1px solid #d7d7d7;font-size:18px;color:#232323;background:#f5f5f5;border-top-left-radius:15px;border-top-right-radius: 15px;font-weight:normal;}
+.product .lesson{margin-left:30px;font-size:18px;color:#232323;overflow: hidden;}
+.lesson .lesson_list{width:400px;float:left;}
+.lesson .lesson_list li{float:left;margin-left:12px;margin-bottom:10px;}
+.lesson .lessonDesc,.lesson .lessonDate{position:relative;display:block;float:left;height:32px;line-height:32px;width:110px;text-align:center;border:1px solid #767676;border-radius:3px;}
+.lesson i{display:block;position:absolute;right:0;bottom:0;height:16px;width:16px;background:url("../i/pay_selLesson.png") no-repeat;}
+.lesson .lessonDesc span,.lesson .lessonDate span{font-size:16px;color:#767676;}
+.lesson .cur{border-color:#00b551}
+.lesson .cur span{color:#00b551;}
+.buy{margin-top:58px;width:100%;text-align:center;}
+.buy p{width:100%;text-align:center;color:#767676;font-size:18px;}
+.buy p span{color:#00b551;font-size:18px;}
+.buy .btn_buy{margin:36px auto 180px;font-size:20px;color:#00b551;display:block;height:56px;line-height:56px;width:196px;text-align:center;border-radius:80px;border:2px solid #00b551;}
+
+
+.rightSide .bg{position:relative;margin-top:110px;height:572px;width:358px;}
+.rightSide .bg img{height:100%;width:100%;}
+.rightSide .bg .count{position:absolute;bottom:110px;width:100%;line-height:20px;text-align:center;}
+.rightSide .bg .icon_stu{display:inline-block;margin-right:10px;height:20px;width:20px; vertical-align: bottom;background:url("../i/stu_count.png") no-repeat;}
+.rightSide .bg .icon_tit{display:inline-block;margin-right:10px;height:20px;width:20px; vertical-align: bottom;background:url("../i/tit_count.png") no-repeat;}
+.bg .count .stu_count,.bg .count .stu_count #str{font-size:14px;color:#fff;}
+.bg .count .tit_count,.bg .count .tit_count #title{font-size:14px;color:#fff;}
+.bg .count .stu_count{margin-right:30px;}

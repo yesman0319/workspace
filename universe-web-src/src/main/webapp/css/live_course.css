@@ -1,0 +1,508 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.layout{
+	width: 100%;
+	height: 100%;
+	border-top:4px solid #3e3e3e;
+	box-sizing: border-box;
+}
+
+.main_center{
+	float: left;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.live_player{
+	margin-left: 280px;
+	margin-right: 280px;
+	height: 100%;
+	background: #eed;
+}
+
+.live_player .video_control{
+	position: relative;
+}
+
+.video_title{
+	width: 100%;
+	line-height: 60px;
+	background: #232323;
+	color: #fff;
+	position: relative;
+}
+#video_title{
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 30px;
+}
+#course_part{
+	font-size: 16px;
+}
+#share_btn{
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	background: url(../i/live/share_icon.png) no-repeat;
+}
+.video_box{
+	width: 100%;
+	height: 100%;
+}
+.video_control{
+	width: 100%;
+	height: 69px;
+	border-top: 1px solid #424242;
+	background: #222222;
+}
+.video_control .exchange{
+	position: absolute;
+	border-radius: 17px;
+	background: #00B551;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-family: "黑体";
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin:auto;
+	width: 90px;
+	height: 34px;
+	line-height: 34px;
+}
+
+
+/*--------直播左侧课程目录-----------*/
+.layout_left{
+	width: 280px;
+	margin-left: -100%;
+	height: 100%;
+	float: left;
+	border-right: 2px solid #3f3f3f;
+	box-sizing: border-box;
+	background: #2d2d2d;
+}
+.live_course_title,
+.discussion_title{
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #d8d8d8;
+	background: #333333;
+	padding: 0 20px;
+}
+.live_course_icon{
+	display: inline-block;
+	width: 28px;
+	height: 16px;
+	background: url(../i/live/video_course_icon.png) no-repeat;
+	vertical-align: -1px;
+	margin-right: 8px;
+}
+.discussion_icon{
+	display: inline-block;
+	width: 23px;
+	height: 21px;
+	background: url(../i/live/discussion_icon.png) no-repeat;
+	vertical-align: -4px;
+	margin-right: 8px;
+}
+.courses_content{
+	padding: 0 20px;
+	max-height: 500px;
+	overflow: auto;
+}
+.courses_content li{
+	display: block;
+	padding: 12px 2px;
+	border-bottom: 1px dashed #b2b2b2;
+}
+.courses_content li:last-child{
+	border: none;
+}
+.courses_content li.lastChild{
+	border: none;
+}
+.courses_content li a{
+	color: #b2b2b2;
+}
+.courses_content_l{
+	color: #d8d8d8;
+}
+.courses_content_chapter{
+	font-size: 16px;
+	margin-right: 10px;
+}
+.courses_content_part{
+	font-size: 14px;
+}
+.live_status{
+	float: right;
+	margin-top: 2px;
+	width: 50px;
+	height: 20px;
+	border: 1px solid #b2b2b2;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 18px;
+}
+.qrcode_box{
+	padding: 40px 0;
+	position: absolute;
+	bottom: 0;
+	width: 280px;
+	height: 150px;
+}
+.qrcode_box img{
+	width: 144px;
+	height: 144px;
+	margin: 0 auto;
+}
+.qrcode_box>p{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	color: #fff;
+}
+.live_info{
+	margin-top: 14px;
+	color: #b2b2b2;
+}
+.live_info .duration_icon{
+	position: static;
+	width: 16px;
+	display: inline-block;
+	height: 16px;
+	background: url(../i/live/duration_icon.png) no-repeat;
+	margin-right: 10px;
+	vertical-align: -3px;
+}
+.live_info .teacher_icon{
+	position: static;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../i/live/teacher_icon.png) no-repeat;
+	margin-left: 20px;
+	margin-right: 10px;
+	vertical-align: -3px;
+}
+
+/*-------右边讨论区部分--------*/
+.layout_right{
+	width: 280px;
+	margin-left: -280px;
+	background: #2D2D2D;
+	height: 100%;
+	float: left;
+	border-left: 2px solid #3f3f3f;
+	box-sizing: border-box;
+	position: relative;
+}
+.file_area{
+	height: 124px;
+	border-bottom: 2px solid #3f3f3f;
+	background: #2d2d2d;
+	padding: 40px 22px 0px 22px;
+}
+.file_area>p{
+	font-size: :;px;
+	text-align: center;
+	padding: 10px 0;
+	color: #615f5f;
+}
+.file_icon{
+	display: block;
+	margin:0 auto;
+	width: 36px;
+	height: 45px;
+	background:url(../i/live/file_icon.png) no-repeat;
+}
+.discussion_area{
+	padding: 10px 20px;
+	height: 408px;
+	color: #5d5d5d;
+	background: #2d2d2d;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.discussion_area::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-thumb:vertical{
+	background-color: #767676;
+	-webkit-border-radius:5px;
+}
+.discussion_area li{
+	padding: 10px 0;
+}
+.nickname{
+	display: inline-block;
+	font-size: 14px;
+	font-family: "黑体";
+}
+.comment_time{
+	float: right;
+}
+.comment_content{
+	color: #a3a3a3;
+	padding: 10px 0;
+}
+.me{
+	color: #00b551;
+}
+.me .nickname,
+.me .comment_time{
+	color: #00b551;
+}
+.me .comment_content{
+	color: #d5d5d5;
+}
+
+.input_box{
+	position: absolute;
+	bottom: 0;
+	width: 280px;
+	height: 230px;
+	background: #424242;
+}
+.input_box textarea{
+	display: block;
+	width: 243px;
+	height: 144px;
+	margin: 18px auto;
+	resize:none;
+}
+.input_box .send_btn{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid #00b551;
+	border-radius: 15px;
+	background: #3b4e44;
+	color: #00B551;
+}
+
+
+
+
+
+/*------回放、直播中、未开始 动态class部分--------*/
+.huifang .courses_content_l{
+	color: #555555;
+}
+.huifang .live_status{
+	color: #555555;
+	border-color:#555555;
+	cursor: default;
+}
+.huifang .duration_icon{
+	background: url(../i/live/huifang_duration_icon.png) no-repeat;
+}
+.huifang .teacher_icon{
+	background: url(../i/live/huifang_teacher_icon.png) no-repeat;
+}
+.huifang .live_info{
+	color: #555;
+}
+
+.zhibozhong .live_status{
+	color: #00b551;
+	border-color:#00b551;
+}
+
+
+/*-----微信分享二维码--------*/
+
+.share_qrcode_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.share_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 275px;
+	height: 400px;
+	background: #fff;
+}
+
+.share_dialog h2,
+.nickname_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+.share_qrcode{
+	width: 144px;
+	height: 144px;
+	margin: 45px auto;
+}
+.share_tips{
+	margin-left: 40px;
+}
+.share_tips li{
+	margin: 6px 0;
+	color: #767676;
+	font-size: 14px;
+}
+
+
+.nickname_dialog_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.nickname_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 420px;
+	height: 275px;
+	background: #fff;
+}
+.nickname_ipt{
+	padding-top: 40px;
+	display: block;
+	text-align: center;
+}
+.nickname_ipt>span{
+	font-size: 14px;
+	color: #000;
+	margin-right: 10px;
+}
+.nickname_ipt input{
+	width: 215px;
+	height: 32px;
+	border: 1px solid #dcdcdc;
+}
+.warn_tips{
+	color: #f32424;
+	margin-left: 122px;
+	margin-top: 20px;
+} 
+.warn_icon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../i/live/warn_icon.png) no-repeat;
+	vertical-align: -3px;
+}
+
+.nickname_dialog .submit{
+	display: block;
+	margin: 0 auto;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border: 2px solid #00b551;
+	border-radius: 20px;
+	background: #f2fbf6;
+	color: #00B551;
+	margin-top: 30px;
+}
+
+/*购买计划弹框*/
+#payPlan_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    /*display: none;*/
+}
+#payPlan_dialog{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 420px;
+    height: 275px;
+    background: #fff;
+}
+#payPlan_dialog h2{
+    height: 54px;
+    line-height: 54px;
+    background: #39c075;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 25px;
+    position: relative;
+}
+
+#payPlan_tips{
+    padding: 40px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.btns{
+    text-align: center;
+}
+#pay_plan, #check_plan{
+    display: inline-block;
+    margin: 0 auto;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 2px solid #00b551;
+    border-radius: 8px;
+    background: #f2fbf6;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+#check_plan{
+    margin-left: 30px;
+}

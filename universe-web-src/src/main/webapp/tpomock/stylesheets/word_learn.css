@@ -1,0 +1,92 @@
+
+/* header start */
+.header{ width:100%; height:99px; background: #fff; overflow: hidden; border-bottom:1px solid #e5e5e5; line-height: 99px;}
+.header-wrap{ width: 1000px; height:99px; }
+.logo-wrap{ width: 244px; height: 81px; padding-top: 25px;}
+.logo-wrap img{ display: block;}
+.navList li{ margin-right: 31px;}
+.navList li a{ font-size: 20px; color:#555;}
+.navList li a.active{ background: url("../images/nav-active.jpg") no-repeat center; color:#308ee3; display: block;}
+.login{ height: 99px;}
+
+/*main*/
+.vocabulary-main{ width: 100%; overflow: hidden;}
+.vocabulary-wrap{ width: 1000px; overflow: hidden; padding-bottom:29px;}
+.vocabulary-content{ width: 962px; border:1px solid #e8e8e8; overflow: hidden; padding: 33px 19px 0 19px; background: #fff;}
+.crumb { height: 61px; line-height: 72px;}
+.topic-wrap{ width: 100%; height: 130px; margin-bottom: 37px;}
+.topic-box{ width: 573px; height: 130px;}
+.topic-list,.ll-icon,.xx-icon,.horn-icon,.gl-horn-icon,.explain-icon,.g-will-icon,.l-will-icon,.g-Dont-icon,.l-Dont-icon{ background: url("../images/wordLearn-Icon.png") no-repeat; display: block;}
+.topic-list{ width: 250px; height: 130px;}
+.topic-list{ line-height: 130px;}
+.beenBack{ background-position: 0 -796px;}
+.inLeft{ background-position: 0 -484px; }
+.num{ font-size: 72px;}
+.yb{ margin: 0 47px 0 35px;}
+.msIcon-wrap{ width: 122px; overflow: hidden; margin: 0 0 0 117px;}
+.ll-icon,.xx-icon{ width: 122px; height: 34px; line-height: 34px; text-indent: 55px;}
+.ll-icon{ margin: 19px 0 26px 0;}
+.xx-icon{ background-position: 0 -400px; }
+.xx-icon:hover{ background-position: 0 -233px; }
+.ll-icon:hover{ background-position: 0 -317px; }
+.audio-list{ width: 100%;}
+.tr-list{ width: 958px; height:56px; margin-bottom: 10px; border:1px solid #ebedf0; line-height: 56px;}
+.w204{ width: 204px; height: 56px;}
+.w245{ width: 245px; height: 56px;}
+.w324{ width: 324px; height: 56px; position: relative; }
+.w185{ width: 185px; height: 56px;}
+.word{ text-indent: 22px;}
+.gl-horn-icon{ background-position: 0 -730px; width: 21px; height: 16px; margin: 20px 20px 0 0;}
+.horn-icon{ background-position: 0 -664px; width: 21px; height: 16px; margin: 20px 20px 0 0; }
+.explain-icon{ background-position: 0 -149px; margin:12px 0 0 0; width: 122px; height: 34px; line-height: 34px; text-indent: 55px;}
+.will{margin-right: 58px;}
+.g-will-icon,.l-will-icon,.g-Dont-icon,.l-Dont-icon{ width: 16px; height: 16px; margin: 20px 10px 0 0;}
+.l-will-icon{ background-position: 0 -976px;}
+.g-will-icon{ background-position: 0 -1042px; }
+.g-Dont-icon{ background-position: 0 -83px;}
+.l-Dont-icon{ background-position: 0 -1108px;}
+.dui{ width: 40px; height: 36px; display: block; padding: 10px 0 0 0;}
+.cuo{ width: 50px; height: 40px; display: block; padding: 10px 0 0 0;}
+
+.explainMark{ color: #31708f;
+			  background-color: #d9edf7;
+			  border-color: #bce8f1;
+			  padding: 10px;
+			  border: 1px solid transparent;
+			  width: 200px;
+			  border-radius: 4px;
+			  position: absolute;
+			  left: 0; top: 50px;
+			  margin-left: -50px;
+			  overflow: hidden;
+			  z-index: 20;
+			  line-height: 22px;
+			  display: none;
+			}
+
+
+.page{ width: 100%; height: 76px; padding:12px 0 0 0;}
+.goPage{ width: 44px; height: 17px; font:14px/1.5 Arial,"微软雅黑","Microsoft Yahei"; border:1px solid #e0e0e0; font-size: 14px; text-align: center; line-height: 17px;}
+.listPage a,.listPage span{ border:1px solid #dfdfdf; height: 36px; padding:0 15px; text-align: center; line-height: 40px; color:#666; margin-right: 3px; background: #fff;}
+.listPage a.on,.listPage a.Under{ color:#ccc; width:64px;}
+.listPage a.on:hover{ color:#666;}
+.listPage a.on:hover i{ background-position:0 -13px;}
+.listPage a.Under:hover{ color:#666;}
+.listPage a.Under:hover i{ background-position:-12px -13px !important;}
+.listPage a.active{ background: #35b5eb; border-color: #35b5eb; color:#fff;}
+.goPage-wrap{ line-height: 38px;}
+.listPage{ margin-right: 36px;}
+.listPage i{ width: 8px; height: 12px; background: url("../images/pageIcon.png") no-repeat;}
+.onIcon{ margin: 12px 13px 0 0; }
+.UnderIcon{ background-position: -12px 0 !important; margin:12px 0 0 13px;}
+.determine{ width: 55px; height: 30px; background: #35b5eb; font-size: 14px; margin:2px 0 0 12px; color:#fff; text-align: center; line-height: 30px;}
+
+
+/* footer */
+.footer{ width: 100%; overflow: hidden; border-top: 6px solid #D9D9D9; background: #f5f5f5;}
+.footer-wrap{ width:1000px; height: 223px; padding-top:22px;}
+.guide-ul{ margin-bottom: 50px; overflow:hidden;}
+.guide-ul li{ padding: 0 30px 30px 0; margin-right: 40px;}
+.foot-new-lk{ background:#00affe; height: 15px; display: block; float: left; margin: 0px 4px 0 0; width: 4px;}
+.font-new-aa a{ color:#333; display: block; margin-left: 10px;}
+.font-new-aa a:hover{ color: #00affe; text-decoration: underline;}

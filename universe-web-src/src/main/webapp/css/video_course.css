@@ -1,0 +1,482 @@
+.layout {
+	width: 100%;
+	background: #f5f5f5;
+}
+
+.main {
+	position: relative;
+	width: 1160px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+}
+
+/*----面包屑地址位置-----*/
+.location{
+	height: 55px;
+	line-height: 55px;
+	background: #f5f5f5;
+}
+.location>a{
+	font-size: 14px;
+}
+.down_href{
+	color: #00b551!important;
+}
+
+/*----基础提分课程标题部分-----*/
+.top_title{
+	overflow: hidden;
+	padding: 32px 28px;
+}
+.top_title_img{
+	width: 262px;
+	height: 170px;
+	float: left;
+}
+
+.top_title_desc{
+	overflow: hidden;
+}
+.desc_l{
+	float: left;
+	padding-left: 48px;
+}
+.desc_l .title_name{
+	font-size: 30px;
+	font-weight: bold;
+}
+.desc_l .lecturer{
+	line-height:24px;
+	font-size:14px;
+	color:#7a7a7a;
+}
+
+.desc_l .lesson_price{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.brmb_icon{
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+	background: url('../i/video_lesson/brmb_icon.png') no-repeat;
+	vertical-align: -1px;
+}
+.desc_l .btns{
+	padding-top: 12px;
+}
+.desc_l .btns .buy_btn{
+	display: inline-block;
+	width: 112px;
+	border-radius: 20px;
+	border: 1px solid #ff9c00;
+	color: #ff9c00;
+	background: #fff5e5;
+	font-size: 15px;
+	text-align: center;
+	line-height: 40px;
+}
+.desc_l .btns .free_btn{
+	display: inline-block;
+	width: 112px;
+	line-height: 40px;
+	border-radius: 20px;
+	border: 1px solid #00b551;
+	color:#00b551;
+	background: #e5f7ed;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 25px;
+}
+.desc_r{
+	float: right;
+}
+.desc_r>span{
+	font-size: 14px;
+	color: #7a7a7a;
+	font-family: 黑体;
+}
+.desc_r a{
+	font-size: 14px;
+	color: #7a7a7a;
+	font-family: 黑体;
+}
+.join_icon{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: url(../i/video_lesson/join_icon.png) no-repeat;
+	vertical-align: -6px;
+}
+.video_icon{
+	display: inline-block;
+	width: 23px;
+	height: 21px;
+	background: url(../i/video_icon.png) no-repeat center;
+	vertical-align: -6px;
+}
+.share_icon{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: url(../i/video_lesson/share_icon.png) no-repeat;
+	vertical-align: -5px;
+}
+.share_btn{
+	font-size: 14px;
+	color: #7a7a7a;
+	font-family: 黑体;
+}
+
+.cutline{
+	padding: 0 15px;
+}
+
+
+/*------视频内容区域------*/
+.content_box{
+	background: #f5f5f5;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+.content_left{
+	float: left;
+	width: 720px;
+	min-height: 680px;
+}
+.content_left .tips{
+	background: #ffeed4;
+	color: #ff9c00;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	position: relative;
+	margin: 24px 0;
+}
+.content_left #tips_content{
+	font-size: 14px;
+}
+.content_left .tips .close{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	float: right;
+	background: url(../i/video_lesson/close_icon.png) no-repeat;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+}
+.section{
+	padding: 20px 10px;
+	background: #fff;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.section li{
+	float: left;
+	padding-top: 10px;
+}
+.section li:hover{
+	background: #F9F9F9;
+}
+.section h2,
+.content_right h2{
+	font-size: 18px;
+	position: relative;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+	
+.greenBar{
+	position: absolute;
+	width: 4px;
+	height: 18px;
+	background: #00b551;
+	left: -20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.video_box{
+	width: 154px;
+	height: 100px;
+	margin: 0 10px;
+	position: relative;
+	cursor: pointer;
+}
+.video_box:hover .lock_modal{
+	display: inline-block;
+}
+.video_box img{
+	width: 154px;
+	height: 100px;
+}
+.video_type{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0 10px 10px;
+	width:146px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.content_left li .video_num{
+	margin-left: 10px;
+}
+.content_left li .video_num .video_icon{
+	margin-right: 10px;
+}
+.lock_modal{
+	position: absolute;
+	top: 0;
+	height: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	text-align: center;
+	display: none;
+	line-height: 100px;
+	color: #fff;
+	font-size: 14px;
+}
+.lock_modal p{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 15px;
+	color: #FFF;
+}
+.lock_icon{
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 28px;
+	background: url(../i/video_lesson/lock.png) no-repeat;
+	background-size: cover;
+	top: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+/*---------右部分课程简介------------*/
+
+
+.content_right{
+	float: right;
+	width: 400px;
+	min-height: 130px;
+	background: #fff;
+	margin-top: 24px;
+	padding: 20px 10px;
+}
+.introduction{
+	padding:10px;
+	color: #767676;
+	line-height: 19px;
+	min-height: 50px;
+	position: relative;
+}
+/*.ellipsis:after{
+	content: "...";
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+.introduction>span{
+	display: inline-block;
+	line-height: 25px;
+	font-size: 14px;
+	overflow: hidden;
+}
+#v_show_btn, #v_hidden_btn{
+	color: #00b551;
+	position: absolute;
+	font-size: 14px;
+	right: 25px;
+	cursor:pointer;
+	bottom: 18px;
+}
+#v_show_div{
+	display: none;
+	line-height: 25px;
+	font-size: 14px;
+}
+#v_show_div>p, #v_show_div>span,#v_show_div>a{
+	font-size: 14px;
+}
+
+.join_list li{
+	padding: 10px 10px;
+	overflow: hidden;
+}
+.join_list li img{
+	float: left;
+	width: 125px;
+	height: 80px;
+}
+.join_list .desc{
+	float: left;
+	padding-left: 15px;
+}
+.join_list .lesson_name{
+	font-size: 16px;
+	font-weight: bold;
+}
+.join_list p{
+	padding: 3px 0;
+}
+.join_list p span{
+	padding-left: 5px;
+	color: #767676;
+}
+/*支付结果弹框*/
+
+.payResult_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.payResult_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 420px;
+	height: 275px;
+	background: #fff;
+}
+.payResult_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+.payResult_tips{
+	padding: 40px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+}
+.pay_confirm{
+	display: block;
+	margin: 0 auto;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border: 2px solid #00b551;
+	border-radius: 8px;
+	background: #f2fbf6;
+	margin-top: 30px;
+	font-size: 14px;
+	color: #000;
+}
+
+/*-----微信分享二维码--------*/
+
+.share_qrcode_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.share_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 275px;
+	height: 400px;
+	background: #fff;
+}
+
+.share_dialog h2,
+.nickname_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+.share_qrcode{
+	width: 144px;
+	height: 144px;
+	margin: 45px auto;
+}
+.share_tips{
+	margin-left: 40px;
+}
+.share_tips li{
+	margin: 6px 0;
+	color: #767676;
+	font-size: 14px;
+}
+#goToDis {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 380px;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    background: rgb(241, 141, 0);
+    border-radius: 5px;
+}
+#goToDis .icon-in {
+    display: inline-block;
+    margin-left: 110px;
+    margin-right: 15px;
+    vertical-align: -5px;
+    height: 26px;
+    width: 28px;
+    background: url("../i/video_lesson/icon-in.png") no-repeat;
+}

@@ -1,0 +1,36 @@
+input{ border: 0; background: none;}
+.header{ height: 99px; width: 100%; border-bottom: 1px solid #e5e5e5;}
+.header-wrap{ width: 1000px; overflow: hidden;}
+.logo-box{ padding:25px 0 0 0;}
+.registeredText{ line-height: 99px; color:#000; text-indent: 35px;}
+
+.main{ width: 100%; overflow: hidden;}
+.main-wrap{ width: 1000px; padding:90px 0 140px 0; overflow: hidden;}
+.user-box{ width: 585px; border-right: 1px solid #e2e2e2; margin-right:43px;}
+.uText{ line-height: 45px;}
+.u-wrap{ margin-bottom: 15px;}
+.btn-box{ width: 262px; height: 32px; border:1px solid #ccc; border-radius: 2px;}
+.userIcon,.passIcon{ width: 36px; height: 32px; }
+.userIcon{background:url("../images/userIcon.png") no-repeat;}
+.passIcon{background:url("../images/password.png") no-repeat;}
+.textBtn{ width:226px; height: 32px; line-height: 32px;}
+.fgg{ margin-bottom: 27px; overflow: hidden;}
+.lck{ width:12px; height: 12px; background: url("../images/lck.png") no-repeat; margin: 2px 9px 0 0;}
+.lck.active{ background: url("../images/lckY.png") no-repeat; width: 14px; height: 14px;}
+.submitWrap{ height: 32px; line-height: 32px;}
+.submitBtn{ display: block; margin-right: 15px; width:106px; height: 32px; line-height: 32px; background: url("../images/submitIcon.png") no-repeat;}
+
+
+.Login-box{  width: 197px;}
+.lt{ height:46px; line-height: 59px;}
+.ctt{ line-height: 21px;}
+.l-box{ height: 49px; width: 100%; padding-top: 17px;}
+.dlIcon{ width: 195px; height: 32px; color:#010101; line-height: 32px;  border:1px solid #ccc; border-radius: 2px; display: block;}
+.hz{ height: 43px; line-height: 43px;}
+.fx{ font-size: 14px; }
+.fx a{ color:#4f7bf2; margin-right: 25px;}
+/*.qqIcon,.sinaIcon,.RenIcon{ display: block;}*/
+.qqIcon{ width:16px; height: 16px; background: url("../images/qq.png") no-repeat; margin:2px 5px 0 0;}
+.sinaIcon{ width: 18px; height: 15px; background: url("../images/sn.png") no-repeat; margin:2px 4px 0 0;}
+.RenIcon{ width: 16px; height: 16px; background: url("../images/rr.png") no-repeat; margin:2px 4px 0 0;}
+#numTip,#passwordTip{color: red;}

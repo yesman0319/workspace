@@ -1,0 +1,1427 @@
+@charset "utf-8";
+.layout {
+	width: 100%;
+	background: #f5f5f5;
+	padding: 40px 0;
+}
+
+.main {
+	position: relative;
+	width: 1160px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+}
+
+.mt10 {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
+.main .leftSide {
+	width: 290px;
+}
+
+.main .leftSide .user_info {
+	padding: 14px 0;
+	height: 100px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.user_info .avatar {
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #f5f5f5;
+	border-radius: 50px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.user_info .avatar img{
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+}
+.user_info .avatar:hover .changeAvatar_modal{
+	display: block;
+	cursor: pointer;
+}
+.avatar .changeAvatar_modal{
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	border-radius: 50px;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	text-align: center;
+	line-height: 96px;
+	background: rgba(0,0,0,.3);
+	color: #FFF;
+	font-size: 14px;
+	display: none;
+}
+.user_info .info .nickyname {
+	font-size: 20px;
+	color: #232323;
+	display: inline-block;
+	max-width: 120px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.user_info .info .nickname .user_vip {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	background: url("../i/user/user_vip.png") no-repeat;
+	vertical-align: bottom;
+}
+
+.user_info .info .change_file {
+	font-size: 14px;
+	color: #767676;
+}
+
+.user_info .info p .re_pay {
+	margin-left: 20px;
+	font-size: 14px;
+	color: #39c075;
+	text-decoration: underline;
+}
+
+.user_info .info p .change_psw {
+	font-size: 14px;
+	color: #767676;
+}
+.user_info .info p .file_icon{
+	margin-right: 10px;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	background: url(../i/user/file_icon.png) no-repeat;
+	vertical-align: -2px;
+}
+.user_info .info p .psw_icon {
+	margin-right: 10px;
+	display: inline-block;
+	height: 16px;
+	width: 14px;
+	background: url("../i/user/psw_icon.png") no-repeat;
+	vertical-align: -2px;
+}
+
+.menu li {
+	padding: 13px 0;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.menu .menu_list {
+	display: block;
+	position: relative;
+	padding-left: 68px;
+	height: 44px;
+	line-height: 44px;
+	border-left: 2px solid #fff;
+	font-size: 18px;
+	color: #232323;
+}
+
+.menu .menu_list:hover {
+	color: #39c075;
+	border-left-color: #39c075;
+}
+
+.menu .cur {
+	color: #39c075;
+	border-left-color: #39c075;
+}
+
+.menu .menu_list i{
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	left: 20px;
+	height: 28px;
+	width: 28px;
+}
+#coupon-num{
+	font-size: 16px;
+}
+.menu .menu_list .setting {
+	background: url("../i/user/setting0.png") no-repeat;
+}
+.menu .menu_list .down_his {
+	background: url("../i/user/down_history0.png") no-repeat;
+}
+.menu .menu_list .plan{
+	background: url("../i/user/plan0.png") no-repeat;
+}
+.menu .menu_list .video{
+	background: url("../i/user/video0.png") no-repeat;
+	left: 24px;
+}
+.menu .menu_list .coupons{
+	background: url("../i/user/coupons0.png") no-repeat;
+	left: 24px;
+	top: 13px;
+}
+.menu .menu_list .wallet{
+	background: url("../i/user/wallet0.png") no-repeat;
+	left: 24px;
+	top: 13px;
+}
+.menu .menu_list .kaoshen{
+	background: url("../i/user/kaoshen0.png") no-repeat;
+	left: 24px;
+	top: 13px;
+}
+.menu .menu_list .practice{
+	background: url("../i/user/practice0.png") no-repeat;
+}
+.menu .menu_list .order{
+	background: url("../i/user/order0.png") no-repeat;
+}
+
+
+.menu .menu_list:hover .setting {
+	background: url("../i/user/setting1.png") no-repeat;
+}
+.menu .menu_list:hover .down_his {
+	background: url("../i/user/down_history1.png") no-repeat;
+}
+.menu .menu_list:hover .plan{
+	background: url("../i/user/plan1.png") no-repeat;
+}
+.menu .menu_list:hover .video{
+	background: url("../i/user/video1.png") no-repeat;
+}
+.menu .menu_list:hover .coupons{
+	background: url("../i/user/coupons1.png") no-repeat;
+}
+.menu .menu_list:hover .wallet{
+	background: url("../i/user/wallet1.png") no-repeat;
+}
+.menu .menu_list:hover .kaoshen{
+	background: url("../i/user/kaoshen1.png") no-repeat;
+}
+.menu .menu_list:hover .practice{
+	background: url("../i/user/practice1.png") no-repeat;
+}
+.menu .menu_list:hover .order{
+	background: url("../i/user/order1.png") no-repeat;
+}
+
+
+.menu .cur .setting {
+	background: url("../i/user/setting1.png") no-repeat;
+}
+.menu .cur .down_his {
+	background: url("../i/user/down_history1.png") no-repeat;
+}
+.menu .cur .plan{
+	background: url("../i/user/plan1.png") no-repeat;
+}
+.menu .cur .video{
+	background: url("../i/user/video1.png") no-repeat;
+}
+.menu .cur .practice{
+	background: url("../i/user/practice1.png") no-repeat;
+}
+.menu .cur .order{
+	background: url("../i/user/order1.png") no-repeat;
+}
+.menu .cur .coupons{
+	background: url("../i/user/coupons1.png") no-repeat;
+}
+.menu .cur .wallet{
+	background: url("../i/user/wallet1.png") no-repeat;
+}
+.menu .cur .kaoshen{
+	background: url("../i/user/kaoshen1.png") no-repeat;
+}
+
+.leftSide .exit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	line-height: 60px;
+	border-top: 1px solid #e4e4e4;
+	width: 290px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	color: #767676;
+}
+
+/*右边部分*/
+#right_box{
+	min-height: 680px;
+}
+.rightSide {
+	padding: 10px 30px;
+	width: 810px;
+	box-shadow: -1px 0 1px #f7f7f7;
+	min-height: 655px;
+	position: relative;
+}
+
+.rightSide .location {
+	line-height: 60px;
+	font-size: 18px;
+	color: #232323;
+}
+
+.rightSide .location a {
+	font-size: 14px;
+}
+
+.rightSide .location .user_href {
+	color: #39c075;
+}
+
+.rightSide .location .down_href {
+	color: #232323;
+}
+
+.list {
+	position: relative;
+}
+
+
+/*---------我的订单-----------*/
+.order_top{
+	padding-bottom: 20px;
+}
+.all_order{
+	font-size: 14px;
+	font-weight: bold;
+	background: ;
+}
+.waitfor_pay{
+	color: #ee0000;
+	padding-left: 10px;
+}
+.order_title{
+	overflow: hidden;
+	background: #f2f2f2;
+	margin-bottom: 20px;
+}
+.order_title>li{
+	float: left;
+	width: 184px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.order_list{
+	margin-bottom: 20px;
+}
+.order_thead{
+	line-height: 30px;
+	background: #f2f2f2;
+}
+.order_thead .order_time{
+	font-size: 13px;
+	padding: 0 15px;
+}
+.order_thead .order_code{
+	font-size: 13px;
+	color: #767676;
+}
+.order_tbody{
+	border-bottom: 1px solid #f5f5f5;
+	overflow: hidden;
+}
+.order_tbody>li{
+	float: left;
+	width: 183px;
+	height: 88px;
+	/*height: 70px\9;*/
+	border-right:1px solid #f5f5f5;
+	text-align: center;
+}
+.order_tbody .order_content{
+	width: 254px;
+	/*width: 238px\9;*/
+	padding-top: 18px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.order_img{
+	float: left;
+	padding-right: 10px;
+}
+.order_content .desc{
+	float: left;	
+}
+.order_content .desc b{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: -4px;
+}
+.order_content .desc h3{
+	padding: 3px 0;
+}
+.order_content .desc .test{
+	display: inline-block;
+	padding-top: 10px;
+	margin-left: -12px;
+}
+.order_tbody .price{
+	font-size: 14px;
+	color: #ff9c00;
+	line-height: 88px;
+}
+.order_tbody .price i{
+	display: inline-block;
+	width: 11px;
+	height: 14px;
+	background: url("../i/rmb_icon.png") no-repeat;
+	position: relative;
+	top: 1px;
+	/*vertical-align: 4px\9;*/
+	margin-right: 3px;
+}
+.order_status{
+	padding-top: 22px;
+	box-sizing: border-box;
+}
+.order_status h3{
+	padding-bottom: 6px;
+}
+.order_status .order_detail{
+	color: #24ba61;
+	text-decoration: underline;
+}
+.order_tbody .pay{
+	border-right: none;
+	line-height: 88px;
+}
+.pay_now{
+	display: inline-block;
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #fff5e5;
+	border:1px solid  #ff9c00;
+	border-radius: 15px;
+	color: #ffaf4b;
+	font-size: 14px;
+}
+.check_now{
+	display: inline-block;
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #e5f7ed;
+	border:1px solid  #00b551;
+	border-radius: 15px;
+	color: #20ba5f;
+	font-size: 14px;
+}
+
+
+
+
+/*---------学习计划-----------*/
+.plan_div .list li,
+.video_div .list li,
+.practice_div .list li{
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px dashed #767676;
+}
+.plan_div .list>li:last-child,
+.video_div .list>li:last-child,
+.practice_div .list>li:last-child{
+	border-bottom: none;
+}
+
+.plan_div .list img,
+.video_div .list img{
+	float: left;
+}
+.plan_div .list .desc,
+.video_div .list .desc,
+.practice_div .list .desc{
+	float: left;
+	overflow: hidden;
+	padding: 3px 0;
+	padding-left: 12px;
+	box-sizing: border-box;
+}
+.list .plan_img{
+	width: 125px;
+	height: 82px;
+}
+.list .desc b{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: -4px;
+	/*position: relative\9;*/
+	/*top: -3px\9;*/
+}
+.plan_div .list .desc .left,
+.video_div .list .desc .left{
+	float: left;
+	width: 190px;
+}
+.list .desc .left h3{
+	font-size: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.left .continue{
+	font-size: 14px;
+}
+.plan_div .list .desc .left .test_time,
+.video_div .list .desc .left .test_time{
+	display: inline-block;
+	padding: 10px 0;
+	color: #828282;
+}
+.plan_div .list .desc .middle,
+.video_div .list .desc .middle{
+	float: left;
+	padding-left: 30px;
+}
+.middle .price{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #ff9c00;
+}
+.middle .study_progress{
+	color: #828282;
+	cursor: default !important;
+}
+.middle .price .rmb_icon{
+	display: inline-block;
+	width: 11px;
+	height: 14px;
+	vertical-align: -1px;
+	position: relative;
+	/*top: -2px\9;
+	top: 1px\9;
+	padding-right: 4px\9;*/
+	background: url("../i/rmb_icon.png") no-repeat;
+}
+.plan_div .list .desc .right,
+.video_div .list .desc .right{
+	padding-top: 8px;
+	position: absolute;
+	right: 0;
+}
+.plan_div .list .desc .right .delete{
+	width: 18px;
+	height: 18px;
+	background: url("../i/delete.png") no-repeat;
+	position:relative;
+	right: -220px;
+	cursor: pointer;
+}
+.plan_div .list .desc .right .date,
+.video_div .list .desc .right .date{
+	margin-bottom: 5px;
+	padding-top: 35px;
+	font-size: 14px;
+	color: #767676;
+}
+#last_time{
+	font-size: 14px;
+}
+.list .desc .right .buy_plan{
+	font-size: 14px;
+	color: #ff9c00;
+	padding-left: 10px;
+}
+.list .desc .right .add_plan{
+	font-size: 14px;
+	color: #00b551;
+	padding-left: 10px;
+}
+
+
+
+/*----------视频课程------------*/
+
+.video_div .video_num{
+	display: inline-block;
+	padding: 10px 0;
+	color: #828282;
+}
+.video_div .video_num b{
+	padding-left: 5px;
+	vertical-align: -5px;
+}
+.video_div .list .desc .right .delete{
+	width: 18px;
+	height: 18px;
+	background: url("../i/delete.png") no-repeat;
+	position:relative;
+	right: -150px;
+	cursor: pointer;
+}
+
+
+/*----------练习历史------------*/
+
+
+.practice_div .list .tingli_icon{
+	width: 45px;
+	height: 45px;
+	float: left;
+	padding-top: 6px;
+}
+.practice_div .list li{
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.practice_div .list li:hover{
+	background: #fcfcfc;
+}
+.practice_div .list li:hover .check_out,
+.practice_div .list li:hover .delete_record{
+	display: inline-block;
+}
+.practice_div .list .desc{
+	float: left;
+	overflow: hidden;
+	padding-left: 12px;
+	box-sizing: border-box;
+	color: #767676;
+}
+.practice_div .desc h3{
+	color: #000;
+}
+.practice_div .desc .left{
+	float: left;
+}
+.left .tifen_plan{
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 14px;
+}
+.practice_div .desc .middle{
+	position: absolute;
+	right: 150px;
+	line-height: 52px;
+}
+.practice_div .check_out{
+	padding-right: 30px;
+	color: #767676;
+	display: none;
+}
+.practice_div .delete_record{
+	color: #f92323;
+	display: none;
+}
+.practice_div .desc .right{
+	position: absolute;
+	right: 15px;
+	line-height: 52px;
+}
+
+
+
+/*----------下载历史------------*/
+.list .h {
+	display: block;
+	position: relative;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	background: #f3f3f3;
+}
+
+.list .h .name,
+.list .h .down_date {
+	font-size: 14px;
+	font-weight: bold;
+	color: #232323;
+}
+
+.list .h .num {
+	margin-left: 10px;
+	color: #767676;
+}
+
+.list ul .list_li {
+	padding: 0 20px;
+	height: 64px;
+	line-height: 64px;
+	/* border-top: 1px dashed #767676; */
+}
+
+.list .list_li i {
+	display: block;
+	float: left;
+	margin-top: 21px;
+	margin-right: 15px;
+	height: 22px;
+	width: 22px;
+}
+
+.list .list_li .word {
+	background: url("../i/info/word_s.png") no-repeat;
+}
+
+.list .list_li .ppt {
+	background: url("../i/info/ppt_s.png") no-repeat;
+}
+
+.list .list_li .pdf {
+	background: url("../i/info/pdf_s.png") no-repeat;
+}
+.list .list_li .rar {
+	background: url("../i/info/rar.png") no-repeat;
+}
+.list .list_li .article {
+	float: left;
+	font-size: 16px;
+	color: #232323;
+	width: 368px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.list .list_li .up_date {
+	display: block;
+	line-height: 64px;
+	color: #767676;
+	float: right;
+}
+
+/*------我的优惠券------*/
+.coupons-div ul{
+	overflow: hidden;
+	margin-right: -25px;
+	padding-left: 10px;
+}
+.c-usable, .c-unusable, .c-overdue{
+	float: left;
+	width: 240px;
+	height: 230px;
+	background: url(../i/user/coupon_bg0.png) no-repeat;
+	background-size: cover;
+	margin-right: 35px;
+	margin-bottom: 35px;
+}
+.c-unusable{
+	background: url(../i/user/coupon_bg1.png) no-repeat;
+}
+.c-overdue{
+	background: url(../i/user/coupon_bg2.png) no-repeat;
+}
+.c-price{
+	font-size: 40px;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 18px;
+	width: 238px;
+	height: 52px;
+	background: #93D8BD;
+	text-align: center;
+	margin-left: 1px;
+}
+.c-unusable .c-price,
+.c-overdue .c-price{
+	display: inline-block;
+	width: 238px;
+	background: #fff;
+	color: #dcdcdc;
+	margin-left: 1px;
+}
+.c-price-icon0{
+	display: inline-block;
+	width: 22px;
+	height: 32px;
+	background: url(../i/user/coupon_price_icon0.png) no-repeat;
+	background-size: cover;
+}
+.c-price-icon1{
+	display: inline-block;
+	width: 22px;
+	height: 32px;
+	background: url(../i/user/coupon_price_icon1.png) no-repeat;
+	background-size: cover;
+}
+.c-unusable div,
+.c-overdue div{
+	color: #dcdcdc;
+}
+.c-usable-range{
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	margin-top: 25px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.c-start-time{
+	margin-top: 50px;
+}
+.c-start-time ,.c-end-time, .c-use-time{
+	color: #fff;
+	text-align: center;
+}
+
+/*我的钱包*/
+.wallet-balance{
+	width: 756px;
+	height: 125px;
+	line-height: 125px;
+	border: 2px dashed #d2d2d2;
+	padding: 0px 25px;
+}
+.wallet-balance-show{
+	float: left;
+	font-size: 20px;
+}
+.wallet-picon{
+	font-size: 14px;
+	color: #00bb51;
+}
+#wallet-balance-show{
+	color: #00bb51;
+	font-size: 25px;
+}
+#wallet-charge-btn{
+	float: right;
+	width: 90px;
+	height: 30px;
+	border: 1px solid #00b551;
+	line-height: 30px;
+	text-align: center;
+	color: #00bb51;
+	background: #e5f7ed;
+	font-size: 12px;
+	border-radius: 15px;
+	margin-top: 47px;
+}
+#wallet-charge-btn:hover{
+	color: #00bb51;
+}
+.charge-records{
+	width: 810px;
+	border: 1px solid #dcdcdc;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+.charge-records th{
+	border: none;
+	height: 30px;
+	background: #f2f2f2;
+	font-size: 14px;
+	font-weight: 100;
+}
+.charge-records td{
+	text-align: center;
+	color: #232323;
+	font-size: 14px;
+	padding: 13px 15px;
+	border-color: #dcdcdc;
+}
+.charge-records .charge-money, .charge-records .charge-time{
+	width: 198px;
+	
+}
+.no-records-tips td{
+	text-align: left;
+}
+.charge-records .charge-money, .charge-records .charge-money span{
+	font-size: 15px;
+}
+.charge-records .charge-remark{
+	font-weight: bold;
+	text-align: left;
+	padding-left: 25px;
+}
+.charge-records .charge-remark span{
+	font-size: 14px;
+}
+.for-charge .charge-money{
+	color: #00bb51;
+}
+
+.wallet-charge-page{
+	width: 810px;
+	margin-top: 30px;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	padding-bottom: 65px;
+}
+.wallet-charge-page .charge-title{
+	height: 30px;
+	background: #f2f2f2;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 30px;
+	padding-left: 22px;
+	border: 1px solid #dcdcdc;;
+}
+.charge-range{
+	width: 750px;
+	padding: 65px 8px 0px 50px;
+	margin-right: -42px;
+	overflow: hidden;
+}
+.charge-range li{
+	float: left;
+	width: 142px;
+	height: 48px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	line-height: 48px;
+	text-align: center;
+	margin-right: 42px;
+	margin-bottom: 50px;
+	color: #232323;
+	font-size: 30px;
+	cursor: pointer;
+}
+.charge-range li .wallet-picon{
+	color: #232323;
+	font-size: 16px;
+}
+.charge-range li.selectd{
+	border-color: #00bb51;
+	color: #00bb51;
+}
+.charge-range li.selectd .wallet-picon{
+	color: #00bb51;
+}
+#charge-tip{
+	color: #f00;
+	text-align: center;
+	font-size: 14px;
+}
+.charge-btns{
+	text-align: center;
+}
+#confirm-charge, #cancel-charge{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border: 1px solid #00b551;
+	line-height: 30px;
+	text-align: center;
+	color: #00bb51;
+	background: #e5f7ed;
+	font-size: 12px;
+	border-radius: 15px;
+	margin-top: 47px;
+}
+#cancel-charge{
+	border-color: #767676;
+	background: #f1f1f1;
+	color: #767676;
+	margin-left: 40px;
+}
+
+/*支付结果弹框*/
+
+.payResult_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.payResult_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 420px;
+	height: 275px;
+	background: #fff;
+}
+.payResult_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+.payResult_tips{
+	padding: 40px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+}
+.pay_confirm{
+	display: block;
+	margin: 0 auto;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border: 2px solid #00b551;
+	border-radius: 8px;
+	background: #f2fbf6;
+	margin-top: 30px;
+	font-size: 14px;
+	color: #000;
+}
+
+/*账户设置部分样式*/
+
+.gd {
+	/*position: absolute*/
+}
+
+.t22 {
+	font-size: 17px;
+}
+
+.t1 {
+	float: left;
+}
+
+.t18 {
+	font-size: 17px;
+
+}
+.col1{
+	width: 100px;
+	position: relative;
+	padding: 15px 0;
+}
+.col1 div{
+	position: absolute;
+	top: 15px;
+}
+.col2{
+	padding: 15px 0;
+}
+.accountTable{
+	margin-left: 55px;
+	margin-top: 50px;
+}
+.tab {
+	height: 45px;
+	border-bottom: 1px solid #e4e4e4;
+	width: 100%;
+}
+
+.tab .tab_list {
+	margin-left: 20px;
+	height: 46px;
+}
+
+.tab .tab_list li {
+	float: left;
+	width: 150px;
+	text-align: center;
+	color: #383838;
+	font-size: 14px;
+	cursor: pointer;
+	height: 43px;
+	line-height: 43px;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.tab .tab_list .cur_tab {
+	border-top: 2px solid #39c075;
+	border-left: 1px solid #e4e4e4;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #e4e4e4;
+}
+
+.xx {
+	position: relative;
+	width: 100%;
+	height: 550px;
+}
+
+.pswinput, #nickname{
+	height: 30px;
+	border: 1px solid #767676;
+	padding-left: 10px;
+	outline: none;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.pswinput:focus, #nickname:focus{
+	border: 1px solid #00bb51;
+}
+.bpinputBox .pswinput{
+	width: 160px;
+}
+#pyzm{
+	font-size: 12px;
+	position: absolute;
+	left: 109px;
+	top: 7px;
+	padding: 2px 0;
+	background: rgba(255,255,255,0);
+	z-index: 55;
+}
+#pyzmm{
+	font-size: 12px;
+	position: absolute;
+	left: 103px;
+	top: 7px;
+	padding: 2px 0;
+	background: rgba(255,255,255,0);
+	color: #767676;
+	padding:0 20px;
+}
+#pconfirm, #bconfirm, #bindNow{
+	width: 90px;
+	height: 30px;
+	border: #00bb51 1px solid;
+	background: #e5f7ed;
+	text-align: center;
+	line-height: 30px;
+	color: #00bb51;
+	font-size: 14px;
+}
+#pconfirm{
+	float: left;
+	border-radius: 15px;
+	cursor: pointer;
+}
+#pcancle{
+	float: left;
+	border-radius: 15px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+#bindPhone{
+	color: #00BB51;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#bpconfirm{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	border: #00bb51 1px solid;
+	background: #e5f7ed;
+	color: #00bb51;
+	border-radius: 15px;
+	cursor: pointer;
+}
+#bpcancle{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	border: #7c7c7c 1px solid;
+	background: #f1f1f1;
+	color: #7c7c7c;
+	margin-left: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+#phoneError, #codeError{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #f00;
+}
+#bindNow{
+	border-radius: 15px;
+}
+#pcancle, #bcancle{
+	width: 90px;
+	height: 30px;
+	border: #7c7c7c 1px solid;
+	background: #f1f1f1;
+	text-align: center;
+	line-height: 30px;
+	color: #7c7c7c;
+	font-size: 14px;
+}
+#wx_account{
+	font-size: 16px;
+}
+#pass, #nextPass{
+	display: block;
+}
+#codeNum{
+	float: left;
+}
+#yzm{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#yzmm{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #767676;
+	display: none;
+}
+#error{
+	padding-bottom:15px;
+	color: #f00;
+	font-size: 15px;
+}
+
+/*账号信息弹框*/
+.info_modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.info_dialog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 420px;
+	height: 275px;
+	background: #fff;
+}
+.info_dialog h2{
+	height: 54px;
+	line-height: 54px;
+	background: #39c075;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 25px;
+	position: relative;
+}
+.info_tips{
+	margin-left: 50px;
+	margin-top: 40px;
+} 
+.info_tips p{
+	padding: 5px 0;
+	font-size: 15px;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+#info_confirm{
+	display: block;
+	margin: 0 auto;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border: 2px solid #00b551;
+	border-radius: 8px;
+	background: #f2fbf6;
+	color: #00B551;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*更换头像*/
+
+.up {
+	padding: 30px 45px;
+	width: 720px;
+	height: 180px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.up .up_ava {
+	height: 180px;
+	width: 180px;
+	background: #ededed;
+	text-align: center;
+	color: #a0a0a0;
+	position: relative;
+}
+.up .up_ava img{
+	width: 100%;
+	height: 100%;
+}
+
+/*.up .up_ava i {
+	display: block;
+	margin: 30px auto 10px;
+	height: 96px;
+	width: 96px;
+	background:url("../i/user/up_icon.png") no-repeat;
+}*/
+#ava_file{
+	display: none;
+}
+.up .up_area,
+.show .up_area {
+	margin-left: 60px;
+	position: relative;
+	height: 100%;
+	width: 400px;
+}
+
+.up .up_area h3,
+.show .up_area h3 {
+	color: #232323;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.up .up_area .support {
+	color: #767676;
+	margin-top: 10px;
+}
+
+.btn {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 90px;
+	background: #e5f7ed;
+	border: 1px solid #00b551;
+	border-radius: 50px;
+}
+
+.up .up_area .ava_btn {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #00b551;
+	cursor: pointer;
+}
+
+.show {
+	padding: 30px 45px;
+	width: 720px;
+	height: 180px;
+}
+
+.show .ava_big {
+	height: 180px;
+	width: 180px;
+}
+
+.show .ava_big img {
+	height: 100%;
+	width: 100%;
+}
+
+.show .up_area .pic {
+	margin-top: 10px;
+	height: 86px;
+	line-height: 86px;
+}
+
+.show .up_area .pic .ava_s {
+	margin-left: 48px;
+	margin-top: 19px;
+}
+
+.show .up_area .btns {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.show .up_area .btns .save,
+.show .up_area .btns .cancel {
+	border-color: #767676;
+	background: #f1f1f1;
+	color: #767676;
+}
+
+.show .up_area .btns .save:hover,
+.show .up_area .btns .cancel:hover {
+	border-color: #00b551;
+	background: #e5f7ed;
+	color: #00b551;
+}
+
+.show .up_area .btns .cancel {
+	margin-left: 25px;
+}
+
+
+/*头像设置*/
+
+.preview-container {
+	position: absolute;
+	height: 86px;
+	width: 86px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.preview-container1 {
+	position: absolute;
+	left: 130px;
+	top: 19px;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.jcrop-holder #preview-pane {
+	position: absolute;
+	z-index: 2000;
+	top: 40px;
+	left: 240px;
+	height: 86px;
+	width: 178px;
+}

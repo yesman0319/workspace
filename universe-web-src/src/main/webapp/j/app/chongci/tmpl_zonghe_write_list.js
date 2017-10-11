@@ -1,0 +1,50 @@
+/**
+ * Created by SaE on 2015/4/16.
+ * 综合写作列表
+ */
+define(function () {
+    return ['<div class="right-part1">',
+        '    <p class="p1 bold black mleft25"><img src="../../i/list-pic.png" style="margin-left:-10px;margin-right:10px;"><span>综合写作批改</span></p>',
+        '    <hr class="mleft25">',
+        '{{each data as value index}}',
+
+        '   {{if value.type==1}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13 jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class=" sim-width510" >{{value.content}}</a>',
+        '       <span class="fright pg_red">已保存</span>',
+        '   </p>',
+        '   {{else if value.type==2}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13 jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class=" sim-width510" >{{value.content}}</a>',
+        '       <span class="fright pg_red">等待老师抢作业</span>',
+        '   </p>',
+        '   {{else if value.type==3}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13 jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class=" sim-width510" >{{value.content}}</a>',
+        '       <span class="fright pg_red">已有{{value.grap_amount}}位老师抢作业</span>',
+        '   </p>',
+        '   {{else if value.type==4}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13 jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class=" sim-width510" >{{value.content}}</a>',
+        '       <span class="fright pg_red">待批改</span>',
+        '   </p>',
+        '   {{else if value.type==5}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13  jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class=" sim-width510" >{{value.content}}</a>',
+        '       <span class="left25 b-blue round rewrite-percentnew " ><span class="number">{{value.score}}分</span></span>',
+        '   </p>',
+        '   {{else}}',
+        '   <p class="zonghepigai-div left25 mleft20 font13 jj-speak-padding" qid="{{value.id}}" type="{{value.type}}">',
+        '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+        '       <a href="#" category="wjj" class="sim-a2" >{{value.content}}</a>{{if value.is_today_task}}<span class="orange left16">今日任务</span>{{/if}}',
+        '   </p>',
+        '   {{/if}}',
+        '{{/each}}',
+        '</div>'
+    ].join('');
+});

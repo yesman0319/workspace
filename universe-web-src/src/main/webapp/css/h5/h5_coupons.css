@@ -1,0 +1,334 @@
+
+/*优惠券tab切换*/
+.pay_coupons_nav,
+.coupons_nav{
+	width: 100%;
+	height: 3.125rem;
+	border-bottom: 1px solid #d6d6d6;
+	box-sizing: border-box;
+	background: #fff;
+}
+.pay_coupons_nav>li{
+	width: 50%;
+	position: relative;
+	box-sizing: border-box;
+}
+.pay_coupons_nav .cutLine,
+.coupons_nav .cutLine{
+	position: absolute;
+	width: 1px;
+	height: 50%;
+	background-color: #d6d6d6;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	/*right: 0;*/
+	margin: auto;
+}
+.pay_coupons_nav li{
+	float: left;
+	width:50%;
+	line-height: 3.125rem;
+	text-align: center;
+	font-size: 15px;
+}
+.coupons_nav>li{/*个人中心优惠券tab*/
+	float: left;
+	width: 33.3%;
+	line-height: 3.125rem;
+	text-align: center;
+	font-size: 15px;
+	position: relative;
+	box-sizing: border-box;
+}
+.pay_coupons_nav>li>a,
+.coupons_nav>li>a{
+	padding: 0;
+	display: inline-block;
+	color: #767676;
+	position: relative;
+}
+.pay_coupons_nav .active>a,
+.coupons_nav .active>a{
+	color: #00b551;
+}
+.pay_coupons_nav .active>a:after,
+.coupons_nav .active>a:after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #00b551;
+	bottom: 0;
+	left: 0;
+}
+#cancel_coupons{
+	height: 45px;
+	width: 100%;
+	line-height: 45px;
+	text-align: center;
+	border: 1px solid #767676;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+#cancel_coupons:active{
+	background: #eee;
+}
+.coupons-ul{
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-bottom: 45px;
+}
+.coupons-ul li{
+	width: 100%;
+	height: 85px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.c-usable .choicedimg{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 15px;
+	top: 10px;
+}
+.coupons-ul li{
+	color: #dcdcdc;
+}
+.c-usable .c-price{
+	position: absolute;
+	width: 80px;
+	height: 21px;
+	top: 31px;
+	left: 14%;
+	font-size: 18px;
+	color: #fff;
+	background: #93D8BD;
+}
+.c-unusable .c-price,
+.c-overdue .c-price{
+	position: absolute;
+	width: 80px;
+	height: 21px;
+	top: 31px;
+	left: 14%;
+	background: #fff;
+	font-size: 18px;
+}
+.c-usable .c-endtime,
+.c-usable .c-range{
+	color: #fff;
+}
+.c-range{
+	position: absolute;
+	top: 20px;
+	left: 43%;
+	font-size: 16px;
+}
+.c-endtime{
+	position: absolute;
+	top: 50px;
+	left: 43%;
+	font-size: 14px;
+}
+.unmatch-tips{
+	position: absolute;
+	top: 62px;
+	left: 41%;
+	font-size: 10px;
+}
+#c-endtime{
+	
+}
+
+.c-usable{
+	background: url(../../../i/wappay_test/usable_h5.png) no-repeat;
+	background-size: 100% 84px;
+}
+
+.c-unusable{
+	background: url(../../../i/wappay_test/unusable_h5.png) no-repeat;
+	background-size: 100% 84px;
+}
+.c-overdue{
+	background: url(../../../i/wappay_test/overdue_h5.png) no-repeat;
+	background-size: 100% 84px;
+}
+.choiced .choicedimg{
+	display: inline-block;
+	background: url(../../../i/wappay_test/usable_h5_choiced.png) no-repeat;
+	background-size: cover;
+}
+/*------没有优惠券的样式--------*/
+.no-coupons{
+	text-align: center;
+	padding: 200px 0 55px 0;
+	display: none;
+}
+.no-coupons img{
+	width: 35px;
+	height: 25px;
+}
+.no-coupons p{
+	font-size: 16px;
+	color: #767676;
+	margin-top: 10px;
+}
+.no-coupons p span{
+	font-size: 16px;
+	color: #767676;
+}
+#queding, #fanhui{
+	position: fixed;
+	width: 100%;
+	z-index: 101;
+	height: 45px;
+	line-height: 45px;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	background: #FAFAFA;
+	color: #00B551;
+	font-size: 15px;
+}
+@media screen and (min-width: 320px) {
+	.coupons-ul li{
+		height: 76px;
+		background-size: 100% 75px;
+	}
+	.c-usable .c-price,
+	.c-unusable .c-price,
+	.c-overdue .c-price{
+		font-size: 18px;
+		top: 29px;
+	}
+	.c-range{
+		font-size: 16px;
+		left: 41%;
+	}
+	.c-endtime{
+		font-size: 12px;
+		left: 41%;
+	}
+}
+@media screen and (min-width: 360px) {
+	.coupons-ul li{
+		height: 81px;
+		background-size: 100% 80px;
+	}
+	.c-usable .c-price,
+	.c-unusable .c-price,
+	.c-overdue .c-price{
+		font-size: 18px;
+		top: 31px;
+	}
+	.c-range{
+		font-size: 16px;
+		left: 41%;
+	}
+	.c-endtime{
+		font-size: 12px;
+		left: 41%;
+	}
+	.unmatch-tips{
+		top: 64px;
+	}
+}
+@media screen and (min-width: 414px) {
+	.coupons-ul li{
+		height: 95px;
+		background-size: 100% 94px;
+	}
+	.coupons-ul .c-price{
+		width: 100px;
+		height: 22px;
+		top: 36px;
+		font-size: 22px;
+	}
+	.c-endtime{
+		top: 59px;
+		font-size: 15px;
+	}
+	.c-range{
+		top: 28px;
+		font-size: 18px;
+	}
+	.unmatch-tips{
+		top: 77px;
+	}
+}
+@media screen and (min-width: 485px) {
+	.coupons-ul li{
+		height: 105px;
+		background-size: 100% 104px;
+	}
+	.coupons-ul .c-price{
+		width: 100px;
+		height: 22px;
+		top: 40px;
+		font-size: 22px;
+	}
+	.c-endtime{
+		top: 63px;
+		font-size: 16px;
+	}
+	.c-range{
+		top: 30px;
+		font-size: 19px;
+	}
+	.unmatch-tips{
+		top: 87px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.coupons-ul li{
+		height: 125px;
+		background-size: 100% 124px;
+	}
+	.coupons-ul .c-price{
+		width: 115px;
+		height: 29px;
+		top: 47px;
+		font-size: 29px;
+	}
+	.coupons-ul a .c-endtime{
+		top: 75px;
+		font-size: 15px;
+	}
+	.coupons-ul a .c-range{
+		top: 40px;
+		font-size: 18px;
+	}
+	.no-coupons{
+		padding-top: 300px;
+	}
+	.no-coupons img{
+		width: 45px;
+		height: 35px;
+	}
+	.unmatch-tips{
+		top: 92px;
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 800px) {
+	body{
+		width: 800px;
+		margin: 0 auto;
+	}
+	#queding, #fanhui{
+		width: 800px;
+		right: 0;
+    	margin: auto;
+	}
+	.no-coupons{
+		padding-top: 300px;
+	}
+	.no-coupons img{
+		width: 55px;
+		height: 35px;
+	}
+}

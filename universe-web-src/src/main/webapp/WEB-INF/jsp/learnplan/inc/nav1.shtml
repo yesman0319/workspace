@@ -1,0 +1,25 @@
+<div class="header">
+    <div class="width">
+        <img class="fl logo" src="../i/logo.png" alt="精英计划"/>
+        <ul class="fl nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="javascript:;">直播</a></li>
+            <li><a href="plan.html">学习计划</a></li>
+            <li><a href="info.html">资料</a></li>
+            <li><a href="javascript:;">回放</a></li>
+            <li><a href="javascript:;">FAQ</a></li>
+        </ul>
+        <div class="user_nav fr">
+            <div class="user fl">
+                <i class="no_message"></i>
+                <span class="nickname">宇宙超人</span>
+                <i class="level"></i>
+            </div>
+            <div class="message fl">
+                <i class="icon_msg"></i>
+                <span>消息</span>
+                <span class="num_msg">26</span>
+            </div>
+        </div>
+    </div>
+</div>

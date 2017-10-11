@@ -1,0 +1,45 @@
+'use strict';
+
+define(function(){
+  return [
+    '{{each data.questions as value index}}',
+    '   {{if value.type==1}}',
+    '   <p class="duliwrite left25 mleft20 font13 jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class=" sim-width510" style="display:inline-block;width: 512px;">{{value.content}}</a>',
+    '       <span class="fright pg_red">已保存</span>',
+    '   </p>',
+    '   {{else if value.type==2}}',
+    '   <p class="duliwrite left25 mleft20 font13 jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class=" sim-width510" style="display:inline-block;width: 512px;">{{value.content}}</a>',
+    '       <span class="fright pg_red">等待老师抢作业</span>',
+    '   </p>',
+    '   {{else if value.type==3}}',
+    '   <p class="duliwrite left25 mleft20 font13 jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class=" sim-width510" style="display:inline-block;width: 512px;" >{{value.content}}</a>',
+    '       <span class="fright pg_red">已有{{value.grap_amount}}位老师抢作业</span>',
+    '   </p>',
+    '   {{else if value.type==4}}',
+    '   <p class="duliwrite left25 mleft20 font13 jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class=" sim-width510" style="display:inline-block;width: 512px;" >{{value.content}}</a>',
+    '       <span class="left25 bgray round rewrite-percentnew " ><span class="number">待批改</span></span>',
+    '   </p>',
+    '   {{else if value.type==5}}',
+    '   <p class="duliwrite left25 mleft20 font13  jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class=" sim-width510" style="display:inline-block;width: 512px;" >{{value.content}}</a>',
+    '       <span class="left25 b-blue round rewrite-percentnew " ><span class="number">{{value.score}}分</span></span>',
+    '   </p>',
+    '   {{else}}',
+    '   <p class="duliwrite left25 mleft20 font13 jj-speak-padding" id="{{value.id}}" type="{{value.type}}" category="wsl" score="{{value.score}}" answer_id="{{value.answer_id}}" sequence_number="{{value.sequence_number}}">',
+    '       <span class="num bold sin_num">{{value.sequence_number}}</span>',
+    '       <a href="#" category="wsl" class="sim-a2" style="display:inline-block;width: 512px;" >{{value.content}}</a>{{if value.is_today_task}}<span class="orange left16">今日任务</span>{{/if}}',
+    '   </p>',
+    '   {{/if}}',
+    '{{/each}}'
+
+  ].join('')
+});

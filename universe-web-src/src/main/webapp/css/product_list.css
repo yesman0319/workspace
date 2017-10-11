@@ -1,0 +1,108 @@
+body{background:#f5f5f5;}
+.layout{padding-top:20px;padding-bottom:40px;width:1160px;margin:0 auto;overflow:hidden;}
+.location{line-height:55px;font-size:14px;}
+.location .cur{color: #00b551;}
+.location a{font-size:14px;}
+.plan_list{width:1160px;}
+.plan_list .plan_item{padding:15px 14px 0;height:275px;width:262px;float:left;cursor:pointer;}
+.plan_list .plan_item:hover{background:#fff;}
+.plan_list .plan_item a{display:block;position:relative;margin:0 auto;height:170px;width:262px;}
+.plan_list .plan_item a img{height:170px;width:262px;}
+.plan_list .plan_item .plan_name{display:block;line-height:50px;font-size:18px;width: 262px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+.plan_list .plan_item .study_num{font-size:16px;color:#767676;margin-right:0;}
+.plan_list .plan_item .study_num .audio{display:inline-block;margin-right:5px;height:16px;width:26px;background:url("../i/index/stu_plan.png") no-repeat;}
+.plan_list .plan_item .free{font-size:16px;color:#00b551;}
+.plan_list .plan_item .price{font-size:18px;color:#ff9c00;font-weight: bold;}
+.page {
+	display: inline-block;
+	margin: 20px 0;
+	height: 30px;
+	line-height: 30px;
+}
+.page .first,
+.page .prev,
+.page .next,
+.page .last {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	width: 48px;
+	color: #232323;
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+}
+
+.page .page_list {
+	float: left;
+	height: 30px;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 5px;
+	overflow: hidden;
+}
+
+.page .page_list li {
+	float: left;
+	margin-right: 5px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.page .page_list li a {
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	width: 28px;
+	border: 1px solid #dcdcdc;
+	color: #232323;
+}
+.page .page_list li a.pageActive{
+	background:#00b551;
+	color:#fff;
+}
+
+.page .page_list li a:hover {
+	color: #fff;
+	background: #00b551;
+}
+
+.page .page_count,
+.page .cur_page {
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+.page .total_count {
+	margin: 0 5px;
+}
+
+.page .goTO {
+	display: inline-block;
+	margin: 0 10px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	width: 28px;
+	border: 1px solid #dcdcdc;
+	outline: none;
+	color: #232323;
+}
+
+.page .ok {
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	width: 28px;
+	border: 1px solid #dcdcdc;
+	color: #232323;
+}
+ 

@@ -1,0 +1,46 @@
+.view-bj{ background: url("../images/view-body.png") repeat-y center; }
+.wrap{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+/* header */
+.header{ width: 100%; height: 100px; background:#0ea5e6;}
+.logo-box{ padding:19px 0 0 59px; width:256px; height:81px;}
+.title{ line-height: 122px; height: 100px;}
+.remind-box{ padding:20px 59px 0 0;}
+.btns-box{ margin-bottom: 10px; }
+.,.chooseIcon,.timeIcon{ background: url("../images/header-icon.png") no-repeat; display: block;}
+.{background-position: 0 -76px; width: 91px; z-index:100; height: 26px; position: relative;}
+.chooseIcon{ width: 91px; height: 26px;  }
+.timeIcon{ background-position: 0 -208px; width: 91px; height: 26px;}
+.LeftTime-box{ clear: both; width: 150px;}
+.sheet-box{ display: none; position: absolute; z-index: 100; padding:0 21px 0 15px; top:50px; left: -92px; width: 240px; height: 450px; background: #fff; }
+.sj{  border-style:solid; border-width:10px;  border-color:#0EA5E6 #0EA5E6 #fff #0EA5E6; z-index: 100; position: absolute; top: -20px; left: 50%; margin-left: -10px; height:0; width:0; font-size:0}
+.sheet-title{ height: 52px; line-height: 74px; text-align: left;}
+.re-box{ overflow: hidden;}
+.reList li{ float:left; width: 22px; margin:0 5px 8px; height: 22px;}
+.reList li a{ display: block; width: 20px; height: 20px; border:1px solid #ccc; background: #f1f1f1; text-align: center; line-height: 20px; color:#000;}
+.reList li a:hover{ border-color:#777;}
+
+/* main */
+.main{ width: 100%; height:100%;}
+.main-content{ width: 1200px; height: 100%;}
+.view-l-box,.view-r-box{ height: 100%; overflow-y:scroll; overflow-x:hidden; position: relative;}
+.view-l-box{ width: 600px; }
+.view-r-box{ width: 590px;}
+.Question-title{ width: 100%; height: 35px; margin: 30px 0 30px 0;}
+.QuestionIcon,.radioIcon{ background: url("../images/Question-icon.png") no-repeat; display: block;}
+.QuestionIcon{ background-position: 0 -66px; width: 226px; height: 35px; line-height: 35px;}
+.Question{ margin-bottom: 20px;}
+.textBlock{ background: #C2BFBF; font-weight: 700;}
+.radioBtn{ display: none;}
+.radioIcon{ background-position: 0 0; width: 16px; position: absolute; left: 0; top: 12px; height: 16px;  } 
+.radioIcon:hover{ background-position: -19px 0;}
+.radioIcon.active{ background-position: -19px 0;}
+.optionsList li{ line-height: 39px; height: 39px; padding-left: 30px; position: relative;}
+.Q-title{  padding: 30px 0 29px; }
+.QuestionText{ padding: 0 20px 30px 20px;}
+.block{ background:#C2BFBF; font-weight: 700; }
+.tag{ float: left; font-size: 20px; width: 15px; height: 15px;}
+#scrollTop{ position: relative;  }
+.insert{ width: 10px; height: 20px; background:#000; display: inline-block; margin:0 8px; vertical-align: middle;}
+.rBox{ padding-top: 30px;}
+
+

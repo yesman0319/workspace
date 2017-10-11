@@ -1,0 +1,61 @@
+#dic-hd img{
+	display: inline-block;
+}
+#dic-clock{
+	color: #5499ff;
+}
+.progressZ{
+	cursor: pointer;
+}
+.loadedZ{
+	cursor: pointer;
+}
+#lookDicAnswer{
+	cursor: pointer;
+}
+#lookDicAnswer:active, #clearDicAnswer:active{
+	text-decoration: underline;
+}
+#answer{
+	line-height: 23px;
+}
+.dic-word{
+	position: relative;
+    margin: 0 10px 0px;
+    display: inline-block;
+    height: 18px;
+    width:100px;
+    border-bottom: 1px solid #b7b7b7;
+    vertical-align: middle;
+}
+.dic-word input{
+	position: absolute;
+	width:100%;
+    border: 0 none;
+    text-align: center;
+    ime-mode: disabled;
+    background: none!important;
+    background: #fff;
+    resize: none;
+    outline:none;
+    top: -2px;
+}
+.dic-ans-word{
+	display: none;
+}
+.sentences{
+	line-height: 25px;
+}
+
+.dic-ans-word.dic-right{
+	color: #00b551;
+}
+.dic-ans-word.dic-wrong{
+	color: #f00;
+}
+.colorCircle{
+	cursor:default !important;
+}
+.practice-result .result-img1{
+	width: 100%;
+}

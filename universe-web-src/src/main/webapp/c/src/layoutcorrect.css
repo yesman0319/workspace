@@ -1,0 +1,42 @@
+
+.h915{width:733px;min-height:910px;background: #ffffff;border-radius:8px;position: relative;top: 22px;margin-top: -290px;margin-left: 518px;height: auto !important;}
+.top40{margin: 17px 21px 30px 0px;}
+.top25{padding-top:20px;}
+.h915 p{margin-right:7px;}
+.top30{margin-top:30px;}
+.top9{margin-top:9px;}
+.top28{position:relative;top:28px;}
+/*模块练习*/
+.h1075,.h495,.h400{border-radius:8px;height:auto !important;}
+.h1075{width:733px;min-height:1075px;float:left;margin-left:250px;margin-top:26px;}
+.h400{width:733px;height:400px;background: #ffffff;}
+.h665{width:733px;height:665px;background: #ffffff;margin-top:20px;}
+.h495{width:250px;min-height:495px;margin-left: 1005px;margin-top:-1094px;background: #ffffff;}
+.p3{padding-left: 27px;padding-top: 20px;margin-bottom: -8px;}
+.ans-div1{width:735px;min-height:140px;margin-bottom: 30px;}
+.ans-scorediv1{width: 1000px;min-height: 140px;}
+.ans-div2{width:680px;min-height:180px;background: #f8f8f8;border-radius: 8px;} 
+.yc_ckda .i4{margin-left:130px;margin-top:-60px;}
+.yc_ckda .ico{margin-left: -160px;margin-top: -60px;margin-right:400px;}
+.ans-p{margin-left:325px;margin-top:-55px;}
+.ans-p1{margin-left:325px;margin-top:-40px;}
+.min1{padding-right:140px;}
+.min2{padding-right:200px;}
+.min3{padding-right:170px;}
+.right20{width: 210px;height: 130px;line-height: 22px;}
+.h1075 p{margin-bottom: 0px;}
+/* .ans-p2{margin-left:480px;margin-top:-55px;} */
+/*口语精华*/
+
+.h950{width:730px;min-height:950px;position: relative;top: 22px;margin-top: -290px;margin-left: 518px;height: auto !important;}
+.h950 ul{width:620px;height:44px;border:none;text-align: center;}
+.tab-content{/* width: 730px; */min-height: 100px;background: #ffffff;display: block;/* border-bottom-right-radius: 8px;border-bottom-left-radius: 8px; */height:auto !important;overflow: hidden;}
+
+.second-tab{min-width:500px;height:35px;margin-top: 18px;line-height: 30px;}
+.second-tab a{display: block;float:left;width:130px;height:35px;text-align: center;margin-right: 25px;line-height: 35px;text-decoration: none;}
+.second-tab a:link,.second-tab a:visited{text-decoration: none;}
+.second-tab a:hover{width: 130px;height: 35px;background: #208978;border-radius: 14px;text-decoration: none;text-align: center}
+.navActive1{width: 130px;height: 35px;background: #208978;border-radius: 14px;text-decoration: none;text-align: center;color:#fff!important;}
+
+.audioin{background:#FF8A8A!important;}
+.popover-content{word-break: break-all;}

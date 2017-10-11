@@ -1,0 +1,24 @@
+.banner{width:100%;height:522px;background: url(../../i/banner.jpg) no-repeat;background-size: cover;}
+  .banner-content{width:1000px;min-height: 522px;/* background: #f0f; */}
+  .content-bg{width:100%;height:700px;background: url(../../i/content-bg.jpg) no-repeat;background-size: cover;}
+  .content-mid {width: 944px;height:700px;/* background: url(../../i/content.jpg) no-repeat;background: #f00; */}
+  .content-img{margin-top: -130px;width: 950px;}
+  /* banner  */
+  .banner-phone{margin-top: 99px;margin-left: 100px;}
+  .banner-font{position: relative;left: 80px;top: -60px;letter-spacing: 8px;}
+  .banner-font1{float: right;position: relative;left: -68px;top: -281px;letter-spacing: 8px;}
+  .banner-shade,.banner-shade1{width:235px;height:60px;border-radius: 43px;line-height: 51px;position: relative;/* float: right; */ display: block;}
+  .banner-shade{background-color: rgba(0, 0, 0, 0.45);top: -200px;left: 170px;}
+  .banner-shade1{background-color: rgba(212, 219, 197, 0.6);top: -110px;left: 480px;}
+  .banner-shade1:hover{color:#fff;text-decoration: none;}
+  .app,.download{margin-left: 40px;}
+  .pointer{cursor: pointer;}
+ .font22{font-size: 22px;}
+ .font90{font-size: 90px;}
+ .font50{font-size: 50px;}
+ .app-font,.download-font{padding-left: 20px;top: 4px;position: relative;}
+ .QR-code{float: right;position: relative;left: 413px;top: -219px;width:140px;height:140px;}
+ .logo-font{position: relative;left: 13px;top:10px;}
+.return-home{float: right;margin-top: 24px;font-size: 15px;}
+/* .bbot106{border-bottom: 106px solid #656565;} */
+.ios-download{position: relative;left: 314px;top: -253px;color: #fff;float: right;}

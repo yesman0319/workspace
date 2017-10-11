@@ -1,0 +1,93 @@
+.jijing-speak-div{width: 691px;min-height: 80px;padding-top: 15px;padding-left: 10px;padding-right: 20px;}
+p.jijing-speak-div,.jj-speak-divnew{margin:0px;}
+.jijing-speak-div:nth-child(2n+1){background-color: #f6f6f6;}
+
+.jj-speak-padding {padding-left: 10px;}
+.jj-speak-padding:nth-child(2n+1){background-color: #f6f6f6;}
+.jj-speak-single{width: 691px;height: 50px;position:relative;  padding-right: 20px;line-height:50px;margin-bottom: 0px;}
+.jj-speak-divnew{width: 691px;height: 88px;padding-top: 20px;position:relative;  padding-right: 20px;}/*当行数为俩行并且有状态*/
+.jijing-speak-dic{position: relative;top: -75px;margin-left: 77px;}
+.jingjing-speak-tab{min-height: 150px;}
+.jijing-tab-style{padding-top: 20px;}
+/*何蛟添加开始*/
+.jijing-fun-round-video{width: 90px;height: 90px;border-radius: 90px;border: 1px solid #e2e2e2;margin-left: 75px;color: #cccccc;background: url(../../i/tpo-pic5.png) no-repeat 53% 35%;}
+.jijing-fun-round-video:hover{color: #fff;background: url(../../i/tpo-pic6.png) no-repeat 53% 35%;background-color: #f38866;}
+.jijing-span-style1 {position: relative;top: 53px;right:-3px;font-size: 12px;margin-left:26px;}
+.height100{height:100px;}
+.height90{height:90px;}
+/*何蛟添加结束*/
+
+/*wangfengliang添加开始*/
+.pgnum{position:relative;top:3px;}
+a.zonghepigailist{width:571px;margin-left: 21px;margin-top: -13px;}
+.zonghepigai{width: 691px;min-height: 71px;padding-top: 10px;padding-left: 10px;padding-right: 20px;margin:0px;}
+/*.zonghepigai-div{cursor:pointer;width:691px;margin-left: 20px;}
+.zonghepigai-div:nth-of-type(odd){background-color: #f6f6f6;}*/
+div.zonghe-one{margin-top:-38px;right: 20px;}
+div.zonghe-lists{margin-top:-18px;right: 14px;}
+.tpo-write-tab{border-top: none; padding-top: 20px;}
+.pgnum1{top:6px;}
+
+/*提示框*/
+.feedback-title1 {padding-left: 59px;padding-top: 12px;top: -20px;font-size: 14px;color: #000;}
+.feedback-title2 {font-size: 14px;color: #000;padding: 30px 90px;}
+button.feedback-button5{background-color:#e6e6e6;}
+.one-button6 {text-align: center;padding-bottom: 13px;}
+/*提示框*/
+
+p.zonghe-poing {margin-top: -19px;margin-right: -112px;}
+
+/*音频播放器样子*/
+.audiojsZ audio { position: absolute; left: -1px; }
+.audiojsZ { width: 720px; height: 50px; background: #e4e2e3; overflow: hidden; font-family: monospace; font-size: 14px;margin-left:25px;}
+    /*-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);*/
+    /*-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }*/｝
+.audiojsZ .play-pauseZ { width: 53px; height: 50px; padding: 4px 6px; margin: 0px; float: left; overflow: hidden; border-right: 2px solid #ffffff; }
+.audiojsZ p { display: none; width: 43px; height: 45px; margin: 0px; cursor: pointer; }
+.audiojsZ .playZ { display: block; }
+.audiojsZ .scrubberZ { position: relative; float: left;background: #a8a8a8; width: 530px; height: 4px; margin:23px 10px 22px; border-left: 0px; border-bottom: 0px;/*background: #fcc;*/ /*overflow: hidden;*/ }
+.audiojsZ .progressZ { position: absolute; top: 0px; left: 0px; height: 4px; width: 0px; background: #00b551; z-index: 1; }
+.audiojsZ .progressZ:after{  position: absolute;content: " ";background: url(../../i/audio2.png) no-repeat;width: 30px; height: 30px;top: -10px; right:-27px;}
+.audiojsZ .loadedZ { position: absolute; top: 0px; left: 0px; height: 4px; width: 0px; background: #a8a8a8; }
+.audiojsZ .timeZ { float: left; height: 50px; line-height: 50px; margin: 0px 0px 0px 6px; padding: 0px 6px 0px 12px; border-left: 2px solid #ffffff; color: #000000; font-family:"Microsoft YaHei",微软雅黑!important;/*text-shadow: 1px 1px 0px rgba(125, 0, 0, 0.5);*/ }
+.audiojsZ .timeZ em { padding: 0px 2px 0px 0px; color: #000000; font-style: normal; }
+.audiojsZ .timeZ strong { padding: 0px 0px 0px 2px; font-weight: normal; }
+.audiojsZ .error-messageZ { float: left; display: none; margin: 0px 10px; height: 50px; width: 560px; overflow: hidden; line-height: 50px; white-space: nowrap; color: #fff;
+    text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; }
+.audiojsZ .error-messageZ a { color: #eee; text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #999; white-space: wrap; }
+.audiojsZ .playZ { background: url('../../i/audio1.png') center center no-repeat; }
+.audiojsZ .loadingZ { background: url('../../i/loadimg.gif') center center no-repeat; background-size:19px;}
+.audiojsZ .errorZ { background: url('../../i/audio1.png') center center no-repeat; }
+.audiojsZ .pauseZ { background: url('../../i/audio3.png') center center no-repeat }
+
+.playingZ .playZ, .playingZ .loadingZ, .playingZ .errorZ { display: none; }
+.playingZ .pauseZ { display: block; }
+
+.loadingZ .playZ, .loadingZ .pauseZ, .loadingZ .errorZ { display: none; }
+.loadingZ .loadingZ { display: block; }
+
+.errorZ .timeZ, .errorZ .playZ, .errorZ .pauseZ, .errorZ .scrubberZ, .errorZ .loadingZ { display: none; }
+.errorZ .errorZ { display: block; }
+.errorZ .play-pauseZ p { cursor: auto; }
+.errorZ .error-messageZ { display: block; }
+
+/*wangfengliang添加结束*/
+
+.relative{position:relative;}
+.bf_bg {
+    background: url(../../i/person_bf_bg.png)no-repeat;
+    width: 65px;
+    height: 58px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.bf_fontday {
+    color: #fff;
+    display: inherit;
+    position: absolute;
+    top: 10px;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+}

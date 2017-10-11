@@ -1,0 +1,33 @@
+
+<script id="tmpl_jplayer" type="text/html">
+<div id="jquery_jplayer"></div>
+		<div id="jp_container" class="demo-container" style="position:relative">
+			<ul style="display:none">
+				<li><span>Select a track : </span></li>
+				<li><a href="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3" class="track"></a></li>
+				<li> | </li>
+				<li><a id="audioUrl" href="http://xiaomatuofu.b0.upaiyun.com/xiaomatuofu/tingxie/TPO4L1-6-2.mp3" class="track track-default"></a></li>
+				<li> | </li>
+			</ul>
+			<p>
+				<span class="play-state" style="display:none"></span>
+				<span class="track-name"></span>
+				<span class="extra-play-info" style="display:none"></span>
+				<span class="jp-current-time" style="display:none"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="jp-duration"></span>
+			</p>
+			<ul class="wrapul">
+				<li><span class="jp-play glyphicon glyphicon-play"></span></li>
+				<li><a class="jp-pause glyphicon glyphicon-pause" href="#" ></a></li>
+				<li><a style="display:none" class="jp-stop" href="#">Stop</a></li>
+				<li style="margin-top: -10px;"><!--#include file="progress.shtml"--></li>
+			</ul>
+			<ul style="display:none">
+				<li>volume :</li>
+				<li><a class="jp-mute" href="#">Mute</a></li>
+				<li><a class="jp-unmute" href="#">Unmute</a></li>
+				<li> <a class="jp-volume-bar" href="#">|&lt;----------&gt;|</a></li>
+				<li><a class="jp-volume-max" href="#">Max</a></li>
+			</ul>
+		</div>
+</script>

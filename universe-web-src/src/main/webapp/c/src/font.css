@@ -1,0 +1,100 @@
+.bold{font-weight: bold;}
+.header ul li a{color:#fff;}
+/* .dropdown ul li a{color:#000;} */ 
+.list-group a.list-group-item{color:#767676;}
+/* .breadcrumb ul li{color:#77767b;} */
+.main a{color:#000;}
+.main a:hover{color:#000;}
+.p1{color:#00b551;}
+.black{color:#000!important;}
+.gly,.gly1{background: transparent!important;color: #00b551!important;font-size: 14px!important;position: relative!important;margin-top: -40px!important;top: 1px!important;}
+.gly{left: -42px!important;}
+.gly1{left: -52px!important;}
+.all-blue{color:#327dde;}
+.bgreen{background: #00b551;}
+.green{color: #00b551!important;}
+/* .glyphicon{color:#00b551;font-size: 22px;} */
+.glyphicon1{color:#00b551;font-size: 22px;}
+/* .glyphicon-unchecked{color:#000;font-size: 26px;padding-top: 20px;position:relative!important;top: 8px!important;left:-20px;} */
+.glyphicon-unchecked{display: inline-block;width: 20px;height: 20px;border: 1px solid #fff;/* background: #f00; */color: transparent;position: relative!important;left: -20px;}
+span.glyphicon-volume-up{line-height:30px;margin-left:13px;}
+.voca-back{width:22px;height:22px;margin-top:19px;background:#ccd1d9;font-size:18px;color:#fff;text-align: center;}
+.hear-back{width: 20px;height: 19px;background: #ccd1d9;color: #fff;padding-left: 3px;padding-top: 3px;}
+h4{text-align: center;padding-top: 30px;padding-bottom:50px;}
+.red{color:#ff5a5a!important;}
+.remind_red{color:#ff0000;}
+.all-blue{color:#00b551;}
+.orange{color:#ffc72a!important;}
+.white{color:#fff!important;}
+.bwhite{background:#fff!important;}
+.re-orange{color: #ffc72a;}
+.re-blue{color: #00c2df;}
+.borange{background: #ffc72a;}
+.bblue{background: #00c2df;}
+.gray1{color:#979797;}
+.graynew{color:#767676;}
+.bwrite{background:#fff;}
+.general{color:#97caab;}
+.font-blue{color:#00b551 !important;}
+.gray3{color:#979797;padding-left: 10px;}
+.bluecd{color:#c0dbff}
+.gray2{color:#c4c4c4;}
+.gram-p1{font-size: 96%;}
+/* 口语批改 */
+.gray{color:#5e5e5e;}
+.p3 a{color:#5e5e5e;}
+.sign{color:#eee;padding-left:5px;padding-right:5px;}
+.sign1{color:#5e5e5e;padding-left:5px;padding-right:5px;}
+.scorefont{font-size: 30px;}
+/* 登录 */
+.login-font1{color:#00b551;font-size: 30px;}
+.login-font3{font-size: 20px;font-weight: normal;}
+.h450 li{line-height: 22px;}
+.font18{font-size: 18px;}
+.font15{font-size: 15px;}
+.font20{font-size: 20px;}
+.font30{font-size: 30px;}
+.color58{color:#fff;}
+.footer-font1{font-size: 11px;}
+
+
+.message-space{padding-left: 20px;}
+.font10{font-size:10px;}
+..font12{font-size:12px;}
+
+.font13{font-size:13px;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font24{font-size:24px;}
+.font22{font-size:22px;}
+.person-gray{color:#a5a6a6;}
+.zonghe-bgray{color:#464646;}
+.fontright{text-align:right;}
+.font-left{position:relative;z-index:1;color:#fff;right:100px;}
+.font-right{position:relative;display:inline-block;width:10px;z-index:1;color:#fff;left:100px;}
+
+.remind_red {  color: #ff0000;  }
+.orangeff7{color:#ff7d3d;}
+.yellowffd{color: #ffdf30;}
+.yellowe5c{color:#e5c00b;}
+.green00b{color:#00b551;}
+.blue4dd{color:#4dd7ff;}
+.bluea4c{color:#a4ccff}
+.blue509{color:#00b551;}
+.redff3{color:#ff3c1f;}
+.black272{color:#272727;}
+.black232{color:#232323;}
+.defaultBlack{color:#232323;}
+
+.bblack232{background:#232323;}
+.bblue509{background: #00b551;}
+.byellowffd{background: #ffdf30;}
+.borange37{background: #e3702d;}
+.defaultBlack{color:#232323;}
+
+/*商店引入字体*/
+@font-face{
+    font-family:'zzgflh';
+    src:url('../../fonts/zzgflh.otf');
+}

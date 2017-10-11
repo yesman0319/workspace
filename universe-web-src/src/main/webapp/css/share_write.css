@@ -1,0 +1,155 @@
+body{background:#f5f5f5;color:#232323;}
+.layout{width:1160px;margin:55px auto;overflow: hidden;}
+.main{width:786px;}
+.side{margin-left:24px;width:350px;}
+.main .h{ position:relative;padding-left:25px;height:70px;line-height:70px;width:766px;background:url("../i/share/ban_speaking.png") no-repeat;font-size:20px;font-weight:bold;}
+.main .h .title{margin-left:50px;font-size:16px;}
+.main .h .share_icon{
+    position:absolute;
+    top: 20px;
+    right:34px;
+    display:inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../i/plan/share_black.png") no-repeat;
+    cursor:pointer;
+}
+.main .question{margin-top:20px;padding-bottom:25px;background: #fff;}
+.main .question h2{padding-left:20px;font-size:14px;height:58px;line-height:58px;border-top:3px solid #00b551;border-bottom:2px solid #f5f5f5;}
+.main .question .question_con{padding:10px 20px;font-size: 16px;width:746px;line-height:30px;}
+.main .question button{margin:20px 335px 0;box-sizing: inherit;height:38px;line-height:38px;text-align:center;width:114px;border:1px solid #00b551;background:#e5f7ed;color:#00b551;border-radius:50px;outline: none;cursor:pointer;font-size:16px;}
+.main .share{margin-top:20px;background: #fff;}
+.main .share h2{padding-left:20px;font-size:14px;height:58px;line-height:58px;border-top:3px solid #00b551;border-bottom:2px solid #f5f5f5;}
+.main .share h2 span{display:inline-block;height:58px;line-height:58px;}
+.main .share h2 .count{color:#555;font-weight:normal;margin-left:10px;}
+.main .share h2 .time{width:136px;text-align:center;color:#767676;font-size:14px;font-weight:normal;}
+.main .share h2 .sup{width:90px;text-align:left;color:#767676;font-size:14px;font-weight:normal;}
+.main .share h2 .read{width:90px;text-align:left;color:#767676;font-size:14px;font-weight:normal;}
+.main .share h2 .ol_share{margin-right:20px;width:50px;text-align:center;color:#767676;font-size:14px;font-weight:normal;}
+.main .share .share_list{width:786px;margin:0 auto;}
+.main .share .share_list li{position:relative;padding:15px 20px 0;width:746px;}
+.main .share .share_list li:hover{background:#f7f7f7;}
+.main .share .share_list li .action{position:relative;padding-bottom:12px;width:100%;border-bottom:1px dashed #d4d4d4;overflow:hidden;}
+.main .share .share_list li .action .ava{margin-left:10px;height:52px;width:52px;border-radius:50%;overflow:hidden;}
+.main .share .share_list li .action .ava img{height:100%;width:100%;}
+.main .share .share_list li .action .action-info{margin-left:13px;width:150px;font-size:14px;}
+.main .share .share_list li .action .action-info .action-info-name{display:block;font-size:14px;line-height:13px;height:13px;max-width: 129px;overflow: hidden;  text-overflow: ellipsis; white-space: nowrap;}
+.main .share .share_list li .action .action-info .his_time{line-height:35px;height:35px;width:100%;color:#767676;}
+.main .share .share_list li .action .con {position:relative;width: 670px;padding-right: 23px;}
+.main .share .share_list li .action .con .action-answer-brief{position:relative;line-height:24px;height:120px;font-size:14px;overflow:hidden;}
+.main .share .share_list li .action .con .action-answer{position:relative;line-height:24px;font-size:14px;overflow:hidden;}
+.main .share .share_list li .action .con .unfold{display:inline-block;margin-left:10px;color:#00b511;font-size:12px;bottom:0;cursor:pointer;}
+.main .share .share_list li .action .ic-con{height:32px;}
+.main .share .share_list li .action .ic-con .answer-time{position:absolute;left:74px;bottom:6px;height:32px;line-height:32px;}
+.main .share .share_list li .action .ic-con .answer-length{position:absolute;left:220px;bottom:6px;height:32px;line-height:32px;}
+
+
+
+.main .share .share_list li .support{display:block;position:absolute;bottom: 12px;left:565px;height:20px;line-height:20px;text-align:left;}
+.main .share .share_list li .support .support-icon{display:inline-block;margin-right:10px;height:18px;width:18px;background:url("../i/share/ic-support.png") no-repeat;vertical-align:-4px;}
+.main .share .share_list li .support:hover .support-icon{background:url("../i/share/ic-support-hover.png") no-repeat;}
+.main .share .share_list li .support:hover .support-num{color:#fe6708;}
+
+.main .share .share_list li .comment{display:block;position:absolute;bottom: 12px;left:642px;height:20px;line-height:20px;text-align:left;}
+.main .share .share_list li .comment .comment-icon{display:inline-block;margin-right:10px;height:18px;width:20px;background:url("../i/share/ic-comment.png") no-repeat;vertical-align:-5px;}
+.main .share .share_list li .comment:hover .comment-icon{background:url("../i/share/ic-comment-hover.png") no-repeat;}
+.main .share .share_list li .comment:hover .comment-num{color:#fe6708;}
+
+
+.main .share .share_list li .share_btn{display:inline-block;height:16px;width:16px;position:absolute;bottom: 12px;left:719px;background:url('../i/share/ic-share.png') no-repeat;vertical-align:-5px;}
+.main .share .share_list li .share_btn:hover{background:url('../i/share/ic-share-hover.png') no-repeat;}
+/*播放样式*/
+.main .share .share_list li .action .action-info .play{background:#00b551;}
+.main .share .share_list li .action .action-info .play .drop{border-right-color:#00b551}
+.main .share .share_list li .action .action-info .play .lb{background:url("../i/share/lb.gif") no-repeat;}
+/*点过赞的样式*/
+.main .share .share_list li .supported{display:block;position:absolute;bottom: 12px;left:565px;height:20px;line-height:20px;text-align:left;}
+.main .share .share_list li .supported .support-icon{display:inline-block;margin-right:10px;height:18px;width:18px;background:url("../i/share/ic-support-hover.png") no-repeat;vertical-align:-4px;}
+.main .share .share_list li .supported .support-num{color:#fe6708;}
+
+
+/*分页*/
+
+.page{margin:20px auto;display:Inline-block;height:30px;line-height:30px;}
+.page .first,.page .prev,.page .next,.page .last{display:block;float:left;margin-left:5px;height:28px;line-height:28px;text-align:center;width:48px;color:#232323;border:1px solid #dcdcdc;cursor:pointer;}
+.page .page_list{float:left;height:30px;padding:0;margin-top:0;margin-left:5px;overflow:hidden;}
+.page .page_list li{float:left;margin-right:5px;line-height:30px;font-size:16px;}
+.page .page_list li a{display:block;height:28px;line-height:28px;text-align:center;width:28px;border:1px solid #dcdcdc;color:#232323;}
+.page .page_list li .pageActive{color:#fff;background:#00b551;}
+.page .page_list li a:hover{color:#fff;background:#00b551;}
+.page .page_count,.page .cur_page{display:block;float:left;margin-left:10px;}
+.page .total_count{margin:0 5px;}
+.page .goTO{display:inline-block;margin:0 10px;height:18px;line-height:18px;text-align:center;width:28px;border:1px solid #dcdcdc;outline: none;color:#232323;}
+.page .ok{display:block;float:left;margin-top:5px;margin-left:10px;height:18px;line-height:18px;text-align:center;width:28px;border:1px solid #dcdcdc;color:#232323;}
+
+
+/*右侧*/
+.side{padding-bottom:30px;background:#fff;border-top:3px solid #ff9c00}
+.side .plan{padding-left:20px;height:84px;line-height:84px;font-size:18px;}
+.side .con{padding-left:20px;}
+.side .con .plan_pic{height:116px;width:164px;}
+.side .con .plan_desc{padding-left:15px;widtH:123px;}
+.side .con .plan_desc h2{margin-bottom:20px;font-size:16px;height:40px;line-height:20px;overflow:hidden;}
+.side .con .plan_desc p,.side .plan .con .plan_desc p span{color:#767676;}
+.side .con .plan_desc p{display:block;line-height:30px;height:30px;}
+.side .con .plan_desc i{display:inline-block;margin-right:10px;height:22px;width:22px;margin-bottom: -5px;}
+.side .con .plan_desc .ic_num{background:url("../i/info/ic_num.png") no-repeat;}
+.side .con .plan_desc .ic_count{background:url("../i/info/ic_count.png") no-repeat;}
+/*-----微信分享二维码--------*/
+
+.share_qrcode_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    display: none;
+}
+.share_dialog{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 275px;
+    height: 400px;
+    background: #fff;
+}
+
+.share_dialog h2,
+.nickname_dialog h2{
+    height: 54px;
+    line-height: 54px;
+    background: #39c075;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 25px;
+    position: relative;
+}
+.close_btn{
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    background: url(../i/live/close_icon2.png) no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+.share_qrcode{
+    width: 144px;
+    height: 144px;
+    margin: 45px auto;
+}
+.share_tips{
+    margin-left: 40px;
+}
+.share_tips li{
+    margin: 6px 0;
+    color: #767676;
+    font-size: 14px;
+}

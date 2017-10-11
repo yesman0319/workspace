@@ -1,0 +1,367 @@
+/*中间main部分*/
+.layout{
+	width: 100%;
+	background:#f5f5f5;
+	padding:40px 0;
+}
+.layout .main{
+	width: 1160px;
+	margin: 0 auto;
+}
+.layout .main:after{
+	display: block;
+	content:"";
+	clear: both;
+	visibility: hidden;
+}
+.mod{
+	background: #fff;
+}
+ 
+/*左侧栏*/
+.leftSide{
+	width: 290px;
+	height: 435px;
+	float: left;
+}
+.leftSide .info{
+	padding: 40px 0;
+	border-bottom: 1px solid #e4e4e4; 
+}
+.leftSide .info .avatar{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border: 2px solid #f5f5f5;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+.leftSide .info .avatar img{
+	width: 100%;
+	height: 100%;
+	border-radius:50px;
+}
+.leftSide .info .nicknames{
+	font-size: 18px;
+	font-family:"黑体";
+	color: #232323;
+	text-align: center;
+	padding-top: 10px;
+	max-width: 120px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.leftSide .details{
+	color: #767676;
+	padding-top: 12px;
+}
+.leftSide .details>li{
+	padding: 10px 20px;
+	line-height: 30px;
+}
+.leftSide .details>li:after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.leftSide .details>li b{
+	float:left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: 4px;
+}
+.leftSide .details>li .items{
+	float: left;
+	font-size: 14px;
+	font-family:"黑体";
+	padding-left: 5px;
+}
+.leftSide .details>li .num{
+	float: right;
+	font-size: 14px;
+	font-family:"黑体";
+}
+.leftSide .details>li .num .count{
+	font-size: 15px;
+	color: #555555;
+}
+
+/*右侧栏*/
+.rightSide{
+	width: 850px;
+	margin-left: 20px;
+	float: left;
+}
+
+/*---------学习计划----------*/
+.rightSide .plan{
+	width: 100%;
+	min-height: 210px;
+	margin-bottom: 20px;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.rightSide h2{
+	font-size: 18px;
+	position: relative;
+	padding:18px 0;
+}
+.rightSide .wota{
+	font-size: 18px;
+}
+.rightSide h2 .greenBar{
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 18px;
+	background: #00b551;
+	left: -25px;
+	top: 23px;
+}
+.rightSide .plan .list li{
+	overflow: hidden;
+	padding: 13px 0;
+}
+.rightSide .plan .list img{
+	float: left;
+}
+.rightSide .plan .list .desc{
+	float: left;
+	width: 716px;
+	overflow: hidden;
+	padding-left: 12px;
+	box-sizing: border-box;
+	color: #767676;
+}
+.rightSide .plan .list .desc b{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.rightSide .plan .list .desc .left{
+	float: left;
+}
+.rightSide .plan .list .desc .left .test{
+	display: inline-block;	
+	width: 180px;
+}
+.rightSide .plan .list .desc .left .time{
+	margin-left: 10px;
+}
+.rightSide .list .desc .left .plan_title{
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+.rightSide .list .desc .left h3 a{
+	/*font-size: 15px;*/
+}
+.rightSide .plan .list .desc .right{
+	float: right;
+	padding-top: 8px;
+	padding-right: 15px;
+}
+.rightSide .plan .list .desc .right .date{
+	margin-bottom: 5px;
+}
+.rightSide .plan .list .desc .right a{
+	color: #767676;
+	float: right;
+}
+
+/*---------观看的视频----------*/
+.rightSide .video{
+	width: 100%;
+	min-height: 210px;
+	margin-bottom: 20px;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.rightSide .list{
+	position: relative;
+}
+.rightSide .list li:first-child{
+	padding-top: 0;
+}
+.rightSide .list li{
+	border-bottom:1px dashed #d4d4d4;
+	overflow: hidden;
+	padding: 13px 0;
+}
+.rightSide .list li:last-child{
+	border-bottom:none;
+}
+.rightSide .video .list #video_box{
+	float: left;
+}
+.rightSide .video .list .desc{
+	float: left;
+	width: 715px;
+	overflow: hidden;
+	padding-left: 12px;
+	box-sizing: border-box;
+	color: #767676;
+}
+.rightSide .video .list .desc .left b{
+	display: inline-block;
+	width: 23px;
+	height: 15px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+.rightSide .list .desc .left{
+	float: left;
+}
+.rightSide .list .desc .right{
+	float: right;
+	padding-top: 16px;
+	padding-right: 15px;
+}
+
+
+/*---------听力记录----------*/
+
+.rightSide .record{
+	width: 100%;
+	min-height: 210px;
+	margin-bottom: 20px;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.rightSide .record .list .tingli_icon{
+	width: 45px;
+	height: 45px;
+	float: left;
+	padding-top: 8px;
+}
+.rightSide .record .list .desc{
+	float: left;
+	width: 755px;
+	overflow: hidden;
+	padding-left: 12px;
+	box-sizing: border-box;
+	color: #767676;
+}
+.rightSide .record .list .desc b{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.rightSide .record .list .desc .middle{
+	float: left;
+	margin-left: 36px;
+}
+.rightSide .record .list .desc .middle b{
+	width: 45px;
+	height: 49px;
+	margin: 8px 8px;
+}
+.mod{
+	position:relative;
+}
+.mod .list{
+	min-height:210px;
+}
+.nothingAll{
+	position:absolute;
+	width:100px;
+	height:25px;
+	text-algin:center;
+	line-height:25px;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	font-size:16px;
+}
+
+
+.rightSide .download{
+	width: 100%;
+	min-height: 210px;
+	margin-bottom: 20px;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.rightSide .download .list .tingli_icon{
+	width: 45px;
+	height: 45px;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+}
+/*.rightSide .download .list .tingli_icon img{
+	width: 30px;
+	height: 35px;
+	margin: 0 auto;
+}*/
+.rightSide .download .list .tingli_icon .word{
+	display: block;
+	background: url(../i/download1.png) no-repeat;
+	width: 30px;
+	height: 35px;
+	margin: 0 auto;
+}
+.rightSide .download .list .tingli_icon .ppt{
+	display: block;
+	background: url(../i/download2.png) no-repeat;
+	width: 30px;
+	height: 35px;
+	margin: 0 auto;
+}
+.rightSide .download .list .tingli_icon .pdf{
+	display: block;
+	background: url(../i/download3.png) no-repeat;
+	width: 30px;
+	height: 35px;
+	margin: 0 auto;
+}
+.rightSide .download .list .tingli_icon .rar{
+	display: block;
+	background: url(../i/download1.png) no-repeat;
+	width: 30px;
+	height: 35px;
+	margin: 0 auto;
+}
+.rightSide .download .list .desc{
+	float: left;
+	width: 755px;
+	overflow: hidden;
+	padding-left: 12px;
+	box-sizing: border-box;
+	color: #767676;
+}
+.rightSide .download .list .desc b{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.rightSide .download .list .desc .left{
+	float: left;
+}
+
+
+
+
+
+
+

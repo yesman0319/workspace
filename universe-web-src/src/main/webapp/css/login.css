@@ -1,0 +1,46 @@
+@charset "utf-8";
+.main{width:100%;height:900px;background: #f5f5f5;}
+.main .leftSide{width:648px;}
+.main .rightSide{width:532px;}
+.leftSide .phone{position:relative;padding-top:120px;margin:0 auto;width:454px;}
+.leftSide .phone h2{color:#1d9f57;font-size:26px;width:100%;text-align: center;font-weight: normal;}
+.phone .bg{margin-top:50px;}
+.phone .down_img{position:absolute;bottom:-10px;left:90px;}
+.phone .down_img .ad{display:none}
+.phone .down_img img{height:254px;width:254px;border:10px solid #fff;}
+.down{padding-left:49px;margin-top:40px;width:100%;text-align:center;}
+.down .btn_ios,.down .btn_ad{display:block;height:56px;line-height:56px;width:156px;border-radius:80px;border:2px solid #1d9f57}
+.down .btn_ios:hover,.down .btn_ad:hover{background:#1d9f57}
+.down .cur{background:#1d9f57}
+.down .btn_ios:hover span,.down .btn_ad:hover span{color:#fff;}
+.down .btn_ios .i_ios,.down .btn_ad .i_ad{display:inline-block;margin-right:10px;margin-bottom:-3px;height:24px;width:24px;}
+.down .btn_ios span,.down .btn_ad span{display:inline-block;color:#1d9f57;font-size:16px;}
+.down .cur span{color:#fff;}
+.down .btn_ad{margin-left:36px;}
+.down .btn_ios .i_ios{background:url("../i/ios0.png") no-repeat;}
+.down .btn_ios:hover .i_ios{background:url("../i/ios1.png") no-repeat;}
+.down .cur .i_ios{background:url("../i/ios1.png") no-repeat;}
+.down .btn_ad .i_ad{background:url("../i/ad0.png") no-repeat;}
+.down .btn_ad:hover .i_ad{background:url("../i/ad1.png") no-repeat;}
+.down .cur .i_ad{background:url("../i/ad1.png") no-repeat;}
+.login_container{position:relative;margin-top:120px;margin-left:40px;height:490px;width:422px;}
+.login_container h2{width:100%;text-align:center;line-height:84px;background:#39c075;color:#fff;font-size:20px;font-weight: normal;}
+.login_container .login{position:absolute;left:1px;padding:40px 44px;width:332px;height:324px;box-shadow: 0 0 1px #aaa;background:#fff;}
+.login .user_code .get_code{position: absolute;right: 60px;}
+.login .user_code .get_code span{color: #39c075;font-size: 14px;line-height: 54px;text-decoration: underline;}
+.login .form_item{margin-bottom:30px;height:54px;width:330px;}
+.login .form_label{position:absolute;z_index:10;display:block;height:53px;width:52px;border-right:1px solid #bdbdbd;}
+.login .label_phone{background:url("../i/u_phone.png") 1px 1px no-repeat;}
+.login .label_code{background:url("../i/u_code.png") 1px 1px no-repeat;}
+.login .label_psw{background:url("../i/u_psw.png") 1px 1px no-repeat;}
+.login .label_name{background:url("../i/u_name.png") 1px 1px no-repeat;}
+.login .form_input{position:absolute;background:none;line-height: 32px;height: 32px;padding: 10px 0 10px 64px; width:266px;overflow:hidden;font-size: 14px;border:1px solid #bdbdbd;outline:none;}
+.login .btn_login{display:block;margin-left:86px;position:absolute;bottom:40px;height:56px;line-height:56px;width:156px;text-align:center;border-radius:80px;border:2px solid #39c075}
+.login .btn_login span{color:#39c075;font-size: 18px;}
+.login .btn_login:hover{background:#39c075;}
+.login .btn_login:hover span{color:#fff;}
+
+
+.for3 span,.for3 span a{font-size:14px;}
+.for3 span a{text-decoration: underline;}
+.for3 .forget{display: block}

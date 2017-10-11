@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <springProfile name="development">
+
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+        <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+            <resetJUL>true</resetJUL>
+        </contextListener>
+
+        <!-- To enable JMX Management -->
+        <jmxConfigurator/>
+
+        <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%-5level %logger{0} - %msg%n</pattern>
+            </encoder>
+        </appender>
+
+        <logger name="org.springframework" level="debug"/>
+        <logger name="org.hibernate" level="debug"/>
+        <logger name="com.xiaoma" level="debug"/>
+
+        <root level="info">
+            <appender-ref ref="console"/>
+        </root>
+
+    </springProfile>
+
+    <springProfile name="develop">
+
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+        <property name="PROJECT_NAME" value="universe-web"/>
+
+        <appender name="DAILY_ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>/app/log/${PROJECT_NAME}/app.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <!-- daily rollover -->
+                <fileNamePattern>/app/log/${PROJECT_NAME}/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>30</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${FILE_LOG_PATTERN}</pattern>
+            </encoder>
+        </appender>
+
+
+        <root level="info">
+            <appender-ref ref="DAILY_ROLLING_FILE"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+
+
+        <logger name="org.springframework" level="info"/>
+        <logger name="org.hibernate" level="error"/>
+        <logger name="com.xiaoma" level="debug"/>
+
+        <logger name="druid.sql">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.DataSource">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.Connection">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.Statement">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.ResultSet">
+            <level value="debug"/>
+        </logger>
+
+    </springProfile>
+
+
+    <springProfile name="production">
+
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+        <property name="PROJECT_NAME" value="universe-web"/>
+
+        <appender name="DAILY_ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>/app/log/${PROJECT_NAME}/app.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <!-- daily rollover -->
+                <fileNamePattern>/app/log/${PROJECT_NAME}/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>30</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${FILE_LOG_PATTERN}</pattern>
+            </encoder>
+        </appender>
+
+
+        <root level="info">
+            <appender-ref ref="DAILY_ROLLING_FILE"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+
+
+        <logger name="org.springframework" level="info"/>
+        <logger name="org.hibernate" level="error"/>
+        <logger name="com.xiaoma" level="debug"/>
+
+        <logger name="druid.sql">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.DataSource">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.Connection">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.Statement">
+            <level value="debug"/>
+        </logger>
+        <logger name="druid.sql.ResultSet">
+            <level value="debug"/>
+        </logger>
+
+    </springProfile>
+
+
+</configuration>

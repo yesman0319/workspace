@@ -1,0 +1,51 @@
+/*  table{margin-top:-10px;}
+#table1{width:93%;margin-left:3.5%;}
+#table1 tr td{padding:20px;}
+td{text-align: center;height:60px;line-height: 30px;}
+.table-striped>tbody>tr:nth-child(odd)>td */
+/* td{border:1px solid #ff0;} */
+ .table1{display: block;/* z-index: 9999; */width: 640px;}
+/*    .table1 tr{border:1px solid #000;} 
+   .table1 td{border:1px solid #000;}  */  
+.td3{width:180px;}
+.td4{width:22px;}
+
+.table2{min-width:230px;height:80px;width: auto !important;margin-left:20px; }
+.table2 td{padding-left:10px;}
+.table2 .td1{min-width:60px;width: auto !important;padding-left: 20px;padding-top: 10px;}
+.table2 .td2{width:70px;}
+.table2 .td3{width:150px;}
+.volcabulary-space{ padding-left:20px; padding-top:21px;}
+.tpo-table{position: relative;left: 87px;width:540px;}
+.tpo-table tr{height:47px;}
+/*.newtop{top:-120px;}*/
+.newtpo-table{line-height:23px;font-size:13px;min-height:40px;}
+.newtop-top{margin-top:-5px;}
+
+.table3{width:720px;min-height:500px;}
+.table3 tr td{width:80px;height:60px;text-align:center; clear:both;}
+.tab-green2 input[type=radio] {width:24px;height:24px;border-radius:12px;background:#f00;margin-top:-20px;margin-left:50px;}
+/*.tab-green2 input[type=radio]:checked{background:url("../../i/error.png");}*/
+.tab-green{background:#ccefd9;}
+.tab-green2{background:#a2dab7;}
+.tab-pick{background:#eadaf4;}
+.tab-gray{background:#c6dff5;}
+.tab-pick1{background:#f8d5dc;}
+.tab-org{background:#f9d3b1;}
+.tab-rose{background:#fbdef2;}
+
+
+/*tpo听力复杂题型样式新*/
+.tpo_result{width:530px;height:272px;text-align: left;color: #515151;border:1px solid #dcdcdc;font-size: 12px;font-family:Arial;border-collapse:collapse;margin: 20px auto 40px;}
+.tpo_result tr td{height:47px;padding: 5px;border-color: #dcdcdc;}
+.tpo_result tr th{height:47px;border-color: #dcdcdc;}
+.tpo_result .tpo_tit{width:280px;padding-left: 10px;}
+.tpo_con{background-color: #e3f7ec}
+.tpo_con:hover{ background-color: #00b551;}
+.tpo_con_hid{background-color: #e3f7ec}
+.tpo_active{background:url(../../i/p_checked.png)no-repeat center; background-color: #00b551;}
+.tpo_active_r{background:url(../../i/p_checked.png)no-repeat center; background-color: #fa3131;}
+.tpo_active_b{background:url(../../i/p_checked.png)no-repeat center; background-color: #6bc04b;}
+
+.tpoles_ans{width:87px;}
+.tpoles_radio{width:130px;}

@@ -1,0 +1,85 @@
+
+<style type="text/css">
+    #divName:hover + .edit-list{
+        display: block;
+        z-index: 999999;
+        position: absolute;
+    }
+    #divName:hover{
+        cursor:pointer;
+    }
+    .edit-list{
+        width:90px;
+        margin-left: 10px;
+    }
+    .edit-list:hover{
+        display: block;
+        z-index: 999999;
+        position: absolute;
+    }
+    .edit-list a{
+        color:#fff;
+    }
+    .edit-list li{
+        background: #3b3b3b;
+        padding-top: -6px
+        padding-left: 12px;
+        padding-bottom:6px;
+        font-size: 13px;
+    }
+</style>
+<div class="con-com">
+    <!-- 测试 -->
+    <!-- <a id="logoNav" href="http://wwwtest.amclx.com/"> -->
+    <!-- 线上 -->
+    <a id="logoNav" href="http://www.amclx.com/">
+        <img src="../i/w_logo.png">
+    </a>
+    <ul class="ul_lt">
+        <li>
+            <!-- 测试 -->
+            <!-- <a href="http://wwwtest.amclx.com/" class="firstNav">首页</a> -->
+            <!-- 线上 -->
+            <a href="http://www.amclx.com/" class="firstNav">首页</a>
+        </li>
+        <li id="learnLi">
+            <a href="#" id="learnNav">练习</a>
+            <ul class="s_tabs pop_level2" style="width: 96px;display:none;" id="secondNav">
+             <li class="secondLi" id="jiChuNav">基础练习</li>
+             <li class="secondLi" id="jinJieNav">进阶练习</li>
+             <li class="secondLi" id="chongCiNav">冲刺练习</li>
+            </ul>
+        </li>
+        <li><a href="http://www.amclx.com/tpomock/html/index.html">模考</a></li>
+        <li class="cur1">
+            <!-- 测试 -->
+            <!-- <a href="http://wwwtest.amclx.com/course_play_back">回放</a> -->
+            <!-- 线上 -->
+			<a href="http://www.amclx.com/course_play_back">回放</a>
+        </li>
+        <li><a href="../html/faq.html">FAQ</a></li>
+    </ul>
+    <ul id="lgNav" class="ul_rg" style="display:none;">
+        <li><a href="../html/register.html" id="registerNav" style="color: #ffffff; text-decoration:none;">注册</a></li>
+        <li><a href="../html/login.html" id="loginNav" style="color: #ffffff; text-decoration:none;">登录</a></li>
+    </ul>
+    <div id="userNav" style="float:right; display:none;">
+        <div id="divName" style="height:60px;color:#fff;">
+            <!-- <img id="person" style="width:32px;height:32px;border-radius:16px;margin-right:10px;"/> -->
+            <span id="nameNav" style="float: left;margin-top: 19px;"></span>
+            <span id="nameSanJiao"></span>
+        </div>
+        <div class="edit-list">
+            <ul style="padding-bottom:10px;">
+                <!-- <li class="dropdown-li" style="height:1px;background-color:transparent;">
+                    <img src="../../i/nav-ang.png" style="float:right;margin-right:10px;margin-top: -1px;">
+                </li> -->
+                <li class="dropdown-li" style="width:80px;height:32px;text-align:center;padding-bottom:30px;padding-top:10px;font-size:14px;"><a id="uc" href="#">个人中心</a></li>
+                <li class="dropdown-li" style="width:80px;height:32px;text-align:center;padding-bottom:30px;font-size:14px;"><a id="exitNav" href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<form id="userCenterForm" action="http://www.amclx.com/getUserProfile" method="post">
+	<input type="hidden" id="uc_token" name="token" value=""/>
+</form>

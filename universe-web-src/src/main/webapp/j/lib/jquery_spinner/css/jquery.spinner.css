@@ -1,0 +1,95 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline
+}
+html {
+	line-height: 1
+}
+ol, ul {
+	list-style: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle
+}
+q, blockquote {
+	quotes: none
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none
+}
+a img {
+	border: none
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block
+}
+.spinner-sprite, .spinner .decrease, .spinner .decrease[disabled], .spinner .increase, .spinner .value, .spinner .value.passive {
+
+}
+.spinner {
+	height: 25px;
+	width:120px;
+*zoom:1;
+	margin-left:65px;
+}
+.spinner button, .spinner .value {
+	text-align: center;
+	display: block;
+	float: left;
+	height: 100%;
+	line-height: 25px;
+	margin: 0
+}
+.spinner button {
+	border: none;
+	width:30px;
+	color: #e5312a;
+	font: 22px Arial bold;
+	padding: 0;
+	outline: none
+}
+.spinner .decrease {
+	background: url('../images/minus.png') no-repeat;
+	cursor: pointer;
+	text-indent: -10000px;
+	margin-right:-7px;
+}
+.spinner .decrease[disabled] {
+	background: url('../images/minusDisabled.png') no-repeat;
+	cursor: default
+}
+.spinner .increase {
+	background: url('../images/plus.png') no-repeat;
+	cursor: pointer;
+	text-indent: -10000px
+}
+.spinner .increase[disabled] {
+	background: url('../images/maxplusDisabled.png') no-repeat;
+	cursor: pointer;
+	text-indent: -10000px
+}
+.spinner .value {
+	width: 50px;
+	height: 27px;
+
+	font-family: Arial;
+	padding: 0px
+}
+.spinner .value.passive {
+
+	color: #919191
+}
+.spinner .error, .spinner .invalid {
+	background: #aa0000
+}

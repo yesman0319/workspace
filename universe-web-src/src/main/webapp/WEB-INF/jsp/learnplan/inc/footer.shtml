@@ -1,0 +1,14 @@
+<div class="footer" >
+    <div class="link">
+        <div class="width">
+            <img class="fl f_link" src="../i/f_link.png" alt="精英计划"/>
+            <ul class="fl link_list">
+                <li><a href="">关于我们&nbsp;&nbsp;about us</a></li>
+                <li><a href="">使用协议&nbsp;&nbsp;Use protocol</a></li>
+                <li><a href="">常见问题&nbsp;&nbsp;Common problem</a></li>
+                <li><a href="">联系我们&nbsp;&nbsp;Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mid"><p class="width">© 2014 小马过河 京ICP备14009560号-3 京公网安备11010802016914号</p></div>
+</div>

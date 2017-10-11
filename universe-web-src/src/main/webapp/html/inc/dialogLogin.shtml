@@ -1,0 +1,43 @@
+<!-- Modal -->
+
+<div class="modal fade" id="dialogLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="top:25%!important;left:40%!important;width:auto!important;">
+    <div class="" style="border: 1px solid #bdbdbd;">
+    <div class="modal-content" style="width:453px;min-height: 300px;border-radius: 0px;border:none;border-top: 7px solid #509bfd;box-shadow: none;">
+      <!-- <div class="modal-header feedback-header">
+        <span class="feedback-heading">登陆</span>  -->
+<!--         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+ -->        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+      <!-- </div> -->
+      <div class="modal-body" style="top: 10px;padding: 15px 38px;">
+      <!--<button type="button" class="close-login" style="float:right;" data-dismiss="modal"><span class="clear-btn2"  aria-hidden="true"></span><span class="sr-only">Close</span></button>-->
+      <button type="button" class="close" data-dismiss="modal" style="position:absolute;top:10px;right:20px;"><span  aria-hidden="true" style="font-size:35px;">×</span><span class="sr-only">Close</span></button>
+        <!--用于存放登录注册忘记密码等消息-->
+        <div id="loginDiv">
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" id="cancleFeed">取消</button>
+        <button type="button" class="btn btn-primary btn-sm" id="saveFeed">确认</button>
+      </div> -->
+    </div>
+  </div>
+  </div>
+</div>
+<script src="/j/lib/jquery/1.11.1.js"></script>
+<script src="/j/lib/bootstrap.js"></script>
+<script type="text/javascript">
+$(function () {
+  $("[data-toggle='tooltip']").tooltip();
+});
+</script>
+
+
+
+<!-- Modal -->
+
+<!-- Modal -->
+
+
+<!-- Modal -->
+

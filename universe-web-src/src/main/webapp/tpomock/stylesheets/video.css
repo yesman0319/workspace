@@ -1,0 +1,30 @@
+
+/* main */
+
+.labaIcon/*,.bfIcon*/{ background: url("../images/video-icon.png") no-repeat; display: block;}
+.video-main{ width:100%; background: #eff3f3; padding:30px 0 72px 0;}
+.vodeo-content{ width: 1112px; overflow: hidden;}
+
+.video-title{ line-height: 48px; text-indent: 11px;}
+.videoList-wrap{ width: 100%; overflow: hidden;}
+.videoList{ width: 876px;}
+.videoList li{ width: 189px; height: 188px; padding:9px 11px 0 11px; margin-right: 8px;}
+.videoList li.hover{ background: url("../images/video-bj.jpg") no-repeat;}
+.videoImg-box{ width: 187px; height: 117px; border:1px solid #d9d9d9; position: relative; margin-bottom: 1px;}
+.videoImg-box img{ width: 100%; }
+.ptbox{ width: 100%; height: 20px; margin-bottom: 9px; background: #0ea5e6; text-indent: 11px; line-height: 20px;}
+.videroImg-mark{ width: 100%; position: absolute; bottom:0; left: 0; height: 24px; z-index: 1; background: #000; opacity: 0.7; filter:alpha(opacity=70);}
+.videoImg-info{ line-height: 24px; position: absolute; bottom:0; left: 0; width: 100%; height: 24px; z-index: 2;}
+.videoInfo-box{ padding:0 7px; }
+.info-text{ line-height: 30px; overflow: hidden;}
+.info-text span{ margin-right: 14px;}
+.speaker-box{ line-height: 20px; overflow: hidden;}
+.peopleIcon{ background-position: 0 -121px; width: 12px; height: 11px; margin:5px 4px 0 0;}
+.labaIcon{background-position: 0 -59px; width: 12px; height: 12px; margin:4px 6px 0 0;}
+
+.bf-box{ width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.bfTitle-box{ height: 37px; line-height: 37px; padding:0 16px 0 9px; color:#b6b6b6;}
+.ydIcon{ width: 41px; height: 17px; background: url("../images/ydIcon.png") no-repeat; margin:10px 0 0 0;}
+.bf-icon{ display: block; position: absolute; top: 41px; left: 50%; margin-left: -20px; width: 40px; height: 41px; background: url("../images/pyIcon.png") no-repeat; }
+
+

@@ -1,0 +1,36 @@
+
+.choicehear.selected{
+	background: #767676;
+}
+.question-img{
+	margin-top: 20px;
+}
+.question-img span{
+	float: left;
+	margin-left: 44px;
+	font-weight: bold;
+}
+.question-img img{
+	max-width: 70%;
+	margin-left: 50px;
+}
+.answer-show{
+	text-align: center;
+	padding-top: 20px;
+}
+.answer-show>span{
+	margin-right: 70px;
+}
+
+.button-box{
+	text-align: center;
+	margin-top: 20px;
+	padding: 30px 0;
+}
+
+.ans-wrong{
+	color: #f54040;
+}
+.ans-right{
+	color:#00bb51;
+}

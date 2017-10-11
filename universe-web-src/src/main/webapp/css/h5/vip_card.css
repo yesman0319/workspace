@@ -1,0 +1,140 @@
+html,body{
+	width: 100%;
+	/*background: #ccc;*/
+}
+body{
+	box-sizing: border-box;
+	background: #f5f5f5;
+}
+.top-title{
+	width: 100%;
+	height: 1.253333rem;
+	line-height: 1.253333rem;
+	padding: 0 0.4rem;
+	box-sizing: border-box;
+	font-size: 0.373333rem;
+	border-bottom: 1px solid #d6d6d6;
+	background: #fff;
+	margin-bottom: 0.266666rem;
+}
+#business{
+	background: #fff;
+	border-top: 1px solid #d6d6d6;
+	padding-left:0.4rem;
+	box-sizing: border-box;
+	margin-bottom: 0.32rem;
+	border-bottom: 1px solid #d6d6d6;
+}
+#business li,
+#credit li{
+	position: relative;
+	padding-right:0.4rem;
+	border-bottom: 1px solid #d6d6d6;
+	line-height: 1.173333rem;
+	height: 1.173333rem;
+}
+.front-name{
+	font-size: .346666rem;
+}
+#business li input,
+#credit li input{
+	border: none;
+	width: 60%;
+	height: 80%;
+	font-size: .346666rem;
+	padding-left: .04rem;
+}
+.error-tips{
+	position: absolute;
+	right: 0.2rem;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	color: #FE3C20;
+	font-size: 0.346666rem;
+}
+#credit{
+	background: #fff;
+	border-top: 1px solid #d6d6d6;
+	padding-left:0.4rem;
+	box-sizing: border-box;
+}
+#sendpwd{
+	position: absolute;
+	right: 0.4rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 2.2rem;
+	height: 0.7rem;
+	text-align: center;
+	line-height: 0.71rem;
+	background: #f18d00;
+	border-radius: 0.066666rem;
+	color: #fff;
+	font-size: 0.31rem;
+	text-decoration: none;
+}
+.loginTips{
+	margin-left: 0.4rem;
+	margin-bottom: 0.2rem;
+	color: #767676;
+}
+.negative{
+	background: #dedede !important;
+	color: #767676 !important;
+}
+#errorMsg{
+	text-align: center;
+	color: #FE3C20;
+	font-size: 0.4rem;
+	padding: 0.466666rem 0;
+	background: #fff;
+	margin-bottom: 1.333333rem;
+}
+#confirm-btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.266666rem;
+	background: #dedede;
+	text-align: center;
+	line-height: 1.267rem;
+	color: #767676;
+	font-size: 0.33333rem;
+	border-top: 1px solid #d6d6d6;
+}
+.active{
+	background: #f18d00 !important;
+	color: #fff !important;
+}
+
+#success-page{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 112;
+	background: #fff;
+}
+#success-page p{
+	position: absolute;
+	width: 90%;
+	height: 20%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 0.566666rem;
+}
+#activephone{
+	color: #767676 !important;
+}
+#download_btn{
+	text-decoration:underline;
+}

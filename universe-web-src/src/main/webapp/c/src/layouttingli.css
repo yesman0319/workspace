@@ -1,0 +1,36 @@
+.word-position{padding-left:10px;display: block;width: 600px;position: relative;top: -26px;left: 20px;margin-bottom: -20px;}
+.hear-ul{margin-left: 37px;margin-top: 20px;}
+.pright5{padding-right:5px;}
+.pleft10{padding-left:10px;}
+.pleft15{padding-left:15px;}
+.pleft30{padding-left:30px;}
+.choicehear:hover{background:#767676;width:22px;height: 22px;}
+.hear-percent{position: absolute;right: 30px;top: 73px;}
+/*  .family-song{font-family: "宋体";}  */
+.family-yahei{font-family: "Microsoft YaHei",微软雅黑}
+.hear-ul li{margin-top: 5px;}
+.family-STHeitiSC{font-family:"STHeiti Light";}
+@font-face{font-family:"STHeiti Light";src:url("../../fonts/STHeiti-Light.ttc");}
+.hear-unit {position: relative;top: 6px;}
+/* .hear-unit li a{display: block;width: 160px;height: 35px;line-height: 40px;float: left;margin-right: 6px;padding-left: 20px;} */
+/* .hear-unit >li:nth-child(2n+1)>a{background:#f2f2f2; }
+.hear-unit >li:nth-child(2n)>a{background:#fff; } */
+.modalhear-p{font-size: 18px;position: relative;left: 100px;top: 40px;}
+.hear-misvoca li{height: 47px!important;display: inline-block;background: #fff;line-height: 39px;}
+.hearvoca2{width: 478px;height: 39px;display: inline-block;padding-left: 4px;margin-right: 6px;}
+.hearvoca1{width:97px;height:39px;display: inline-block;line-height: 39px;}
+.hearvoca{width: 582px;height: 39px;display: inline-block;padding-left: 4px;margin-right: 6px;}
+.hear-unit >li:nth-child(2n+1)>span{background:#f2f2f2; }
+.hear-unit >li:nth-child(2n)>span{background:#fff; }
+.hear-judge{width: 681px;height: 73px;background: #f2f2f2;margin-left: 25px;font-size: 20px;text-align: center;line-height: 73px;}
+.hear-wrongvoca{position: relative;}
+.hear-tage{margin-top: -89px;color: #fff;}
+.tingli-table{position: relative;left:40px;}
+.hear-wrongvocatop-50{top: -10px;}
+.tingli-mright6{margin-right:6px;}
+/* .aa{display: inline-block;
+position: relative;
+left: 20px;width: 100px;
+height: 30px;
+background: #ff0;} */
+/* .nav-tabs{border-bottom:none!important;} */

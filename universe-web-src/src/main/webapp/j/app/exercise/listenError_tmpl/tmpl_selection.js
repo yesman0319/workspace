@@ -1,0 +1,40 @@
+'use strict'
+
+define(function(){
+    return [
+       	'<div class="right-part1">',
+	      	'<p class="p1 bold  black mleft25"><img src="../../i/list-pic.png" class="list-pic"><span>{{data.xm_title}}</span></p>',
+	    	'<hr class="mleft25" />',
+		    '<div class="family-song">',
+		        '<audio src="" id="selectionAudio">亲 您的浏览器不支持html5的audio标签</audio>',
+		        '<p class="bold mleft25">',
+		        	'<span class="pleft15">示例音频:<img src="../../i/i20.png" data-url="{{data.question.questionAudioUrl[0].url}}" class="pleft10 pointer selectAudioImg"></span>',
+		    		'<span class="font14 mright30 fr">{{data.question.sequence_number_order}}/{{data.question.group_count}}</span>',
+		    	'</p>',
+		        '<table class="table1 mleft25 tingli-table" cellpadding="0" cellspacing="0" style="display: none;">',
+			        '{{each data.question.simpleChoices as value index}}',
+			        '<tr>',
+				        '<td class="td1 word-layout2">',
+				        	'<span class="glyphicon glyphicon-ok choicehear voca-back pointer selectWord" data-choice="{{value.optionHead}}"></span>',
+				        '</td>',
+				        '<td class="volcabulary-space word-layout3">{{value.optionContent}}</td>',
+			        '</tr>',
+			        '{{/each}}',
+		        '</table>',
+		        '<div class="answer-show">',
+					'<span>你的答案：<span id="user-anwser"></span></span>',
+					'<span>正确答案：<span id="correct-anwser"></span></span>',
+				'</div>',
+		        '{{if data.question.questionImgUrl.length}}',
+				'<div class="question-img">',
+					'<span>示例图片:</span>',
+					'<img src="{{data.question.questionImgUrl[0].url}}"/>',
+				'</div>',
+				'{{/if}}',
+				'<div class="button-box">',
+					'<button disabled="disabled" type="button" class="btn btn-primary" id="nextSelectErrQuestion">下一题</button>',
+				'</div>',
+			'</div>',
+		'</div>'
+    ].join('')
+})

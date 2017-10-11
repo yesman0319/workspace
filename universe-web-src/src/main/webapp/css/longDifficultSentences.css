@@ -1,0 +1,102 @@
+body{background:#f5f5f5;overflow-y:hidden;}
+*{font-size:inherit;box-sizing:inherit;}
+a,a:hover{text-decoration:none;}
+.layout{position:relative;margin:135px -26px 0;padding:0 30px 180px;width:990px;border:1px solid #ddd;min-height:620px;background:#fefefe;}
+.ex-t{padding-left:35px;margin:0;height:70px;line-height:70px;border-bottom:1px solid #dcdcdc;font-size:18px;font-weight: normal;background:url("../i/longSen/ldSen.png") 0 25px no-repeat;}
+.num{font-size:16px;line-height:70px;}
+.step{margin-left:20px;font-size:15px;line-height:70px;}
+.ex-d{font-size:15px;line-height:70px;color:#767676;}
+.ex-main{padding:20px 25px;background:#f6f6f6;width:940px;}
+.ex-tishi{font-size:16px;color:#767676;}
+.ex-tishi-con{margin-top:5px;}
+.ex-tishi-t{font-size:16px;color:#767676;line-height:24px;}
+.ex-sen{margin-top:15px;font-size:16px;line-height:24px;}
+.translation{display:none;margin-top:20px;font-size:14px;line-height:24px;}
+.btn-box{margin-top:46px;}
+.see-trans{font-size:16px;text-decoration: none!important;}
+.see-trans:hover{text-decoration: underline!important;}
+.see-trans,.see-trans:hover{color:#232323!important;}
+.reset{margin-left:25px;font-size:16px;text-decoration: none!important;}
+.reset:hover{text-decoration: underline!important;}
+.reset,.reset:hover{color:#232323!important;}
+.bottom-btn{position:absolute;bottom:100px;width:990px;text-align:center;}
+.bottom-btn .next-btn{display:inline-block;text-decoration:none!important;height:38px;width:112px;line-height:38px;border-width:1px;border-style:solid;border-radius:30px;text-align:center;}
+.bottom-btn .next-btn:hover{text-decoration:none!important;}
+.bottom-btn .gray-btn{cursor:default;background:#f0f0f0;border-color:#767676;color:#767676!important;font-size:16px;}
+.bottom-btn .orange-btn{cursor:pointer;background:#fdf2e4;border-color:#f18d00;color:#f18d00!important;font-size:16px;}
+/*结果*/
+.re-t{font-size:18px;}
+.wrong{color:#ff3c1f;font-size:16px;}
+.rightAn{color:#f18d00;font-size:16px;}
+.answer{position:relative;margin-top:25px;width:990px;font-size:16px;}
+.orange-bg{background:#f4d4a7;}
+.orange-font{color:#ff3c1f;}
+.comAnswer{position:absolute;left:0;top:22px;background:transparent;}
+/*重组句子*/
+.df-steps{margin-top:-10px;width:990px;overflow: hidden;}
+.df-steps .df-steps-li{/* float:left; */display:inline;margin-right:15px;margin-top:20px;height:38px;}
+.df-steps .df-steps-li .s-default{/* float:left; */margin-right:15px;margin-bottom:18px;display:inline-block;vertical-align: top;width:110px;height:36px;line-height:36px;border:1px solid #d6d6d6;border-radius:5px;}
+.df-steps .df-steps-li .steps-selected{/* display:block; */cursor:pointer;height:36px;line-height:36px;font-size:16px;}
+.split{margin-top:30px;height:0;width:990px;border:none;border-bottom:1px solid #dcdcdc;}
+.sentences{margin-top:30px;font-size:16px;width:990px;}
+.sentences .sen-list{overflow:hidden;}
+.sentences .sen-list .sen-li{float:left;margin-top:20px;margin-right:15px;padding:0 5px;cursor:pointer;height:36px;line-height:36px;border:1px solid #d6d6d6;border-radius:5px;font-size:16px;}
+
+/*练习报告页面*/
+.result{position:relative;margin:135px auto;padding:0 30px 180px;width:990px;border:1px solid #ddd;min-height:620px;background:#fefefe;}
+.score{margin-top:25px;margin-bottom:0;text-align: left;}
+.rate{font-size:16px;}
+.avgSpeed{margin-left:30px;font-size:16px;}
+.result-list-li{margin-top:20px;}
+.r-p1{font-size:16px;margin-top:25px;}
+.r-p2{font-size:16px;margin-top:15px;}
+.mt15{margin-top:15px;}
+.li-split{margin:30px 0;height:0;width:990px;border:none;border-bottom:1px solid #dcdcdc;}
+.bottom-btn .re-btn{display:inline-block;height:38px;width:114px;font-size:14px;line-height:38px;text-align:center;border-width:2px;border-style: solid;border-radius:40px;}
+.bottom-btn .errorBtn{border-color:#ffc72a;color:#ffc72a;background:#fffbf3; border-width: 2px;text-decoration: none!important;}
+.bottom-btn .errorBtn:hover{color:#ffc72a;}
+.bottom-btn .againBtn{margin-right:10px;border-color:#f54040;color:#f54040;background:#fff7f7; border-width: 2px;text-decoration: none!important;}
+.bottom-btn .againBtn:hover{color:#f54040;}
+.mask{position: fixed; z-index:200;width: 100%;height: 100%;left: 0;top: 0;background: rgba(0,0,0,.4);}
+.mask .mark{position:absolute;height:30px;line-height:30px;padding:0 4px;background:#fff;border-radius:5px;font-size:16px;}
+.mask .m1{top:394px;left:480px;width:204px;}
+.t-box{position:absolute;top:42px;padding:20px 20px 0;height:130px;width:272px;background:#fff;border-radius:5px;font-size:16px;}
+.t-box .icon-drop{display:block;position:absolute;top:-16px;left:30px;height: 0;width: 0;border-width:8px 6px;border-style: solid dashed dashed dashed;border-color:transparent transparent #fff transparent;}
+.t-box .m-btn{display:inline-block;position:absolute;bottom:20px;width:84px;height:28px;line-height:28px;text-align:center;border:1px solid #767676;border-radius:30px;font-size:14px;color:#767676;}
+.t-box .m-btn:hover{color:#767676;}
+.t-box .m-btn-left{left:55px;}
+.t-box .m-btn-right{right:55px;}
+.t-box .m-btn-done{left:108px;}
+
+/*第2步*/
+.m2{top:394px;left:692px;width:264px;}
+/*第3步*/
+.g3 .mark{padding:0;}
+.m3{top:388px;left:940px;}
+.g3 .icon-drop{top:150px;border-style:solid dashed dashed dashed;border-color:#fff transparent transparent transparent;}
+/*第4步*/
+.g4 .mark{padding:0;}
+.m4{top:388px;left:940px;}
+.g4 .icon-drop{top:150px;border-style:solid dashed dashed dashed;border-color:#fff transparent transparent transparent;}
+/*第5步*/
+.g5 .mark{line-height:38px;height:38px;}
+.m5{top:504px;left:466px;width:52px;}
+.g5 .icon-drop{top:150px;border-style:solid dashed dashed dashed;border-color:#fff transparent transparent transparent;}
+.g5 .t-box{top:-164px;left:0;}
+/*第6步*/
+.g6 .mark{line-height:38px;height:38px;}
+.m6{top:266px;left:465px;width:104px;}
+.g6 .t-box{top:52px;}
+/*第7步*/
+.g7 .mark{padding:0;}
+.m7{top:388px;left:940px;}
+.g7 .icon-drop{top:150px;border-style:solid dashed dashed dashed;border-color:#fff transparent transparent transparent;}
+/*第8步*/
+.g8 .mark{padding:0;}
+.m8{top:388px;left:940px;}
+.g8 .icon-drop{top:150px;border-style:solid dashed dashed dashed;border-color:#fff transparent transparent transparent;}
+
+
+.none{display:none;}
+.mt5{margin-top:5px;}
+.mbottom{bottom:300px;}

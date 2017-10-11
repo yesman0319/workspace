@@ -1,0 +1,9 @@
+.grade-correct-round{width: 40px;height: 40px;border-radius: 40px;text-align: center;line-height: 40px;font-size: 12px;margin-top: 15px;margin-left: 20px;}
+.grade-correct-round1{background-color: #509bfd;color: #fff;}
+.grade-correct-round2{background-color: #dedede;color: #626262;}
+.grade-cormessage-round1{width: 8px;height: 8px;border-radius: 4px;background: #f00;display: inline-block;position: absolute;margin-top: 15px;margin-left: -11px}
+.grade-correct-ul li{/* background:#f6f6f6; */min-height: 68px;width: 680px;}
+.grade-correct-ul li:nth-child(2n+1){background:#f6f6f6;}
+.grade-correct-ul li:nth-child(2n){background:#fff;}
+.grade-correct-sentp{width: 660px;padding-left: 80px;padding-top: 17px;}
+.grade-correct-time{padding-right: 21px;font-size: 10px;text-align: right;padding-bottom: 13px;}

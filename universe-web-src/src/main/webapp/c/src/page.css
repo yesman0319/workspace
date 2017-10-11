@@ -1,0 +1,18 @@
+nav.pagination {width: 650px;height: 30px;position: relative;left: 83px;top: 100px;}
+nav.pagination1{margin-top:20px;text-align: center;}
+nav.pagination2 {width: 650px;height: 30px;position: relative;left: 195px;top: 20px;}
+nav.pagination3 {width: 650px;height: 30px;position: relative;left: 326px;top: 7px;}
+.pagination a,.pagination1 a,.pagination2 a,.pagination3 a{display:inline-block;padding: 5px 14px;border: 1px solid #ddd;border-radius: 15px;color: #000;text-decoration: none;background: #fff;}
+.pagination .current,.pagination1 .current,.pagination2 .current,.pagination3 .current,.rewritecurrent{background-color: #509bfd;color: #fff;border: 1px solid #ddd;border-radius: 15px;}
+.pagination1 .current{padding: 5px 15px;}
+.pagination .current{padding: 7px 13px;}
+.pagination2 .current,.pagination3 .current{padding: 8px 13px;}
+.pagination span,.pagination1 span,.pagination2 span,.pagination3 span{width: auto;padding: 1px;}
+.pagination .first a,.pagination1 .first a,.pagination2 .first a,.pagination3 .first a{background-color:#509bfd;color: #fff}
+span.rewritecurrent{display: inline-block;padding: 5px 14px;}
+ nav.pagination4 {min-height: 40px;position: relative;}
+.pagination4 a{width: 36px;height: 36px;display: inline-block;line-height: 36px;/*border: 1px solid #ddd;*/border-radius: 18px;color: #fff!important;cursor:default;margin:5px;}
+.pagination4 a:hover{text-decoration: none;color:#fff;}
+.newstyle1{text-align:left;}
+.pagination5 a{width: 42px;height: 42px;display: inline-block;line-height: 42px;border: 1px solid #ddd;border-radius: 21px;color: #fff!important;cursor:default;}
+.pagination5 a:hover{text-decoration: none;color:#fff;}

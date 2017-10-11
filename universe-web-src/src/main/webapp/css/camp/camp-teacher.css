@@ -1,0 +1,333 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+.camp-wrapper .banner{
+	width: 100%;
+	height: 75px;
+	background: #767676;
+	line-height: 75px;
+}
+.camp-wrapper .hd{
+	width: 1360px;
+	margin: 0 auto;
+	position: relative;
+}
+.camp-wrapper .hd .title{
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.camp-wrapper .hd p{
+	position: absolute;
+	right: 0px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+/*计时器*/
+.time-pos,.time-pos a{
+	color: #00bb51;
+}
+.time-icon{
+	vertical-align: middle;
+}
+
+.mod{
+	display: none;
+}
+#start-live,#stop-live{
+	width: 130px;
+	height: 46px;
+	background: #00bb51;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+#stop-live{
+	color: #f5f5f5;
+	box-shadow: 0px 0px 15px #00b74f;
+}
+.camp-content{
+	width: 1360px;
+	margin: 40px auto 0px;
+	overflow: hidden;
+}
+.chat-room{
+	float: left;
+}
+.chat-room .message-box{
+	width: 800px;
+	height: 500px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.chat-room .input-box{
+	margin-top: 40px;
+	width: 800px;
+}
+.chat-room .input-box .editor-main{
+	
+	position: relative;
+}
+.chat-room .input-box .editor-main #editor{
+	width: 800px;
+	height: 140px;
+	position: relative;
+}
+#ed-input{
+	width: 99.5%;
+	height: 99.5%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 5px #ccc;
+	overflow: auto;
+	padding: 10px 30px 10px 20px;
+	box-sizing: border-box;
+}
+.tool-bar{
+	position: relative;
+	overflow: hidden;
+	line-height: 50px;
+	background: #f5f5f5;
+}
+.tool-bar li{
+	float: left;
+}
+.tool-bar li a{
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+.tool-bar li a:hover{
+	color: #737373;
+	background: #e8e8e8;
+}
+.active{
+	color: #737373;
+	background: #e8e8e8;
+}
+#forbid{
+	position: absolute;
+	background: #f18b00;
+	width: 110px;
+	height: 36px;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+#forbid:hover{
+	background: #e08100;
+}
+#send{
+	position: absolute;
+	bottom: -40px;
+	right: 15px;
+	font-size: 16px;
+	padding: 5px;
+}
+#send:hover{
+	color: #00bb51;
+}
+
+/*表情*/
+#emojis{
+	position: absolute;
+	padding: 5px 0px 5px 5px;
+	background: #fff;
+	width: 450px;
+	height: 150px;
+	overflow: auto;
+	top: -160px;
+	left: 0px;
+	box-shadow: 0px 0px 5px #ccc;
+}
+#emojis::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-thumb:vertical{
+	background-color: #ccc;
+	-webkit-border-radius:4px;
+}
+
+
+/*录音模块*/
+
+#recorder{
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	padding: 20px 0;
+	position: relative;
+}
+#recorder-box img{
+	padding-top: 20px;
+}
+#recording{
+	padding-top: 5px !important;
+	margin-bottom: -16px;
+}
+#button-box{
+	margin-top:30px;
+}
+
+#reRecord{
+	background: #ff5a5a;
+    width: 104px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#saveRecord{
+	background: #509bfd;
+    width: 104px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#button-box button.grey{
+	opacity: .5;
+	cursor: default;
+}
+
+/*文件拖拽区域*/
+.file-area{
+	width: 520px;
+	float: right;
+}
+.live-status table{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #dcdcdc;
+	border-collapse: collapse;
+}
+
+.live-status table th{
+	border: none;
+	height: 30px;
+	background: #f2f2f2;
+	font-size: 14px;
+	font-weight: 100;
+}
+.live-status table td{
+	text-align: center;
+	color: #232323;
+	font-size: 14px;
+	padding: 13px 15px;
+	border-color: #dcdcdc;
+}
+.file-area ul{
+	width: 100%;
+	border-top: 1px solid #dcdcdc;
+	margin-top: 30px;
+	/*overflow: hidden;*/
+}
+.file-area ul:after{
+	display: block; 
+	content: "";
+	visibility: hidden;
+	clear: both;
+}
+.file-area ul h4{
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+.file-area .fpic li{
+	width: 25%;
+	float: left;
+	font-size: 0px;
+	padding: 3px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.file-area .fpic li:hover{
+	background: #f2f2f3;
+}
+.file-area .fpic li img{
+	width: 100%;
+}
+.file-area .fsection li{
+	padding: 5px 3px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.file-area .faudio li{
+	width: 120px;
+	height: 30px;
+	float: left;
+	border: none;
+	margin: 15px 10px 15px 0px;
+}
+.file-area .faudio .audio-box{
+	position: relative;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: #c4e5d3;
+	cursor: pointer;
+}
+.file-area .faudio .audio-box .arrowSpan{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #c4e5d3;
+	bottom: 0px;
+	top: 0px;
+	right: -5px;
+	margin: auto;
+	transform: rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+.file-area .faudio .audio-box .laba{
+	position: absolute;
+	width: 20px;
+	height: 18px;
+	left: 6px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(../i/share/lb.png) no-repeat;
+	background-size: cover;
+}
+.file-area .faudio .audio-box .audioLength{
+	position: absolute;
+	color: #fff;
+	right: 10px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	line-height: 30px;
+}
+.file-area .faudio .playing{
+	background: #00bb51;
+}
+.file-area .faudio .playing .arrowSpan{
+	background: #00BB51;
+}
+.file-area .faudio .playing .laba{
+	background-image: url(../i/share/lb.gif);
+}
+.thisdraging{
+	position: absolute;
+	z-index: 1111;
+}

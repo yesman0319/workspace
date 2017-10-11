@@ -1,0 +1,29 @@
+/* header start */
+.header{ width: 100%; height: 100px; background:#0ea5e6;}
+.logo-box{ padding:19px 0 0 59px; width:256px; height:81px;}
+.title{ line-height: 122px; height: 100px;}
+.remind-box{ padding:55px 59px 0 0;}
+.Volume-box{ width: 91px; height: 26px; position: relative;}
+.,.chooseIcon{ background: url("../images/header-icon.png") no-repeat; display: block;}
+.DragDrap-v-box,.drapIcon,.labaIcon{ background: url("../images/audio-icon.png") no-repeat; }
+.{background-position: 0 -76px; width: 91px; height: 26px; }
+.chooseIcon{ width: 91px; height: 26px; }
+
+.DragDrap-v-box{ background-position: 0 -70px; display: none; width: 91px; height: 26px; position: absolute; top: 0; left: 0;}
+.volume-progress{ width: 66px; height: 3px; background: #f4f4f4; top: 11px; left: 10px; position: absolute;}
+.range{ position:absolute; background: #5aa8f7; height: 3px; z-index: 1; width: 80%;}
+.drapIcon{background-position: 0 -146px; width: 11px; height: 10px; left:80%; top:-3px; z-index: 3; position: absolute;}
+
+
+/* main */
+.player-main{ width:100%; overflow: hidden; }
+.audio-wrap{ width: 100%; padding:50px 0 0 0; }
+.audio-title{ height: 92px; line-height: 107px;}
+.progress-wrap{ width: 719px; height: 36px;  margin:106px auto 0 auto;}
+.playIcon{ width: 36px; height: 36px; background: url("../images/play.png") no-repeat; margin: 0 20px 0 0;}
+.playIcon.pause{ background: url("../images/pause.png") no-repeat; }
+.player-wrap{ background: url("../images/ypbj.png") no-repeat; width: 663px; height: 36px; position: relative;}
+.progress-box{ width: 639px; height: 14px; background: url("../images/progressBj.png") no-repeat; position: absolute; left: 11px; top: 11px; }
+.jd{ width:0; height: 14px; background: url("../images/progressBj2.png") no-repeat; position: absolute; left: 0; top:0;}
+.progressBtnIcon{ width: 27px; height: 28px; position: absolute; display: block; left:-2px; top: -6px; background: url("../images/progressBtnIcon.png") no-repeat; }
+.audioTime{ height: 72px; line-height: 72px;}

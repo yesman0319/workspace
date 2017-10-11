@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>精英计划</title>
+  <meta charset="utf-8" />
+  <link href="../c/g4.css" rel="stylesheet" type="text/css">
+  <link href="../c/g24.css" rel="stylesheet" type="text/css">
+  <link href="../c/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- <link rel="shortcut icon" type="image/x-icon" href="../../i/icon-8.png" media="screen" /> -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F70a4207c0ff2d9989e70faa8265b982f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</head><body>
+<div class="wrap">
+  <header>
+<!--#include file="./inc/nav.shtml"-->
+</header>
+<div id="wrap" class="logincontent">
+ <div class="login-content">
+  <div class="main mid">
+    <div class="register-new">
+  <div class="login" id="form" data-flag="home">
+    <div class="login-form">
+    <form role="form" autocomplete="off">
+      <label for="login" class="login-font all-blue">登录 
+        <!-- <span class="white font15 login-sui-span" style="">随时学用户可以直接登录</span> -->
+      </label>
+      <div class="form-group">
+       <input type="text" class="tel" id="uname" placeholder="请输入手机号/邮箱" nullmsg="请输入手机号/邮箱" datatype="e|m|/^[a-zA-Z0-9_]{6,30}$/" errormsg="手机/邮箱格式不正确">
+      </div>
+      <br>
+      <div class="form-group">
+       <input type="password" class="pwd" id="pwd" placeholder="请输入密码" nullmsg="请输入密码" datatype="*6-16" errormsg="密码长度为6-16位">
+      </div>
+      <p class="red mistake">
+        <span id="errorMsg"></span>
+      </p>
+      <div class="checkbox">
+       <label id="cbx_remember_lg" class="label-pwd">
+        <a id="forget" href="###" class="forget-pwd white bold">忘记密码?</a>
+       </label>
+      </div>
+      <button type="submit" id="btnLogin" data-flag="home" class="btn5 btn btn-primary active ">登录</button>
+      <div class="text-center login-tooltip">
+       <a href="register.html" class="regsiter white">立即注册</a>
+      </a>
+  </form>
+  </div>
+  </div>
+   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+<!--#include file="./inc/footer.shtml"-->
+</div>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?22fe330b8bf5f3b6daef2ad6864536cc";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script data-main="../j/app/login/main" src="../j/lib/requirejs/2.1.15.js" type="text/javascript"></script>
+<script src="../j/lib/jquery/1.11.1.js"></script>
+<script src="../j/lib/bootstrap.js"></script>
+<script type="text/javascript">
+$(function () { 
+  $("[data-toggle='tooltip']").tooltip(); 
+});
+</script>

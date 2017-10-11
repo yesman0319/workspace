@@ -1,0 +1,61 @@
+.glyphicon-play{top: -2px!important;cursor: pointer;color:#509bfd;font-size: 22px;}
+.progress{width: 450px;height: 20px;margin-left: 30px;margin-top: -19px;}
+.demo-container {
+	padding:0 20px;
+	font-family: "Myriad Pro Regular","Trebuchet MS";
+}
+/* .jp-pause{;margin-top: 13px!important;;margin-left: 10px!important;} */
+
+.demo-container a, .demo-container a:link, .demo-container a:visited, .demo-container a:hover, .demo-container a:focus, .demo-container a:active {
+	color: #009BE3;
+}
+
+.demo-container ul {
+	list-style-type:none;
+	padding:0;
+	margin:1em 0;
+	width: 480px;
+	height: 20px;
+	margin-top: -10px;
+}
+.demo-container p{
+	width: 100px;
+	height: 20px;
+	margin-left: 515px;
+	padding-top: 15px;
+}
+
+/*.demo-container ul span {
+	color: #A0A600;
+}*/
+
+.demo-container li {
+	float:left;
+	margin-right:1em;
+}
+
+.demo-container p span.track-name {
+	color: #CC0090;
+}
+.demo-container .glyphicon-pause{position:absolute;color:#509bfd!important;text-decoration: none;left: 45px;top: 18px;font-size: 22px;}
+.progress-bar{background-color: rgb(45, 177, 154)!important;}
+.jp-duration{display: inline-block;margin-top: 5px;}
+
+.MusicBox{width:680px;height:50px;padding: 13px 0px 13px 20px;position:absolute;z-index:9;background: #f5f5f5;margin-left: 20px;}
+
+/* 音频进度控制 */
+.ProcessControl{width: 620px;padding: 17px 10px 10px 10px;float:left; height:40px; margin-right:12px;color:#000;}
+.ProcessControl .SongName  {  float:left;   }
+.ProcessControl .SongTime  {  float:right;   }   
+.ProcessControl .Process{width: 500px;float: left;height: 4px;cursor: pointer;background-color: #a8a8a8;   margin-top:7px;}
+.ProcessControl .ProcessYet{ width:40px; position:absolute;height: 4px;left:10px; top:24px;cursor: pointer;background-color:#509bfd;}
+.ProcessControl .ProcessYet:after{position: absolute;content: " ";background: url(../../i/audio2.png) no-repeat;width: 30px;height: 30px;top: -12px;right: -27px;}
+/* 呈现出播放图标 */
+.MainControl{width:25px;padding: 10px 15px 5px 10px;float:left; height:20px;background:url(../../i/audio1.png)  no-repeat;margin-top: 16px;margin-left: 20px;  } 
+/* .MainControl:hover{ background:url(../Images/sk-dark.png) -80px -166px no-repeat;} */
+   
+ /* 呈现出暂停或停止图标 */
+
+.StopControl{width:25px;padding: 10px 15px 5px 10px;float:left; height:20px;background:url(../../i/audio3.png)  no-repeat;margin-top: 16px;margin-left: 20px;  }
+/* .StopControl:hover{background:url(../Images/sk-dark.png) -50px -165px no-repeat; } */
+ 

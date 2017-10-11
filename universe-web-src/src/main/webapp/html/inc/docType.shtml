@@ -1,0 +1,5 @@
+<!--#set var='PATH_c' value='../../c/'-->
+<!--#set var='PATH_i' value='../../i/'-->
+<!--#set var='PATH_html' value='../../html/'-->
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">

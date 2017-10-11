@@ -1,0 +1,298 @@
+body {
+	background: #f5f5f5;
+}
+
+.layout {
+	padding-bottom: 40px;
+	width: 1160px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.location {
+	line-height: 55px;
+	font-size: 14px;
+}
+
+.location .cur {
+	color: #f18b00;
+}
+
+.location a {
+	font-size: 14px;
+}
+/*左侧历年真题*/
+.years-examination{
+	width: 785px;
+	float: left;
+}
+.years-examination .exam-title{
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px dashed #d4d4d4;
+	height: 62px;
+	line-height: 62px;
+	padding: 0 2px;
+}
+/*历年真题二级选区*/
+.exam-top{
+	height: 237px;
+	margin-bottom: 20px;
+	padding: 0 18px;
+	border-top: 2px solid #f18d00;
+	background: #fff;
+}
+.years-examination ul{
+	/*overflow: hidden;*/
+	padding: 0 2px;
+}
+.years-examination ul li{
+	font-size: 14px;
+	float: left;
+}
+.jj_type{
+	height: 62px;
+	line-height: 62px;
+	border-bottom: 1px dashed #d4d4d4;
+}
+.jj_type_item{
+	margin-right: 35px;
+}
+.jj_type_item:hover{
+	color: #f18d00;
+	cursor: pointer;
+}
+.statement{
+	margin-right: 20px;
+}
+.jj_date{
+	position: relative;
+	line-height: 62px;
+}
+.select_year{
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 30px;
+}
+.triangle{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #f5f5f5;
+	bottom: 3px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	transform: rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	display: none;
+}
+.selected{
+	color: #f18b00;
+}
+.selected .triangle{
+	display: block;
+}
+.select_year:hover{
+	color: #f18d00;
+}
+.month_item{
+	display: none;
+	background: #f5f5f5;
+	position: absolute;
+	width: 638px;
+	height: 33px;
+	line-height: 33px;
+	left: 46px;
+	top: 54px;
+	padding: 0 12px;
+	border-radius: 5px;
+}
+.select_month{
+	font-size: 14px;
+	margin-right: 23px;
+}
+.select_month:last-child{
+	margin-right: 0;
+}
+.select_month:hover{
+	color: #f18d00;
+	cursor: pointer;
+}
+/*真题月份选区*/
+.exam-bottom{
+	position: relative;
+	padding: 0 18px 150px 18px;
+	border-top: 2px solid #f18d00;
+	background: #fff;
+	overflow: hidden;
+}
+.exam-bottom ul li{
+	height: 90px;
+	line-height: 45px;
+	border-bottom: 1px dashed #d4d4d4;
+}
+.exam-bottom ul li:hover{
+	background: #f5f5f5;
+	cursor: pointer;
+}
+.done_tag{
+	display: inline-block;
+	width: 42px;
+	height: 20px;
+	background: #f18d00;
+	color: #fff;
+	line-height: 20px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 11px;
+	display: none;
+}
+.done .done_tag{
+	display: inline-block;
+}
+.exam_content{
+	position: relative;
+    width: 735px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding-right: 18px;
+}
+.exam_content .content-wrap{
+	font-size: 14px;
+}
+.ellipsis{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.exam_info_left{
+	float:left;
+	color: #767676;
+}
+.exam_info_right{
+	float: right;
+	color: #767676;
+}
+
+/*右侧机经预测*/
+.prediction{
+	float:right;
+	width: 314px;
+	background: #ddd;
+	border-top: 2px solid #f18d00;
+	padding: 0 18px;
+	background: #fff;
+}
+.prediction .exam-title{
+	font-size: 16px;
+	font-weight:bold;
+	margin-top: 25px;
+}
+.recommond_jj li{
+	overflow: hidden;
+	padding: 17px 0;
+	border-bottom: 1px dashed #d4d4d4;
+}
+.recom_default{
+	font-size: 16px;
+	display: inline-block;
+}
+.recom_default:hover{
+	color: #f18d00;
+	cursor: pointer;
+}
+.choiced .recom_default{
+	display: none;
+}
+.choiced .recom_hover{
+	display: block;
+}
+.recom_hover{
+	overflow: hidden;
+	display: none;
+}
+.recom_hover>a{
+	float: left;
+	display: block;
+}
+.recom_hover>a:hover{
+	cursor: pointer;
+}
+.recom_hover>a img{
+	width: 170px;
+	height: 110px;
+}
+.recom_hover_info{
+	position: relative;
+	height: 110px;
+	float: left;
+	margin-left: 13px;
+	width: 130px;
+}
+.recom_hover_info .title a{
+	font-size: 16px;
+}
+.recom_hover_info .title a:hover{
+	color: #f18d00;
+	cursor: pointer;
+}
+.recom_hover_info .study_num{
+	position: absolute;
+	left: 0;
+	top: 45px;
+	font-size: 14px;
+	color: #767676;
+}
+.recom_hover_info .price{
+	position: absolute;
+	font-size: 18px;
+	bottom: 0px;
+	left: 0;
+	margin-top: 15px;
+	color: #ff9c00;
+	font-weight: bold;
+}
+.recom_hover_info .price .price_icon{
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	background: url("/i/rmb_icon.png") no-repeat;
+	background-size: cover;
+	vertical-align: -1px;
+	margin-right: -4px;
+}
+.prediction .study_num .user_icon {
+	display: inline-block;
+	margin: 0 3px 0 -2px;
+	height: 22px;
+	width: 22px;
+	background: url("/i/index/t_ic.png") no-repeat;
+	background-size: cover;
+	vertical-align: -3px;
+}
+#check_more{
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	padding: 17px 0;
+}
+#check_more:hover{
+	color: #f18d00;
+}
+
+/*分页*/
+#pagination{
+	position: absolute;
+	width: 785px;
+	padding: 60px 0;
+	background: #ccc;
+	bottom: 0px;
+	margin-top: 100px;
+	text-align: center;
+}

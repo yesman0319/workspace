@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../../../common/js/jquery-1.7.2.min.js"></script>
+		<script src="../../../common/js/baseUrl.js"></script>
+		<title>词语拼接</title>
+		<link rel="stylesheet" type="text/css" href="../../../common/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../common/css/h5_reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/h5/vocab-join.css"/>
+	</head>
+	<body>
+		<div id="init-page">
+			<div class="wrapper">
+				<p><i class="fa fa-cubes"></i>快将断开的单词拼接起来吧~</p>
+				<a id="goJoin" href="javascript:void(0);" class="button">GO</a>
+			</div>
+		</div>
+		<div id="question-page">
+			<audio src="#" id="myAudio"></audio>
+			<section class="nav">
+				<div class="title">
+					词语拼接
+				</div>
+				<div id="circleWrapper"></div>
+			</section>
+			<section class="stem">
+				<script id="stem-tmpl" type="text/html">
+					<p>{{stem}}</p>
+				</script>
+			</section>
+			<section class="options">
+				<script id="options-tmpl" type="text/html">
+					<ul id="dragble" data-sequenceNum="{{sequence_number}}">
+						{{each sortedSample as value n}}
+							<li style="left:{{value.leftMove}}px;top:{{value.topMove}}px;" data-index="{{value.index}}"><span>{{value.item}}</span></li>
+						{{/each}}
+					</ul>
+				</script>
+			</section>
+			<section class="result">
+				<script id="result-tmpl" type="text/html">
+					<ul id="drop-area" data-correct="{{correctWord}}">
+						{{each newCorrectSampleArr as value i}}
+							<li>
+								<span class="text-line">_</span>
+								<span class="text-show"></span>
+							</li>
+						{{/each}}
+					</ul>
+				</script>
+			</section>
+			<section class="progress">
+				<div class="total-bar">
+					<div class="load-bar"></div>
+				</div>
+				<div class="detail">
+					<script id="progress-tmpl" type="text/html">
+						<p class="percent-show">{{value}}%</p>
+						<p class="text">共有{{total}}词,已经学习{{cur}}词</p>
+					</script>
+				</div>
+			</section>
+		</div>
+		<!--动画弹出效果 -->
+		<div id="animate-stem">
+			<script id="animate-stem-tmpl" type="text/html">
+				<span class="fa fa-check check"></span>
+				<div class="animated-result">
+					<p>{{stem}}</p>
+					<p>{{correctWord}}</p>
+				</div>
+			</script>
+		</div>
+		<!--结果页-->
+		<div id="result-page">
+			<script id="resultPage" type="text/html">
+				<section class="banner">
+					<div class="description">
+						{{description}}
+						<i class="fa {{fa}}"></i>
+					</div>
+				</section>
+				<section class="detail">
+					<p class="finish-num"><i class="fa fa-list-ol" aria-hidden="true"></i>完成个数:{{doneNum}}</p>
+					<p class="spend-time"><i class="fa fa-clock-o" aria-hidden="true"></i>用时:{{spendTime}}</p>
+				</section>
+				<div class="footer">点击右上角，分享给小伙伴们练一下吧</div>
+			</script>
+		</div>
+		<script src="../../../js/dragble/dragPlugins.js"></script>
+		<script src="../../../common/js/template.js"></script>
+		<script src="../../../js/lib/base64.js"></script>
+		<script src="../../../js/h5/vocab-join.js"></script>
+	</body>
+</html>

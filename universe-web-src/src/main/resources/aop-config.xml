@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/aop
+  http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+  http://www.springframework.org/schema/tx
+  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!-- all methods starting with 'get' are read-only -->
+            <!-- 			<tx:method name="get*" read-only="true" /> -->
+            <!-- 			<tx:method name="list*" read-only="true" /> -->
+            <!-- 			<tx:method name="query*" read-only="true" /> -->
+            <!-- 			<tx:method name="search*" read-only="true" /> -->
+            <!-- 			<tx:method name="find*" read-only="true" /> -->
+            <!-- 			<tx:method name="check*" read-only="true" /> -->
+            <!-- other methods use the default transaction settings  -->
+
+            <tx:method name="*" rollback-for="Exception"/>	<!-- all exception rollback -->
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- set class -->
+    <aop:config>
+        <aop:pointcut id="managerOperation" expression="execution(* com.xiaoma.universe.*.service.*Service.*(..)) or execution (* com.xiaoma.*.*.service.*Service.*(..))"/>
+        <aop:advisor pointcut-ref="managerOperation" advice-ref="txAdvice"/>
+    </aop:config>
+
+</beans>

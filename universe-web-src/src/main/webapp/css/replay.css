@@ -1,0 +1,116 @@
+body{background:#f5f5f5;}
+.layout{padding-bottom:40px;width:1160px;margin:0 auto;overflow:hidden;}
+.location{line-height:55px;font-size:14px;}
+.location .cur{color: #f18b00;}
+.location a{font-size:14px;}
+.main{width:790px;}
+.main .list{margin-bottom:22px;border-top:2px solid #00b551;background:#fff;}
+.main .list h2{position:relative;z-index:2;padding-left:20px;line-height:60px;font-size:14px;border-bottom:2px solid #f5f5f5;}
+.main .list .listUl{margin-top:-1px;}
+.main .list .listUl li{padding:0 20px;height:64px;width:100%;}
+.main .list .listUl li:hover{background:#f7f7f7;}
+.main .list .listUl li .con{position:absolute;height:64px;line-height:64px;width:750px;border-top:1px dashed #d4d4d4;overflow:hidden;}
+.main .list .listUl li .con p{position:absolute;}
+.main .list .listUl li .con .time{line-height:64px;font-size:16px}
+.main .list .listUl li .con .title{left:118px;line-height:64px;font-size:18px;width:180px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.main .list .listUl li .con .course{left:354px;padding-left:26px;font-size:14px;color:#767676;background:url("../i/text.png")0 20px  no-repeat;width:120px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.main .list .listUl li .con .teacher{left:537px;padding-left:28px;font-size:14px;color:#767676;background:url("../i/info/ic_num.png") 0 20px no-repeat;}
+.main .list .listUl li .con .see{right:0;padding-right:18px;font-size:14px;color:#767676;cursor:pointer;}
+.main .list .listUl li .con .see span{display:none;position:absolute;right:0;height:64px;line-height:64px;font-size:18px;}
+.main .list .listUl li:hover .con .see{color:#f18b00;}
+.main .list .listUl li:hover .con .see span{display:inline-block;}
+.page{margin:20px auto;display:Inline-block;height:30px;line-height:30px;}
+.page .first,.page .prev,.page .next,.page .last{display:block;float:left;margin-left:5px;height:28px;line-height:28px;text-align:center;width:48px;color:#232323;border:1px solid #dcdcdc;cursor:pointer;}
+.page .page_list{float:left;height:30px;padding:0;margin-top:0;margin-left:5px;overflow:hidden;}
+.page .page_list li{float:left;margin-right:5px;line-height:30px;font-size:16px;}
+.page .page_list li a{display:block;height:28px;line-height:28px;text-align:center;width:28px;border:1px solid #dcdcdc;color:#232323;}
+.page .page_list li .pageActive{color:#fff;background:#00b551;}
+.page .page_list li a:hover{color:#fff;background:#00b551;}
+.page .page_count,.page .cur_page{display:block;float:left;margin-left:10px;}
+.page .total_count{margin:0 5px;}
+.page .goTO{display:inline-block;margin:0 10px;height:18px;line-height:18px;text-align:center;width:28px;border:1px solid #dcdcdc;outline: none;color:#232323;}
+.page .ok{display:block;float:left;margin-top:5px;margin-left:10px;height:18px;line-height:18px;text-align:center;width:28px;border:1px solid #dcdcdc;color:#232323;}
+.page span,.page a{background:#fff;}
+.page .page_count{background:#f5f5f5;}
+.page .total_count{background:#f5f5f5;}
+
+/*�Ҳ���ʽ*/
+.side{margin-left:20px;padding: 30px 24px;width: 302px;border-top: 2px solid #ff9c00;background: #fff;}
+.side h2{font-size: 18px;color: #232323;}
+.side .plan .con{margin-top:30px;margin-bottom:-10px;overflow: hidden;}
+.side .plan .con .plan_pic{height:116px;width:164px;}
+.side .plan .con .plan_desc{padding-left:15px;widtH:123px;}
+.side .plan .con .plan_desc h2{margin-bottom:40px;}
+.side .plan .con .plan_desc p,.right .plan .con .plan_desc p span{color:#767676;}
+.side .plan .con .plan_desc p{display:block;line-height:24px;height:24px;}
+.side .plan .con .plan_desc i{display:inline-block;margin-right:10px;height:22px;width:22px;margin-bottom: -5px;}
+.side .plan .con .plan_desc .ic_num{background:url("../i/info/ic_num.png") no-repeat;}
+.side .plan .con .plan_desc .ic_count{background:url("../i/info/ic_count.png") no-repeat;}
+
+/*购买计划弹框*/
+#payPlan_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    /*display: none;*/
+}
+#payPlan_dialog{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 420px;
+    height: 275px;
+    background: #fff;
+}
+#payPlan_dialog h2{
+    height: 54px;
+    line-height: 54px;
+    background: #39c075;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 25px;
+    position: relative;
+}
+.close_btn{
+	position: absolute;
+	width: 14px;
+	height: 15px;
+	background: url(../i/live/close_icon2.png) no-repeat;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	margin: auto;
+	cursor: pointer;
+}
+#payPlan_tips{
+    padding: 40px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.btns{
+    text-align: center;
+}
+#pay_plan, #check_plan{
+    display: inline-block;
+    margin: 0 auto;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 2px solid #00b551;
+    border-radius: 8px;
+    background: #f2fbf6;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+

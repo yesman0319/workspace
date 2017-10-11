@@ -1,0 +1,16 @@
+  .result-round{width:680px;height:240px;background: #f8f8f8;border-radius: 8px;margin-top: 20px;}
+  .center{text-align: center;font-size: 16px;/* padding-top: 42px; */}
+  .result-round a.share{display:block;color:#818181;font-size: 14px;}
+  .result-round nav a{display: inline-block;}
+.b-blue{background: #00b551!important;}
+.bred{background:#f54040; }
+  .bgray{background:#dedede;}
+  .a_disabled{color:gray!important;cursor:default;text-decoration:none;}
+  a:hover.a_disabled,a:focus.a_disabled{text-decoration:none;}
+  .a_enabled{color:#0370ff!important;cursor:pointer;}
+  .t-save{display:none;}
+  .t-modify{display:none;}
+  .topaymodel{padding-left: 0;padding-top: 30px;text-align: center;padding-bottom: 10px;font-weight: bold;}
+  .tipmodelcontent{width:370px;height:180px;border: 1px solid #C2BFBF;border-top: 7px solid #00b551!important;}
+  .bproduct{cursor:pointer;}
+  #tbodyOrder tr{height:32px;}

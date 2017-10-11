@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+.window {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1400px;
+	height: 100%;
+	overflow: hidden;
+	margin-left: -700px;
+	left: 50%;
+}
+
+.w {
+	position: relative;
+	width: auto;
+	height: 100%;
+	float: left;
+}
+
+.l {
+	background: #46484c;
+	width: 350px
+}
+
+.r {
+	background: #fff;
+	width: 350px;
+}
+
+.wmid {
+	position: relative;
+	width: 700px;
+	height: 100%;
+	float: left;
+	background: #f4f4f4;
+}
+
+.l>.nw, .l>#x>.nz {
+	position: relative;
+	border-bottom: 1px solid #343539;
+	width: 100%;
+	font-size: 18px;
+	color: #fff;
+}
+
+.l>.nw {
+	height: 60px;
+	line-height: 60px;
+}
+
+.l>#x>.nz {
+	min-height: 90px;
+}
+
+.l>#x>.z1:hover {
+	background: #747474;
+	cursor: pointer;
+}
+
+.l>#x>.z2:hover {
+	background: #747474;
+	cursor: pointer;
+}
+
+.l>#x>.z3:hover {
+	cursor: no-drop;
+}
+
+.l>#x>.nz:after {
+	position: absolute;
+	width: 48px;
+	height: 18px;
+	top: 20px;
+	right: 30px;
+	border: 1px solid;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.l>#x>.z1:after {
+	content: "回放";
+	border-color: #ff8030;
+	color: #ff8030
+}
+
+.l>#x>.z2:after {
+	content: "直播中";
+	border-color: #21e478;
+	color: #21e478
+}
+
+.l>#x>.z3:after {
+	content: "未开始";
+	border-color: #fff;
+	color: #fff
+}
+
+.l>.nw:before {
+	position: absolute;
+	width: 21px;
+	height: 13px;
+	top: 23px;
+	left: 15px;
+	content: "";
+	background: url(/common/images/video.png)
+}
+
+.l>.nw>.n {
+	margin-left: 50px;
+}
+
+.l>#x>.nz>.n {
+	margin-left: 15px;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.l>#x>.nz>.n>.t {
+	padding-top: 20px;
+	font-size: 14px;
+	width: 200px;
+}
+
+.l>#x>.nz>.n>.d {
+	padding-top: 15px;
+	font-size: 12px;
+}
+
+.l>#x>.nz>.n>.d>.ele {
+	padding-left: 20px;
+	position: relative;
+	float: left;
+	padding-right: 10px;
+}
+
+.l>#x>.nz>.n>.d>.ele:before {
+	position: absolute;
+	width: 15px;
+	height: 14px;
+	top: 4px;
+	left: 0px;
+	content: "";
+	background: url(/common/images/video.png)
+}
+
+.l>#x>.nz>.n>.d>.z1:before {
+	background: url(/common/images/clock.png)
+}
+
+.l>#x>.nz>.n>.d>.z2:before {
+	background: url(/common/images/hear.png)
+}
+
+.l>.erweima {
+	/* position: absolute; 
+	bottom: 0px;
+	left: 0px;
+	height: 300px;
+	*/
+	margin-top:20px;
+	width: 100%;	
+	color: #fff;
+	font-size: 14px;
+	text-align: center
+}
+
+.wmid>.title {
+	height: 90px;
+	background: #000;
+}
+
+.wmid>.title>.a {
+	margin-left: 10px;
+	font-size: 24px;
+	color: #21e478;
+	padding-top: 15px;
+}
+
+.wmid>.title>.b {
+	margin-left: 10px;
+	font-size: 14px;
+	color: #fff;
+	padding-top: 15px;
+}
+
+.wmid>.video {
+	height: 63%;
+	width: 680px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #000;
+}
+
+.wmid>.lx {
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+
+.wmid>.lx>.title {
+	height: 70px;
+	width: 100%;
+	background: #17bd2f;
+	line-height: 70px;
+	color: #fff;
+}
+
+.wmid>.lx>.title:before {
+	position: absolute;
+	width: 13px;
+	height: 16px;
+	top: 27px;
+	left: 30px;
+	content: "";
+	background: url(/common/images/paper.png)
+}
+
+.wmid>.lx>.title>.n {
+	margin-left: 56px;
+	font-size: 20px;
+}
+
+.wmid>.lx>.n {
+	height: 200px;
+	width: 100%;
+}
+
+.wmid>.lx>.n>.ele {
+	position: relative;
+	width: auto;
+	height: 80px;
+	margin-left: 20px;
+	border-bottom: 1px solid #c0c0c0;
+	cursor: pointer;
+}
+
+.wmid>.lx>.n>.right:before {
+	position: absolute;
+	width: 60px;
+	height: 63px;
+	top: 20px;
+	left: -75px;
+	content: "";
+	background: url(/common/images/c1.png)
+}
+
+.wmid>.lx>.n>.ele>.t {
+	padding-top: 28px;
+	font-size: 16px;
+	color: #232323;
+}
+
+.wmid>.lx>.n>.ele>.d {
+	padding-top: 15px;
+	font-size: 12px;
+	color: #767676
+}
+
+.wmid>.lx>.n>.ele>.d>.ele {
+	width: 124px;
+	position: relative;
+	float: left;
+	padding-top: 5px;
+}
+
+.wmid>.lx>.n>.ele>.num {
+	width: auto;
+	position: absolute;
+	height: 14px;
+	font-size: 14px;
+	top: 43px;
+	text-align: right;
+	right: 135px;
+}
+
+.wmid>.lx>.n>.ele>.right:before {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 3px;
+	left: -22px;
+	content: "";
+	background: url(/common/images/g.png)
+}
+
+
+
+.wmid>.lx>.n>.ele>.num>span {
+	color: #00b551;
+}
+
+#x {
+	position: relative;
+	width: 100%;
+	/* height: 552px!important;
+    overflow-y: scroll!important;
+    overflow: hidden!important; */
+}
+
+
+.r>.title {
+	width: 100%;
+	height: 56px;
+	position: relative;
+	line-height: 56px;
+	font-size: 18px;
+	background: #ececec
+}
+
+.r>.title:before {
+	position: absolute;
+	width: 19px;
+	height: 17px;
+	top: 18px;
+	left: 10px;
+	content: "";
+	background: url(/common/images/chat.png)
+}
+
+.r>.title>.n {
+	margin-left: 40px
+}

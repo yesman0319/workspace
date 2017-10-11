@@ -1,0 +1,24 @@
+.bar{width: 646px;height: 57px;background: #e4e2e3;border-radius: 8px;margin-left: 45px;margin-top:28px;}
+.dic-pra{width:680px;/*min-height:190px;*/height:auto!important;/* border:1px solid #ddd; */margin-left:30px;margin-top:20px;border-radius: 8px;}
+.dic-p{margin-top:5px;}
+.dic-p :nth-child(5n+1) {
+    margin-left: 0px!important;
+}
+.dic-p1{margin-top:-15px;}
+.dic-input1{height:40px;border:none;border-bottom: 1px solid #ddd;background: transparent;margin-left:10px;padding-top: 20px;width:115px;text-align: center;position: relative;top:-24px;ime-mode:disabled;}
+.dicnum{margin-top: 28px;}
+.dic-tip{color: #B9B9B8;position: relative;left: -30px;top:9px;}
+
+.dic-ball-blue { background: #6bc04b;}
+.dic-borange{ background: #f7d54e;}
+.dic-bred{background: #ff3c1f;}
+.dic-roundstyle{width: 16px;  height: 16px;  display: inline-block; border-radius: 16px;   position: relative; top: 3px;margin-right: 5px;}
+.dic-colortip span{padding-right:25px;}
+
+.dic-colortip{text-align: left;padding-top: 25px;padding-left: 50px;}
+.dic-line{border: none;background: transparent;text-align: center;position: relative;top: -15px;color:rgb(157, 156, 156);}
+input.linedict{margin-left:0!important;}
+span.time-pos:hover {text-decoration: underline; }
+span.time-pos a:focus {text-decoration: none;}
+span.time-pos a:visited {color: #00b551;}
+.default-cursor{cursor:default;}

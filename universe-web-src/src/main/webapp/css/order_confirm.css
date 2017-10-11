@@ -1,0 +1,117 @@
+body{background:#f5f5f5;}
+*{color:#232323;}
+.layout{padding-top:55px;padding-bottom:30px;margin:0 auto;width:1160px;overflow:hidden;}
+.main{width:770px;}
+.main .box1{padding:30px;/*height:170px;*/overflow:hidden;background:#fff;}
+.main .box1 img{display:inline-block;float:left;height:170px;width:262px;}
+.main .box1 .desc{float:left;margin-left:48px;width:375px;}
+.main .box1 .desc .con{margin-top: 64px;}
+.main .box1 .desc h1{font-size:36px;}
+.main .box1 .desc h1 .lecturer{font-weight:normal;line-height:24px;font-size:14px;color:#767676;}
+.main .box1 .desc .desc_item .item_name{display:block;height:25px;line-height:25px;width:75px;font-size:14px;color:#555;overflow:hidden;}
+.main .box1 .desc .desc_item .item_list{overflow:hidden;width:300px;}
+.main .box1 .desc .desc_item .item_list li{float:left;height:25px;margin-left:12px;margin-bottom:10px;}
+.main .box1 .desc .desc_item .item_list li a{display:block;height:23px;line-height:23px;width:83px;text-align:center;border:1px solid #767676;border-radius:5px;background:#f8f8f8;}
+.main .box1 .desc .desc_item .item_list li .active{background:#f2fbf6;color:#00b551;border-color:#00b551;}
+.main .box1 .desc .desc_item .item_list li a:hover{background:#f2fbf6;color:#00b551;border-color:#00b551;}
+.main .box2{margin-top:22px;background:#fff;}
+.main .box2 h2{padding:20px 0;height:20px;border-bottom:2px solid #f5f5f5;}
+.main .box2 h2 p{padding-left:20px;font-size:20px;border-left:4px solid #00b551;line-height:20px;}
+.main .box2 .box2_list{padding-bottom:30px;overflow:hidden;}
+.main .box2 .box2_list li{padding:10px 20px;}
+.main .box2 .box2_list li .title{font-size:16px;line-height:30px;font-weight:bold;}
+.main .box2 .box2_list li .para{line-height:26px;color:#555;font-size:14px;}
+
+/*�Ҳ���ʽ*/
+.side{margin-left:25px;padding-bottom:30px;width:350px;background:#fff;}
+.side h2{padding:20px 0;height:20px;border-bottom:2px solid #f5f5f5;}
+.side h2 p{padding-left:20px;font-size:20px;border-left:4px solid #00b551;line-height:20px;}
+.side .box3{padding:0 20px;}
+.side .it{line-height:40px;font-size:16px;}
+.side .ite{margin-top:12px;}
+.side .item{padding-bottom: 12px;border-bottom:1px dashed #e7e7e7;}
+.side .it span{float:right;font-weight: bold;}
+.side .it .course_name{font-size:16px;display: inline-block; max-width: 200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.side .it .course_price{font-size:18px;}
+.side .it .course_cou{font-size:18px;}
+.side .total{padding:0 20px;font-weight:bold;line-height:80px;}
+.side .total .total_price{color:#ff9c00;font-size:20px;font-weight:bold;}
+.side .button{text-align:center;}
+.side .button button{display:inline-block;cursor:pointer;outline:none;height:40px;line-height:38px;width:112px;text-align:center;color:#ff9c00;font-size:16px;border:1px solid #ff9c00;border-radius:20px;background:#fff5e5;}
+.order-coupon-item{
+    position:relative;
+    height:24px;
+}
+.order-coupon .no-coupon{
+    height:24px;
+    line-height:24px;
+    font-size:14px;
+    color:#767676;
+}
+.order-coupon-item i{
+    display:inline-block;
+    height:24px;
+    line-height:24px;
+    font-size:14px;
+    font-style: normal;
+    color:#767676;
+}
+.order-coupon-item span{
+    display:inline-block;
+    position:absolute;
+    height:24px;
+    line-height:24px;
+    font-size:14px;
+    color:#767676;
+}
+.order-coupon-item .coupon-item-ic{
+    width:14px;
+    background:url("../i/order/order-option.png") center 5px no-repeat;
+    cursor:pointer;
+}
+.order-coupon-item .selected{
+    background:url("../i/order/order-option-se.png") center 5px no-repeat;
+}
+.order-coupon-item .coupon-item-price{
+    left:24px;
+}
+.order-coupon-item .coupon-item-title{
+    right:136px;
+    width:84px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.order-coupon-item .coupon-item-date{
+    right:0;
+    width:106px;
+}
+#payTip{position:fixed;top:0;z-index:200;height:100%;width:100%;background:rgba(0,0,0,.4);display:none;}
+#payTip .tip-layout{
+    position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;
+    border-top:6px solid #00b551;
+    height:268px;
+    background:#fff;
+    width:422px;
+}
+#payTip .tip-layout .tip-status{
+    display:inline-block;
+    margin-top:74px;
+    margin-left:191px;
+    height:40px;
+    width:40px;
+    background:url("../i/order/pay-fail.png") no-repeat;
+}
+#payTip .tip-layout .tip-text{
+    margin-top:40px;
+    font-size:22px;
+    color:#ff3c1f;
+    width:100%;
+    text-align:center;
+}
+#payTip .tip-layout-success .tip-status{
+    background:url("../i/order/pay-success.png") no-repeat;
+}
+#payTip .tip-layout-success .tip-text{
+    color:#00b551;
+}

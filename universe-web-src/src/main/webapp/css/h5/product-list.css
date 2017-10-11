@@ -1,0 +1,150 @@
+html,body{width:100%;height:100%;background:#f5f5f5;font-size:62.5%;}
+img{
+    display: inline-block;
+    border:none;
+}
+.content{
+    height:100%;
+    width:100%;
+}
+.list{
+    margin:0 auto;
+    width:94%;
+    height:100%;
+}
+.list li:nth-child(even){
+    margin-left:2%;
+}
+.list .product{
+    float:left;
+    margin-top:1rem;
+    width:49%;
+    height:177px;
+    background:#fff;
+    padding-bottom:5px;
+}
+.list .product img{
+    width:100%;
+    height: 120px;
+    overflow:hidden;
+}
+.list .product .title{
+    margin-left:5%;
+    margin-top:1rem;
+    width:90%;
+    font-size:1.4rem;
+}
+ .list .product .title .title-a{
+      display:block;
+      color:#232323;
+      width: 100%;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  font-size: 1.4rem;
+    }
+.list .product .info{
+    margin-left:0.5rem;
+    margin-top:1rem;
+}
+
+#teacherName{
+    float:left;
+    font-size: 13px;
+    margin-left: 3px;
+}
+.list .product .info .price{
+    color:#fc6d13;
+    font-size:1.4rem;
+}
+.list .product .info p:nth-child(2){
+    float:right;
+    margin-right:0.5rem;
+    color:#fc6d13;
+    font-size:1.2rem;
+}
+.list .product .info .num{
+    color:#767676;
+    font-size:1.2rem;
+}
+@media screen and (max-width:360px){
+	.list .product img {
+	    height: 110px;
+	}
+	.list .product {
+	    margin-top: 8px;
+	    height: 160px;
+	    padding-bottom: 3px;
+	}
+	.list .product .title {
+	    margin-left: 5%;
+	    margin-top: 8px;
+	}
+	.list .product .info {
+	    margin-top: 8px;
+	}
+}
+@media screen and (min-width:760px) {
+    .content{
+        position:relative;
+        top:20px;
+        left:0;
+        right:0;
+        margin:auto;
+        height:100%;
+        width:750px;
+    }
+    .list{
+        margin:0 auto;
+        width:710px;
+        height:100%;
+    }
+    .list li:nth-child(even){
+        margin-left:20px;
+    }
+    .list .product{
+        float:left;
+        margin-top:10px;
+        width:345px;
+        height:330px;
+        background:#fff;
+    }
+    .list .product img{
+        width:345px;
+        height:223px;
+        overflow:hidden;
+    }
+    .list .product .title{
+        margin-left:10px;
+        margin-top:20px;
+        width:100%;
+        font-size:22px;
+    }
+   
+    .list .product .info{
+        margin-left:10px;
+        margin-top:15px;
+    }
+
+    .list .product .info p:nth-child(1){
+        float:left;
+        color:#fc6d13;
+        font-size:20px;
+    }
+    .list .product .info .price{
+        color:#fc6d13;
+        font-size:28px;
+    }
+    .list .product .info p:nth-child(2){
+        float:right;
+        margin-right:10px;
+        margin-top: 6px;
+        color:#767676;
+        font-size:20px;
+    }
+    .list .product .info .num{
+        color:#767676;
+        font-size:20px;
+    }
+}
+

@@ -1,0 +1,38 @@
+<div class="modal fade" id="timeModalRead" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:354px;border: 1px solid #C2BFBF;border-top: 7px solid #509bfd;;">
+      <div class="modal-body">
+        <p class="feedback-title" style="text-align:center;top:0px;">60s后将为您自动提交</p>
+      </div>
+      <div class="one-button3" style="text-align:center;">
+        <button type="button" class="btn btn-primary btn-sm feedback-button2 btn1" id="timeRead">知道了</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="timeModalListen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:354px;border: 1px solid #C2BFBF;border-top: 7px solid #509bfd;;">
+      <div class="modal-body">
+        <p class="feedback-title" style="text-align:center;top:0px;">60s后将为您自动提交</p>
+      </div>
+      <div class="one-button3" style="text-align:center;">
+        <button type="button" class="btn btn-primary btn-sm feedback-button2 btn1" id="timeListen">知道了</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="lockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:354px;border: 1px solid #C2BFBF;border-top: 7px solid #509bfd;;">
+      <div class="modal-body">
+        <p class="feedback-title" style="text-align:center;top:0px;">未达到解锁标准</p>
+      </div>
+      <div class="one-button3" style="text-align:center;">
+        <button type="button" class="btn btn-primary btn-sm feedback-button2 btn1" id="lockSure">确定</button>
+      </div>
+    </div>
+  </div>
+</div>

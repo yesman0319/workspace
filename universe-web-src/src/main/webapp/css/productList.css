@@ -1,0 +1,15 @@
+body{background:#f5f5f5;}
+.layout{padding-top:20px;padding-bottom:40px;width:1160px;margin:0 auto;overflow:hidden;}
+.location{line-height:55px;font-size:14px;}
+.location .cur{color: #00b551;}
+.location a{font-size:14px;}
+.plan_list{width:1160px;}
+.plan_list .plan_item{padding:15px 14px 0;height:275px;width:262px;float:left;cursor:pointer;}
+.plan_list .plan_item:hover{background:#fff;}
+.plan_list .plan_item a{display:block;position:relative;margin:0 auto;height:170px;width:262px;}
+.plan_list .plan_item a img{height:170px;width:262px;}
+.plan_list .plan_item .plan_name{display:block;line-height:50px;font-size:18px;width: 262px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+.plan_list .plan_item .study_num{font-size:16px;color:#767676;margin-right:0;}
+.plan_list .plan_item .study_num .audio{display:inline-block;margin-right:5px;height:16px;width:26px;background:url("../i/index/stu_plan.png") no-repeat;}
+.plan_list .plan_item .free{font-size:16px;color:#00b551;}
+.plan_list .plan_item .price{font-size:18px;color:#ff9c00;font-weight: bold;}

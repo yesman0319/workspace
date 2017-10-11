@@ -1,0 +1,47 @@
+'use strict'
+
+define(function(){
+  return [
+    '<div class="right-part1" id="right-part1">',
+    '{{each data as value index}}',
+       '<p class="p1 bold black mleft25">',
+        '<img src="../../i/list-pic.png" style="margin-left:-10px;margin-right:10px;" /><span>{{value.name}}</span>',
+       '</p>',
+       '<ul>',
+        '<li>',
+        //解决录入时只有tpo没有passagebug
+        // '{{if value.tpo_types.length}}',
+        '{{each value.tpo_types[0].tpo_questions as value1 index1}}',
+         '<p class="totel-unit2">',
+          '<a href="#" class="jinJieUnitDetail" style="margin-right:10px;" data-question_id="{{value1.question_id}}" data-tpoNum="{{value.name}}" data-rates="{{value1.rate}}" data-question_sequence_number="{{value1.question_sequence_number}}">Passage {{value1.question_sequence_number}}</a>',
+          '{{if "" != value1.rate}}',
+            '{{if (value1.rate.substring(0,value1.rate.indexOf("/")) / value1.rate.substring(value1.rate.indexOf("/")+1) * 100).toString().substring(0,value1.rate.indexOf("/")+3) < 50}}',
+              '<a href="#" class="jinJieResult red" data-question_id="{{value1.question_id}}" data-tpoNum="{{value.name}}" data-rates="{{value1.rate}}" data-question_sequence_number="{{value1.question_sequence_number}}">',
+            '{{else if (value1.rate.substring(0,value1.rate.indexOf("/")) / value1.rate.substring(value1.rate.indexOf("/")+1) * 100).toString().substring(0,value1.rate.indexOf("/")+3) >= 50 && (value1.rate.substring(0,value1.rate.indexOf("/")) / value1.rate.substring(value1.rate.indexOf("/")+1) * 100).toString().substring(0,value1.rate.indexOf("/")+3) <= 80}}',
+              '<a href="#" class="jinJieResult orange" data-question_id="{{value1.question_id}}" data-tpoNum="{{value.name}}" data-rates="{{value1.rate}}" data-question_sequence_number="{{value1.question_sequence_number}}">',
+            '{{else}}',
+              '<a href="#" class="jinJieResult green" data-question_id="{{value1.question_id}}" data-tpoNum="{{value.name}}" data-rates="{{value1.rate}}" data-question_sequence_number="{{value1.question_sequence_number}}">',
+            '{{/if}}',
+          '(正确率:{{(value1.rate.substring(0,value1.rate.indexOf("/")) / value1.rate.substring(value1.rate.indexOf("/")+1) * 100).toString().substring(0,value1.rate.indexOf("/")+3)}}%)</a> ',
+          '{{/if}}',
+         '</p>',
+        '{{/each}}',
+        // '{{else}}',
+        //  '<p class="totel-unit2">',
+        //   '<span>暂无数据</span>',
+        //  '</p>',
+        //  '<p class="totel-unit-null">',
+        //  '</p>',
+        //  '<p class="totel-unit-null">',
+        //  '</p>',
+        //  '<br>',
+        // '{{/if}}',
+        '</li>',
+       '</ul>',
+    '{{/each}}',
+   '</div>',
+   '<div class="tpo-load-more pointer" id="jinJieMore" style="display:none;">',
+    '<p><img src="../../i/tpo-pic1.png">点击加载更多</p>',
+   '</div>'
+  ].join('')
+})

@@ -1,0 +1,119 @@
+body {
+	background: #f5f5f5;
+}
+
+.layout {
+	padding-bottom: 40px;
+	width: 1160px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.location {
+	line-height: 55px;
+	font-size: 14px;
+}
+
+.location .cur {
+	color: #00b551;
+}
+
+.location a {
+	font-size: 14px;
+}
+
+.video_list {
+	width: 1160px;
+	overflow:hidden;
+}
+
+.video_list .video_item {
+	padding: 15px 14px 0;
+	height: 275px;
+	width: 262px;
+	float: left;
+	cursor: pointer;
+}
+.v_list_modal{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.v_list_modal b{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 0;right: 0;bottom: 0;top: 0;
+	margin: auto;
+	background: url("../i/index/audio_rou.png") no-repeat;
+	background-size: cover;
+}
+.video_list .video_item:hover {
+	background: #fff;
+}
+.video_list .video_item:hover .video_name{
+	color: #00bb51;
+}
+.video_list .video_item:hover .v_list_modal{
+	display: inline-block;
+}
+.video_list .video_item>a {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	height: 170px;
+	width: 262px;
+}
+.video_item img{
+	height: 170px;
+	width: 262px;
+}
+.video_list .video_item .video_name {
+	display: block;
+	line-height: 50px;
+	font-size: 18px;
+	width: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.default-img{
+	border: 1px solid #767676;
+	box-sizing: border-box;
+}
+.video_list .video_item .study_num {
+	font-size: 16px;
+	color: #767676;
+	margin-right: 0;
+}
+
+.video_list .video_item .study_num .stu_count{
+	display: inline-block;	
+	margin-right: 5px;
+	height: 22px;
+	width: 22px;
+	background: url("../i/index/t_ic.png") no-repeat;
+	background-size: cover;
+	vertical-align: -3px;
+}
+
+.video_list .video_item .free {
+	font-size: 16px;
+	color: #00b551;
+}
+
+.video_list .video_item .price {
+	font-size: 18px;
+	color: #ff9c00;
+	font-weight: bold;
+}
+.lecturer{
+	margin-top: -10px;
+    margin-bottom: 10px;
+	font-size:14px;
+	color:#767676;
+}

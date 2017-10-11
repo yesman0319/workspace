@@ -1,0 +1,149 @@
+
+<p class="mtop20">课程详情</p>
+<table class="mid tab_detail mtop20">
+    <tbody id="tbodyOrder">
+    <tr>
+        <th>课程</th>
+        <th>单价</th>
+        <th>数量</th>
+    </tr>
+    <tr>
+        <%_.each(obj.list,function(item,i){%>
+        <td class=""><%=item.productName%></td>
+        <td><%=item.price%></td>
+        <td class="bold">
+            <div class="spinner">
+                <button class="decrease" disabled="disabled" style="color:lightgray;">-</button>
+                <input disabled value="<%=item.buyCount%>" type="text" class="spinner productList value" data-tag="product" style="width:50px;height:25px;font-size:12px;text-align:center;">
+                <button class="increase" disabled="disabled" style="color:lightgray;">+</button>
+            </div>
+        </td>
+        <%})%>
+    </tr>
+    </tbody>
+</table>
+
+<p class="font12 black232 mtop15 mleft5">
+    <span class="mright15">总价：￥<%=obj.amount%></span>
+    <span class="mright15">已优惠：￥<%=obj.amount-obj.actualAmount%></span>
+    <span>实付：<span class="font16 blue509">￥<%=obj.actualAmount%></span></span>
+</p>
+<p class="mleft5 mtop25 mbot20">
+   <span>
+       <input id="chkAgree" type="checkbox" checked="" name="check1" style="margin-top:-5px;">
+       <label for="chkAgree">我已阅读并同意<a id="lnkAgree" href="javascript:;" class="blue" style="text-decoration:underline;">小马购买条款</a></label>
+   </span>
+</p>
+<%if(obj.userWalletObj){%>
+<div id="userWalletPayDiv" class="mtop30" style="display: none;">
+    <div>
+        <p class="black font12 mleft5 ">选择支付方式：</p>
+        <p class="userWalletSurplusAmount gray font12 mleft5" style="display:none;">第一步, 先从钱包支付 :</p>
+        <span class="platform mleft5">
+            <label class="style_zfb">
+                <span><input type="radio" checked="checked" name="useWalletPay" paytype="" style="display:none;"><em class="bank_xmqb" title="小马钱包"></em></span>
+            </label>
+            <button id="userWalletPayBtn" type="button" class="deep_btn2 fright mright30 mtop5" style="padding:0;">支付</button>
+            <p class="font14 mright20 fright all-blue" style="margin-top:13px;display:inline-block">先从钱包支付￥<font id="userWalletUseAmount"><%=obj.userWalletObj.useAmount%></font></p>
+        </span>
+        <span class="font14 mright20">当前余额：￥<span id="userWalletAmount"><%=obj.userWalletObj.userWallet.amount%></span></span>
+    </div>
+    <p class="userWalletSurplusAmount gray font12 mleft5 mtop10" style="display: none">第二步, 再从网银或者支付宝支付剩余费用 ￥<span><%=obj.userWalletObj.surplusAmount%></span></p>
+</div>
+<%}%>
+<div id="divSmallMoney" style="display:none;">
+    <div class="platform mleft5">
+        <label class="style_zfb">
+            <span><input type="radio" checked="checked" value="" id="alipay" name="bank1" paytype="6"><em class="bank_zfb" title="支付宝"></em></span>
+        </label>
+        <button id="paymentBtn" type="button" class="btnPay deep_btn2 fright mright30 mbot10" style="padding:0;">支付</button>
+        <div class="platform_bor">
+            <label><span><input type="radio" value="ICBCB2C" name="bank1" paytype="2"><em class="bank_8" title="中国工商银行"></em></span></label>
+            <label><span><input type="radio" value="CCB" name="bank1" paytype="2"><em class="bank_2" title="中国建设银行"></em></span></label>
+            <label><span><input type="radio" value="CMB" name="bank1" paytype="2"><em class="bank_1" title="招商银行"></em></span></label>
+            <label><span><input type="radio" value="ABC" name="bank1" paytype="2"> <em class="bank_3" title="中国农业银行"></em></span></label>
+            <label><span><input type="radio" value="BOCB2C" name="bank1" paytype="2"><em class="bank_5" title="中国银行"></em></span></label>
+            <label><span><input type="radio" value="COMM" name="bank1" paytype="2"> <em class="bank_9" title="交通银行"></em></span></label>
+            <label><span><input type="radio" value="SPDB" name="bank1" paytype="2"> <em class="bank_10" title="浦发银行"></em></span></label>
+            <label><span><input type="radio" value="SHBANK" name="bank1" paytype="2"> <em class="bank_13" title="上海银行"></em></span></label>
+            <label><span><input type="radio" value="CIB" name="bank1" paytype="2"><em class="bank_6" title="兴业银行"></em></span></label>
+            <label><span><input type="radio" value="SDB" name="bank1" paytype="2"><em class="bank_11" title="平安银行"></em></span></label>
+            <label><span><input type="radio" value="FDB" name="bank1" paytype="2"><em class="bank_12" title="富滇银行"></em></span></label>
+            <label><span><input type="radio" value="GDB" name="bank1" paytype="2"> <em class="bank_7" title="广发银行"></em></span></label>
+            <label><span><input type="radio" value="POSTGC" name="bank1" paytype="2"><em class="bank_4" title="中国邮政储蓄银行"></em></span></label>
+        </div>
+    </div>
+</div>
+
+<form id="payForm" name="payForm" method="post" action="" target="_blank">
+    <input name="token" id="token" type="hidden" value="">
+    <input name="orderNum" id="orderNum" type="hidden" value="">
+    <input name="bank" id="bank" type="hidden" value="">
+</form>
+<div class="modal fade in" id="payModel" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" style="width:370px;">
+        <div class="modal-content tipmodelcontent" >
+            <div class="modal-body">
+                <p class="topaymodel" >已完成支付？</p>
+            </div>
+            <div style="text-align:center;">
+                <button type="button" data-dismiss="modal" class="btn btn-warning btn-sm" id="payFail">支付遇到问题</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn1" style="margin-left: 20px;" id="paySuccess">支付成功</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade in" id="cancelOrderModel" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" style="width:370px;">
+        <div class="modal-content tipmodelcontent" >
+            <div class="modal-body">
+                <p class="topaymodel" >确定要取消订单？取消后将无法恢复！</p>
+            </div>
+            <div style="text-align:center;">
+                <button type="button" data-dismiss="modal" class="btn btn-warning btn-sm feedback-button5">取消</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-sm  btn1" id="confirmCancel">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade in" id="reverseModel" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" style="width:370px;" >
+        <div class="modal-content tipmodelcontent" >
+            <div class="modal-body">
+                <p class="topaymodel" >确定预定该课程并在第一次上课时缴费？</p>
+            </div>
+            <div style="text-align:center;">
+                <button type="button" data-dismiss="modal" class="btn btn-default btn-sm feedback-button5" id="reverseCancle">取消</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-sm  btn1" id="reverseOk">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade in" id="tipModel" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" style="width:370px;" >
+        <div class="modal-content tipmodelcontent" >
+            <div class="modal-body">
+                <p id="tipMsg" class="topaymodel" >谢谢选择小马的托福课程！</p>
+            </div>
+            <div style="text-align:center;">
+                <button type="button" data-dismiss="modal" class="btn btn-primary btn-sm  btn1">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade in" id="protocolModel" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" style="width:1000px;">
+        <div id="protocolContent" class="modal-content" style="height:607px;">
+            <div class="modal-header" style="background:#509bfd;padding:0;">
+                <a type="button" data-dismiss="modal" style="margin-top:6px;margin-right:6px;float:right;cursor:pointer;">
+                    <img src="../i/11.png"/><span class="sr-only">Close</span>
+                </a>
+                <div style="line-height: 35px;text-align: center;color: white;">购买协议</div>
+            </div>
+            <div class="modal-body" style="height:565px;padding: 5px;">
+                <iframe id="iProtocol" style="width:100%;height:100%;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

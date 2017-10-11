@@ -1,0 +1,76 @@
+.bbd{ border-bottom: 1px dashed #dedede;}
+.f55{ font-size: 55px;}
+.active{ background: #0ea5e6;}
+/* header start */
+.header{ width:100%; height:99px; background: #fff; border-bottom:1px solid #e5e5e5; line-height: 99px;}
+.header-wrap{ width: 1000px; height:99px; }
+.logo-wrap{ width: 244px; height: 81px; padding-top: 18px;}
+.logo-wrap img{ display: block;}
+.navList li{ margin-right: 31px;}
+.navList li a{ font-size: 20px; color:#555;}
+.navList li a.active{ background: url("../images/nav-active.jpg") no-repeat center; color:#308ee3; display: block;}
+.login{height: 99px;}
+
+/* main */
+.main{ width: 100%; overflow: hidden;}
+.main-content{ width: 1000px; overflow: hidden;}
+.crumb{ height: 69px; line-height:76px;}
+.main-head{ width: 998px; border:1px solid #e8e8e8; background: #fff; margin-bottom: 9px;}
+.Subjectclass{ width: 100%; height: 69px; }
+.select-box,.Tasks-box { width: 886px;}
+.title-box{ width: 112px; height: 70px; line-height: 70px; text-indent: 19px;}
+.SubjecBtn{ padding-top: 25px;}
+.SubjecBtn a{ display: block; margin-right: 22px; float: left; width: 42px; height: 20px; text-align: center; line-height: 20px; background: #999; border-radius: 2px;}
+.SubjecBtn a.active{ background: #0ea5e6;}
+.Passage a{ padding: 10px; line-height: 70px; text-align: center; border-radius: 5px;}
+.SerialNumClass{ overflow: hidden;}
+.SerialNumClass .title-box{ height: auto;}
+.SerialNum-box{ width: 886px;}
+.SerialNum{ padding: 20px 0; overflow: hidden;}
+.SerialNum a{ width: 69px; line-height: 32px; text-align: center; border-radius: 5px;}
+.SerialNum a.active{ background: #0ea5e6;}
+.STasksclass{ overflow: hidden;}
+.TasksKList li{ float: left; padding:23px 0 0 0; margin-right: 21px;}
+
+.topicList-box{ width: 998px; border:1px solid #e8e8e8; background: #fff; overflow: hidden;}
+.top-title{ height: 36px; line-height: 36px; padding:0 20px; background: #f7f7f7; border-bottom: 1px solid #e8e8e8;}
+.topicList li{ height: 183px; }
+.serial-box{ width: 162px;}
+.numIcon{ width: 110px; height: 110px; font-size: 17px; line-height: 129px; text-align: center; background: url("../images/sLitIcon.png") no-repeat; margin:37px 0 0 19px; display: block;}
+.numIcon span{  font-style: oblique; line-height: 110px;}
+.topicText-box{ width: 836px; padding:37px 0 36px 0;}
+.result-btn,.answer-box{ overflow: hidden;}
+.result-btn span{ background: #999; height: 20px; border-radius: 2px; padding: 0 8px; margin-right: 20px; line-height:20px; text-align: center;}
+.result-btn span.active{ background: #0ea5e6;}
+.tt{ line-height: 24px; margin: 10px 20px 6px 0;}
+.answer-box{}
+.parsing-box{ width: 65px; height: 23px; border:1px solid #e6e6e6;}
+.parsing-box span{ width: 65px; line-height: 23px; text-align: center;}
+.parsing-box i{ width: 1px; background: #e6e6e6; height: 18px;overflow: hidden; margin: 3px 0 0 0;}
+
+.people-icon,.correct-icon{ background:url("../images/index-icon.png") no-repeat; display: block;}
+.people-icon{background-position: 0 -240px; width: 13px; height: 12px; margin:4px 6px 0 0;}
+.correct-icon{background-position: 0 -178px; width: 15px; height: 12px; margin:4px 3px 0 0;}
+.t-box{ margin: 0 20px 0 0; width: 164px;}
+
+.page{ width: 100%; height: 87px; text-align: center; padding:42px 0 0 0;}
+.page-box{ display: inline-block; *display: inline; *zoom:1;}
+.goPage{ width: 44px; height: 17px; font:14px/1.5 Arial,"微软雅黑","Microsoft Yahei"; border:1px solid #e0e0e0; font-size: 14px; text-align: center; line-height: 17px;}
+.listPage a{ border:1px solid #dfdfdf; height: 36px; padding:0 15px; text-align: center; line-height: 40px; color:#666; margin-right: 3px; background: #fff;}
+.listPage a:hover{ background: #35b5eb; border-color: #35b5eb; color:#fff;}
+.listPage a.active{ background: #35b5eb; border-color: #35b5eb; color:#fff;}
+.listPage a.no{ color:#ccc;}
+.listPage a.no:hover{ background: #fff; border-color:#dfdfdf; color:#ccc;}
+.goPage-wrap{ line-height: 38px;}
+.listPage{ margin-right: 36px;}
+.listPage i{ width: 8px; height: 12px; background: url("../images/pageIcon.png") no-repeat;}
+.onIcon{ margin: 12px 13px 0 0;}
+.UnderIcon{ background-position: -9px 0 !important; margin:12px 0 0 13px;}
+/* footer */
+.footer{ width: 100%; overflow: hidden; border-top: 6px solid #D9D9D9; background: #f5f5f5;}
+.footer-wrap{ width:1000px; height: 223px; padding-top:22px;}
+.guide-ul{ margin-bottom: 50px; overflow:hidden;}
+.guide-ul li{ padding: 0 30px 30px 0; margin-right: 40px;}
+.foot-new-lk{ background:#00affe; height: 15px; display: block; float: left; margin: 0px 4px 0 0; width: 4px;}
+.font-new-aa a{ color:#333; display: block; margin-left: 10px;}
+.font-new-aa a:hover{ color: #00affe; text-decoration: underline;}

@@ -1,13 +1,13 @@
 <template>
     <nav id="homeTab">
         <ul flex="main:center dir:top" >
-            <li @click="toShare">分享管理</li>
-            <li @click="toProduct">商品管理</li>
-            <li @click="toOrder">订单管理</li>
-            <li @click="toVoucher">店铺优惠券</li>
-            <li @click="toWallet">钱包管理</li>
-            <li @click="toUserMes" style="color: #ff2e6b;">个人资料</li>
-            <li @click="toMesControl">消息管理</li>
+            <li @click="toShare" :class="{active:active == 0}">分享管理</li>
+            <li @click="toProduct" :class="{active:active == 1}">商品管理</li>
+            <li @click="toOrder" :class="{active:active == 2}">订单管理</li>
+            <li @click="toVoucher" :class="{active:active == 3}">店铺优惠券</li>
+            <li @click="toWallet" :class="{active:active == 4}">钱包管理</li>
+            <li @click="toUserMes" :class="{active:active == 5}">个人资料</li>
+            <li @click="toMesControl" :class="{active:active == 6}">消息管理</li>
         </ul>
     </nav>
 </template>
@@ -18,7 +18,7 @@
         name: 'homeTab',
         data () {
             return {
-
+                active:5
             }
         },
         mounted (){
@@ -26,14 +26,7 @@
         },
         methods : {
             isSelected(index){
-                let Eli = this.$el.querySelectorAll("li");
-                for(let li of Eli){
-                    console.log(li.style.color)
-                    if(li.style.color == 'rgb(255, 46, 107)'){
-                        li.style.color = "#666"
-                    }
-                }
-                Eli[index].style.color = "#ff2e6b";
+                this.active = index;
             },
             toMesControl(){
                 this.$router.push('mesControl')
@@ -104,6 +97,9 @@
         li{
             height: 50px;
             cursor: pointer;
+        }
+        li.active{
+            color: #ff2e6b;
         }
     }
     .tab{

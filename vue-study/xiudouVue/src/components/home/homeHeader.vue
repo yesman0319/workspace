@@ -18,10 +18,10 @@
             </ul>
         </div>
 
-        <transition name="fade">
+        <transition enter-active-class="animated fadeIn">
             <alerts></alerts>
         </transition>
-        <transition name="fade">
+        <transition enter-active-class="animated fadeIn">
             <confirmAlerts></confirmAlerts>
         </transition>
     </div>

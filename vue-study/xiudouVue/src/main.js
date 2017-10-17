@@ -6,6 +6,8 @@ import router from './router'
 import VueResource from 'vue-resource'
 import store from './store/store'
 import $ from 'jquery'
+import "animate.css"
+
 Vue.use(VueResource)
 Vue.config.productionTip = false;
 //定义全局变量

@@ -30,12 +30,7 @@ let util = {
     getMyDate(str)
     {
         //补0操作
-        var getzf = function (num) {
-            if (parseInt(num) < 10) {
-                num = '0' + num;
-            }
-            return num;
-        }
+        let getzf = num => parseInt(num) < 10 ? num = `0${num}` : num;
         var oDate = new Date(str),
             oYear = oDate.getFullYear(),
             oMonth = oDate.getMonth() + 1,
@@ -46,6 +41,11 @@ let util = {
             oTime = oYear + '-' + getzf(oMonth) + '-' + getzf(oDay) + ' ' + getzf(oHour) + ':' + getzf(oMin) + ':' + getzf(oSen);//最后拼接时间
         return oTime;
     },
+    /*
+    //更简洁的时间戳转年月日方法
+    getLocalTime(timeStamp){
+        return new Date(parseInt(timeStamp)).toLocaleString().replace(/上午|下午/g, "").replace(/\//g,"-"); 
+    },*/
     requestUrl()
     {
         var baseUrl;

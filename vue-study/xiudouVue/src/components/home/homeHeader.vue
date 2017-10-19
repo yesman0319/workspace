@@ -3,7 +3,13 @@
         <div  flex="main:justify cross:center" class="head">
             <img src="/static/img/logo_new1.png" @click="backToIndex">
             <ul flex="dir:left">
-                <li flex="dir:left main:center"  @click="toKefu" :class="{active:active == 0}">
+                <router-link @click.native="toKefu" flex="dir:left main:center" tag="li" to="/home/kefu">
+                    <img :src="serverImg"><span>客服</span><span>|</span>
+                </router-link>
+                <router-link @click.native="toUserMes" flex="dir:left main:center" tag="li" to="/home/userMes">
+                    <img :src="userInfo.avatar" class="avatar"><span>{{userInfo.nick_name}}</span><span>|</span>
+                </router-link>
+                <!-- <li flex="dir:left main:center"  @click="toKefu" :class="{active:active == 0}">
                     <img :src="serverImg"><span>客服</span><span>|</span>
                 </li>
                 <li flex="dir:left main:center" @click="toIM" :class="{active:active == 2}">
@@ -11,7 +17,7 @@
                 </li>
                 <li flex="dir:left main:center" @click="toUserMes" :class="{active:active == 4}">
                     <img :src="userInfo.avatar" class="avatar"><span>{{userInfo.nick_name}}</span><span>|</span>
-                </li>
+                </li> -->
                 <li>
                     <span @click="signOut">退出</span>
                 </li>
@@ -42,7 +48,7 @@
 			}
 		},
         mounted(){
-            document.title = '秀兜后台管理';
+            document.title = `秀兜后台vue-study`;
             this.isLogin()
         },
 		methods: {
@@ -88,11 +94,11 @@
                 this.userInfo = userInfo;
             },
             toKefu(){
-                this.$router.push({name:"kefu"});
+                // this.$router.push({name:"kefu"});
                 this.isSelected(0);
             },
             toUserMes(){
-                this.$router.push({name:"userMes"});
+                // this.$router.push({name:"userMes"});
                 this.isSelected(4)
             },
             toIM(){

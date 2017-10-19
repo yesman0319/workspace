@@ -81,7 +81,7 @@
                                     this.checkCodeStatu = true;
                                     return;
                                 }
-                            }, 100)
+                            }, 1000)
                             setInterval(CountDown)
                         }
                     })
